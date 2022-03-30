@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bath and Body - WOW Skin Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #sortDiv {
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #sorter {
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+
+        #sorter>option {
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+
+        #hairDiv {
+            display: grid;
+            grid-template-columns: repeat(4, 22%);
+            grid-template-rows: repeat(4, 450px);
+            gap: 13px;
+            /* width: 80%; */
+            margin: auto;
+            margin-top: 20px;
+            margin-left: 110px;
+            
+        }
+
+        #hairDiv>div {
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            
+            /* margin-top: 20px;
+            margin-bottom: 20px; */
+        }
+
+        #hairDiv>div>img {
+            width: 100%;
+            margin-bottom: 0px;
+        }
+
+        #hairDiv>div>p {
+            margin-top: 30px;
+            font-size: 14.5px;
+            margin-bottom: -5px;
+        }
+
+        #hairDiv>div>p:nth-child(2) {
+            /* font-size: 16px; */
+            color: rgb(73, 73, 73);
+            margin-top: 0px;
+            font-weight: lighter;
+            text-decoration: none;
+            text-transform: capitalize;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        #hairDiv>div>p:nth-child(3) {
+            font-weight: 600;
+            margin-top: -10px;
+        }
+
+        #cartbtn {
+            padding: 9px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            font-weight: lighter;
+            border: none;
+            cursor: pointer;
+            display: none;
+        }
+
+        #hairDiv>div:hover #cartbtn {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sortDiv">
+        <select id="sorter">
+            <option value="">Sort By</option>
+            <option value="l2h">Price, Low To High</option>
+            <option value="h2l">Price, High To Low</option>
+            <option value="rl2h">Rating, Low To High</option>
+            <option value="rh2l">Rating, High To Low</option>
+            <option value="a2z">Alphabetically, A To Z</option>
+            <option value="z2a">Alphabetically, Z To A</option>
+        </select>
+    </div>
+
+    <div id="hairDiv"></div>
+</body>
+
+</html>
+<script>
+var hairProducts=[
+
+{"name": "  Onion Hair Oil With Black Seed Oil Extracts Helps Control Hair Fall - 200mL","price": "499","ratings": "","image": "https://cdn.shopify.com/s/files/1/1375/4957/products/Onion-hair-oil-1_375x.jpg?v=1646380369"},
+
+{"name": "Moroccan Argan Hair Oil - WITH COMB APPLICATOR - Cold Pressed - No Mineral Oil & Silicones - 100 ml","price": "349","ratings": "","image": "https://cdn.shopify.com/s/files/1/1375/4957/products/Amla-Hair-Oil-with-comb-100-1_375x.jpg?v=1632810790"},
+
+{"name": "Bhringraj Hair Oil - for Hair Restoration - with Comb Applicator - for All Hair Types - Non-Sticky & Non-Greasy Hair Oil - No Mineral Oil, Silicones, Synthetic Fragrance - 200 ml","price": "499","ratings": "","image": "https://cdn.shopify.com/s/files/1/1375/4957/products/BringrajHairOilwithComb2001_375x.jpg?v=1632987919"},
+
+{"name": "Cool Mint Hair Oil with Comb Applicator for all Hair Types - 100 ml","price": "325", "ratings": "", "image": "https://cdn.shopify.com/s/files/1/1375/4957/products/Cool-Mint-Hair-Oil-with-comb-100-1_375x.jpg?v=1634031768"},
+
+{"name": "Ginger Hair Oil for Dandruff Removal with Comb Applicator - 200mL", "price": "499", "ratings": "", "image": "https://cdn.shopify.com/s/files/1/1375/4957/products/GingerHairOilwithComb1001_375x.jpg?v=1632992297"},
+
+{ "name": "Rice Hair Oil With Rice Husk & Lavender Oil - No Mineral Oil, Silicones & Synthetic Fragrance - 150mL", "price": "499","ratings": "", "image": "https://cdn.shopify.com/s/files/1/1375/4957/products/rice-hair-oil-bottel_375x.jpg?v=1628243260"},
+
+{"name": "Bhringraj Hair Oil - for Hair Restoration - for All Hair Types - Non-Sticky & Non-Greasy Hair Oil - 200 ml", "price": "499", "ratings": "", "image": "https://cdn.shopify.com/s/files/1/1375/4957/products/bhringraj-hair-oil_375x.jpg?v=1642243170"},
+
+{"name": "Cool Mint Hair Oil - Non Sticky & Non Greasy - for All Hair Types - 200 ml","price": "499", "ratings": "","image": "https://cdn.shopify.com/s/files/1/1375/4957/products/cool-mint-hair-oil_375x.jpg?v=1642398840"},
+
+{"name": "Almond Hair Oil - infused with Almond Oil - with Comb Applicator - Non Sticky & Greasy Hair Oil - 100mL","price": "349", "ratings": "","image": "https://cdn.shopify.com/s/files/1/1375/4957/products/Almond-with-comb-1_375x.jpg?v=1634034663"},
+
+{"name": "Cool Mint Hair Oil - with Comb Applicator - Non Sticky & Non Greasy - for All Hair Types - 200 ml","price": "499", "ratings": "","image": "https://cdn.shopify.com/s/files/1/1375/4957/products/Cool-Mint-Hair-Oil-with-comb-200-1_375x.jpg?v=1634032014"},
+
+{"name": "Ginger Hair Oil for Dandruff Care with Comb Applicator - 100 ml", "price": "325", "ratings": "", "image": "https://cdn.shopify.com/s/files/1/1375/4957/products/Ginger-wcomb-100-1_375x.jpg?v=1622105921"},
+
+{"name": "Onion Black Seed Hair Oil - with comb applicator - 50 ml","price": "199","ratings": "","image": "https://cdn.shopify.com/s/files/1/1375/4957/products/Onion-Oil-Front_375x.jpg?v=1642485233" },
+
+{"name": "Onion Hair Oil With Black Seed Oil Extracts Helps Control & Hair Fall - 150mL","price": "429","ratings": "", "image": "https://cdn.shopify.com/s/files/1/1375/4957/products/onionhairoil150d-shape1_375x.jpg?v=1646385252" },
+
+{ "name": "Red Onion and Fenugreek Seed Extract Hair Oil By Body Cupid - 200 ml","price": "599","ratings": "","image": "https://cdn.shopify.com/s/files/1/1375/4957/products/onion_bodycupid_375x.jpg?v=1638950114"},
+
+{"name": "Castor Oil - 100% Pure & Cold Pressed By Body Cupid","price": "499","ratings": "","image": "https://cdn.shopify.com/s/files/1/1375/4957/products/castor-oil-1_375x.jpg?v=1638949999"},
+
+{ "name": "Rice Hair Oil With Rice Husk & Lavender Oil - No Mineral Oil, Silicones & Synthetic Fragrance - 150mL","price": "499","ratings": "","image": "https://cdn.shopify.com/s/files/1/1375/4957/products/rice-hair-oil-bottel_375x.jpg?v=1628243260"}
+];
+
+    var hairDiv = document.getElementById("hairDiv");
+
+    var hairOil=JSON.parse(localStorage.getItem("hairOil")) ||[]
+
+    function appendProduct(hairProducts) {
+        hairDiv.innerHTML = null;
+        hairProducts.forEach(function (elem) {
+            let image = document.createElement("img");
+            image.src = elem.image;
+
+            let name = document.createElement("p");
+            name.innerText = elem.name;
+
+            let price = document.createElement("p");
+            price.innerText = "₹" + elem.price;
+
+            let ratings = document.createElement("p");
+            ratings.innerText = elem.ratings;
+
+            var cartbtn=document.createElement("button")
+            cartbtn.innerText="Add to cart"
+            cartbtn.setAttribute("id", "cartbtn")
+            cartbtn.addEventListener("click" ,function(){
+                addToCart(elem)
+            })
+
+            let box = document.createElement("div");
+            box.append(image, name, price, cartbtn);
+            hairDiv.append(box);
+                })
+            }
+            appendProduct(hairProducts);
+
+
+            function addToCart(elem){
+                console.log("Bhagesh")
+                hairOil.push(elem)
+                elem.quant-1
+                console.log(hairOil)
+                localStorage.setItem("hairOil", JSON.stringify(hairOil))
+            }
+
+
+    document.querySelector("#sorter").addEventListener("click", sortByPrice);
+    function sortByPrice() {
+        hairProducts.map(function (elem) {
+            var sorting = document.querySelector("#sorter").value;
+            console.log(sorting);
+            if (sorting == "l2h") {
+                bathProducts.sort(function (a, b) { return a.price - b.price })
+                appendProduct(hairProducts)
+            }
+            else if (sorting == "h2l") {
+                bathProducts.sort(function (a, b) { return b.price - a.price })
+                appendProduct(bathProducts)
+            }
+            else if (sorting == "rl2h") {
+                bathProducts.sort(function (a, b) { return a.ratings - b.ratings })
+                appendProduct(hairProducts)
+            }
+            else if (sorting == "rh2l") {
+                bathProducts.sort(function (a, b) { return b.ratings - a.ratings })
+                appendProduct(hairProducts)
+            }
+            else if (sorting == "a2z") {
+                function SortArray(x, y) {
+                    if (x.name < y.name) { return -1; }
+                    if (x.name > y.name) { return 1; }
+                    return 0;
+                }
+                var s = hairProducts.sort(SortArray)
+                appendProduct(s)
+            }
+            else if (sorting == "z2a") {
+                function SortArray(x, y) {
+                    if (x.name > y.name) { return -1; }
+                    if (x.name < y.name) { return 1; }
+                    return 0;
+                }
+                var sort = hairProducts.sort(SortArray)
+                appendProduct(sort)
+            }
+        })
+    }
+</script>

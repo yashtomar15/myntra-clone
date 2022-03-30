@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        .bip{
+            display: flex;
+        }
+        #products{
+            display: grid;
+            margin-left: 230px;
+            grid-template-columns: repeat(4,1fr);
+            gap: -300px;
+        }
+        #pageno{
+            margin-left: 750px;
+        }
+        .hovclass{
+            height: 100%;
+            width: 100%;
+        }
+        #hovdiv{
+            width: 100%;
+            height: 10%;
+
+        }
+        #button{
+            height : 100%;
+            width: 25%;
+            margin-left: 20px;
+        }
+        #filter{
+            margin-left: 1200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="bip">
+        <div><h5>Home /</h5>  </div>
+        <div> <h5>Women /</h5></div>
+        <div><h5> Myntra Fashion Store</h5></div>
+
+    </div>
+    <div> <h4>Myntra Fashion Store - 
+    </h4></div>
+    <div class="bip">
+        <div><h3>FILTERS</h3></div>
+        <div>
+            <select name="sort by" id="sorting" placeholder = "recommended">
+               <option value="recommended">recommended </option>
+               <option value="whats'new">whats'new</option>
+               <option value="popularity">popularity</option>
+               <option value="better discount">better discount</option>
+               <option value="low to high">low to high</option>
+               <option value="high to low">high to low</option>
+            </select>
+        </div>
+    </div>
+    
+
+    <div id="products"></div>
+    <div id="pageno"> 1 2</div>
+     
+</body>
+</html>
+<script>
+    
+
+    var products = [
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11369740/2020/10/15/f8e99b19-1b04-4968-828b-5add2713cd541602749203648-W-Women-Kurtas-9021602749202693-1.jpg",
+                  "https://content.shop4reebok.com/static/Product-GL2296/reebok_GL2296_1.jpg.plp"],
+        s : "W",
+        name : " mujh kurti",
+        price : 236
+
+
+        },
+         {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/8/19/9930c311-f548-4d3d-b89c-51dbfee260da1597789847697-1.jpg",
+                  "https://content.shop4reebok.com/static/Product-GV5726/reebok_GV5726_1.jpg.plp"],
+        s : "W",
+        name : " bnjh kurti",
+        price : 563
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13447232/2021/11/9/2358b115-7049-45d1-8408-af35c9ddbd8b1636451372149-Biba-Women-Kurta-Sets-9131636451371392-1.jpg",
+                  "https://content.shop4reebok.com/static/Product-GT2338/reebok_GT2338_1.jpg.plp"],
+        s : "W",
+        name : "kurti",
+        price :556
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13446516/2021/2/11/c61361ea-f4f0-439a-9a84-40f59217ff331613024999252KurtasBibaWomenKurtasBibaWomenKurtasBibaWomenKurtasBibaWomen1.jpg",
+                  "https://content.shop4reebok.com/static/Product-GK6777/reebok_GK6777_1.jpg.plp"],
+        s : "W",
+        name : " nbvjk kurti",
+        price : 967
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/8/12/d7e46f0a-0421-4dba-aeb9-f0d7b528012e1597188009225-1.jpg",
+        "https://content.shop4reebok.com/static/Product-GV5726/reebok_GV5726_1.jpg.plp",],
+        s : "W",
+        name : "hgj kurti",
+        price : 235
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14848486/2021/9/1/849c44d7-0274-49fa-bb15-c5d786b74e351630497951879-Biba-Women-Yellow-Printed-Regular-Gotta-Patti-Kurta-with-Tro-1.jpg",
+        "https://content.shop4reebok.com/static/Product-GV5726/reebok_GV5726_1.jpg.plp"],
+        s : "W",
+        name : " fgh kurti",
+        price : 456
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11620524/2021/3/16/80e636b5-0c79-4854-ad7c-5a6409146d061615878976916-Biba-Women-Blue--Grey-Printed-A-Line-Dress-191615878975814-1.jpg",
+        "https://content.shop4reebok.com/static/Product-GV5726/reebok_GV5726_1.jpg.plp"],
+        s : "W",
+        name : "nhj kurti",
+        price : 452
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13446536/2021/3/16/335f41b5-d2de-40d2-8c86-6ac8d80a1e0c1615876450449-Biba-Women-Kurta-Sets-7931615876449679-1.jpg",
+        "https://content.shop4reebok.com/static/Product-GV5726/reebok_GV5726_1.jpg.plp"],
+        s : "W",
+        name :  "lkj kurti",
+        price : 421
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11620524/2021/3/16/80e636b5-0c79-4854-ad7c-5a6409146d061615878976916-Biba-Women-Blue--Grey-Printed-A-Line-Dress-191615878975814-1.jpg",
+        "https://content.shop4reebok.com/static/Product-GV5726/reebok_GV5726_1.jpg.plp"],
+        s : "W",
+        name : " bnx kurti",
+        price : 789
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12185546/2020/10/9/ff3df69d-2844-47c4-bb30-ade975b293081602246526897BibaWomenMustardYellowOrangeSolidKurtawithTrousersDupattaKur1.jpg",
+            "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11866250/2020/6/11/6b51a50e-8239-45c7-b46d-9a522e9595bd1591848709091-SASSAFRAS-Women-Dresses-7311591848707915-1.jpg"],
+        s : "W",
+        name : "mn kurti",
+        price :325
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12436238/2021/4/7/a97deb64-763b-42a1-ba17-6074ea0ea5491617797978818-Biba-Women-Grey--Pink-Layered-Printed-A-Line-Kurta-582161779-1.jpg",
+            "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/11/20/520e3c24-4489-45dd-afbd-85132639a7781574210050213-1.jpg"],
+        s : "W",
+        name : "nbm kurti",
+        price : 236
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11620942/2020/9/17/b3722be2-9e76-4d00-9418-4f2060f003081600326124607KurtasBibaWomenKurtaSetsBibaWomenKurtaSetsBibaWomenKurtaSets1.jpg",
+            "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/11/20/520e3c24-4489-45dd-afbd-85132639a7781574210050213-1.jpg"],
+        s : "W",
+        name : " lk kurti",
+        price : 652
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12643550/2020/10/27/866e579c-00db-4e28-a554-7ae932b318c51603786117390LeggingsBibaWomenChuridarBibaWomenKurtaSetsBibaWomenKurtaSet1.jpg",
+            "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/11/20/520e3c24-4489-45dd-afbd-85132639a7781574210050213-1.jpg"],
+        s : "W",
+        name : " klo kurti",
+        price : 653
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11620864/2020/9/17/369713e8-6b00-4bc7-80f5-4498ee85aaf71600326142295KurtasBibaWomenKurtaSetsBibaWomenKurtaSetsBibaWomenKurtaSets1.jpg",
+            "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/8/7/5d1849b9-b71e-44fe-b186-88f08244ab981596758840058-1.jpg"],
+        s : "W",
+        name : " green kurti",
+        price : 216
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13446164/2021/10/1/ddf4a77e-f72b-4d00-8ccc-f200466551c41633095179736-Biba-Women-Blue-Thread-Work-Pastels-Kurta-7411633095179255-1.jpg",
+                "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/8/7/5d1849b9-b71e-44fe-b186-88f08244ab981596758840058-1.jpg"],
+        s : "W",
+        name : " rrr kurti",
+        price : 259
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13913202/2021/11/3/b6f291dd-e49b-4fe4-8eb7-b033792dceb21635937767430-Biba-Women-Kurtas-4101635937766935-1.jpg",
+        "https://content.shop4reebok.com/static/Product-GV5726/reebok_GV5726_1.jpg.plp"],
+        s : "W",
+        name : " jkksd kurti",
+        price : 452
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13446424/2021/1/21/dae72116-d720-4b8f-ac5a-1100641d2d821611216513890KurtaSetsBibaWomenKurtasBibaWomenKurtaSetsBibaWomenKurtaSets1.jpg",
+        "https://content.shop4reebok.com/static/Product-GV5726/reebok_GV5726_1.jpg.plp",],
+        s : "W",
+        name : " jkdd kurti",
+        price : 453
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13446336/2021/10/1/698de1a2-74f5-48ca-843a-2b6e889a52f31633095342431-Biba-Women-Green--Pink-Floral-Printed-Kurta-7261633095341632-1.jpg",
+        "https://content.shop4reebok.com/static/Product-GV5726/reebok_GV5726_1.jpg.plp"],
+        s : "W",
+        name : " fgg kurti",
+        price : 258
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13921404/2022/3/17/b23da8e3-3c94-48a6-af80-67aa824a210c1647517799995-Biba-Women-Dresses-9971647517799314-3.jpg",
+            "https://content.shop4reebok.com/static/Product-GM3404/adidas_GM3404_1.jpg.plp"],
+        s : "W",
+        name : "mjkx kurti",
+        price : 452
+        },
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12254258/2020/8/10/644de194-c4a3-4529-84d4-b1b66caab4841597056600158BibaWomenOff-White1.jpg",
+        "https://content.shop4reebok.com/static/Product-GM3404/adidas_GM3404_1.jpg.plp"],
+        s : "W",
+        name : " jkgjfk kurti",
+        price :1253
+        },
+        
+        
+
+
+
+    ]
+    function appenddata(products)
+    {
+        products.map((e) =>{
+            //console.log(e)
+            var mainDiv = document.createElement("div")
+            mainDiv.style.cursor ="pointer"
+            var img = document.createElement("img")
+            img.setAttribute("class" , "hov")
+           
+            img.src = e.imglink[0]
+            var div2 = document.createElement("div")
+            div2.style.margin = "auto"
+            div2.setAttribute = ("id" , "lowerbox")
+
+            var s = document.createElement("h4")
+            s.innerText = e.s
+            var name = document.createElement("p")
+            name.innerText = e.name
+
+            div2.append(s,name)
+            var price = document.createElement("h5")
+            price.innerText = e.price
+            
+            mainDiv.append(img , div2 ,price)
+            
+            document .querySelector("#products").append(mainDiv)
+            mainDiv.addEventListener("mouseenter" , function(){
+                div2.innerHTML = null
+                console.log("v")
+                var arrimg = ["https://content.shop4reebok.com/static/Product-GL2296/reebok_GL2296_1.jpg.plp",
+                "https://content.shop4reebok.com/static/Product-GV5726/reebok_GV5726_1.jpg.plp",
+                "https://content.shop4reebok.com/static/Product-GT2338/reebok_GT2338_1.jpg.plp",
+               ]
+               
+                img.src = e.imglink[1]
+               
+                
+                
+                //div2.style.border = "solid" ;
+                //div2.style.backgroundColor = "red"
+                div2.style.width = "300px";
+                div2.style.display ="flex"
+                div2.style.marginLeft = "20px"
+                var butt = document.createElement("button")
+                //butt.style.backgroundColor = "red"
+                butt.innerHTML = "ADD TO WISHLIST"
+                butt.addEventListener("click" , function(e){
+                    description(e)
+                })
+                function description(e){
+                    console.log(products)
+                    
+                    var desArr = JSON.parse(localStorage.getItem("description")) ||[] 
+
+                    localStorage.setItem("product" , JSON.stringify(desArr))
+                }
+
+
+
+
+
+
+                var img2 = document.createElement("img")
+                img2.src = "https://cdn.iconscout.com/icon/free/png-64/heart-suit-card-37956.png"
+                div2.append(butt , img2) 
+                
+                butt.setAttribute("id", "button")
+                div2.append(butt)
+
+                
+                //div2.innerHTML = img2
+
+
+               
+            })
+           
+            mainDiv.addEventListener("mouseleave",previousdata);
+            function previousdata(){
+
+                div2.innerHTML = null
+                //div2.style.margin ="0px"
+                img.src = e.imglink[0]
+
+                 div2.append(s,name)
+            }
+            
+            
+        })
+
+
+
+
+    }
+    appenddata(products)
+    function sort()
+    {
+        let sorting = document.querySelector("#sorting").value
+
+        console.log(sorting)
+        if(sorting == "low to high")
+        {
+            products.sort(function(a,b){
+                return a.price - b.price
+            })
+            appenddata(products)
+        }
+        
+    }
+    sort()
+    
+    
+</script>
