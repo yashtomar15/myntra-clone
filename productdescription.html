@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #upper{
+            background-color: aqua;
+            width: 100%;
+            height: 55px;
+            color: brown;
+            margin: auto;
+            text-align: center;
+            text-shadow: 5px;
+            padding-top: 5px;
+        }
+        #main{
+            width: 100%;
+            height: 1000px;
+            
+            display: flex;
+        }
+        #left{
+            width: 50%;
+            border: solid red;
+            display: grid;
+        }
+
+        #right{
+            height: 1500px;
+            width: 50%;
+            border: solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="upper"><h4>sale starts in 12:00</h4></div>
+    Home/Clothing/Women Clothing/Dresses/Marks & Spencer Dresses>More By Marks & Spencer
+    <br>
+    <br>
+    <div id="main">
+        <div id="left">
+            <div></div>
+            <div></div>
+        </div>
+        <div id="right"></div>
+    </div>
+</body>
+</html>
+<script>
+    var proArr = JSON.parse(localStorage.getItem("product"))
+    console.log(proArr)
+    function appenddata(proArr)
+    {
+        proArr.map((elem) =>{
+             
+            var heading = document.createElement("h1")
+            heading.innerText = elem.name
+            
+        })
+        
+    }
+    
+</script>
