@@ -319,7 +319,7 @@
 
             mainDiv.addEventListener("click" , function(){
                 console.log(e)
-                var proArr = JSON.parse(localStorage.getItem("product")) || []
+                //var proArr = JSON.parse(localStorage.getItem("product")) || []
                 proArr.push(e)
                 localStorage.setItem("product" , JSON.stringify(proArr))
                 window.location.href = "productdescription.html"
