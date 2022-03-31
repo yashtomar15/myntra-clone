@@ -5,14 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="./style/index.css" />
 </head>
 <body>
-    <p>start building</p>
-    <p>hello git</p>
-    <P>problem resolve</P>
-    <P>check live server</P>
-    <p>check again</p>
-    <P>check again1</P>
-    <P>check</P>
+    <div id="slideshow"></div>
+    <div id="container">
+    <h1>DEAL OF THE DAY</h1>
+    <div id="Dealsoftheday"></div>
+     <h1>BEST OF MYNTRA EXCLUSIVE BRANDS</h1>
+     <div id="Exclusivebrands"></div>
+     <h1>TOP PICKS</h1>
+     <div id="toppicks"></div>
+     <h1>CATEGORIES TO BAG</h1>
+     <div id="categoriesbag"></div>
+     <h1>DEALS ON TOP BRANDS</h1>
+     <div id="topbrands"></div>
+     <h1>BRANDS AT SLASHED PRICES</h1>
+     <div id="slashedprices"></div>
+     <h1>BEST BUYS</h1>
+     <div id="bestbuys"></div>
+     <h1>MYNTRA LUXE</h1>
+     <div id="myntraluxe"></div>
+     <h1>GIFTING CARDS</h1>
+     <div id="giftingcards"></div>
+     <h1>DEALS ON LATEST ARRIVALS</h1>
+     <div id="latestarrivals"></div>
+     <h1>SPRING SUMMER 2022- FIRST ON MYNTRA</h1>
+     <div id="springsummer"></div>
+     <h1>STYLECAST HOTTEST FINDS</h1>
+     <div id="stylecasthottest"></div>
+     <h1>TRENDS FOR HER</h1>
+     <div id="trendsforher"></div>
+     <h1>TRENDS FOR HIM</h1>
+     <div id="trendsforhim"></div>
+     <h1>BEST OF KIDSWEAR</h1>
+     <div id="kidswear"></div>
+     <h1>NEW IN TOP BRANDS</h1>
+     <div id="topBrands"></div>
+     <h1>SPRING SUMMER SEASON CHECKLIST</h1>
+     <div id="summerchecklist"></div>
+     <h1>NEWNESS FOR EVERY OCCASION</h1>
+     <div id="occasion"></div>
+     <h1>LATEST IN BEAUTY & GROOMING</h1>
+     <div id="beauty"></div>
+     <h1>UNMISSABLE THIS SEASON</h1>
+     <div id="unmissableseason"></div>
+     <h1>COLOURS OF THE SEASON</h1>
+     <div id="coloursseason"></div>
+     <h1>TOP INFLUENCERS EXCLUSIVE STYLES</h1>
+     <div id="influencerstyle"></div>
+     <h1>BUDGET PICKS INFLUENCERS LOVE</h1>
+     <div id="budgetpicks"></div>
+     <h1>TRENDING OUTFITS BY INFLUENCERS</h1>
+     <div id="trendingoutfits"></div>
+    </div>
 </body>
 </html>
+<script src="./script/data.js"></script>
+<script src="./script/index.js"></script>
+<script type="module">
+    function select(id){
+        return document.querySelector(id);
+    }
+    var data=JSON.parse(localStorage.getItem("homedata"));
+ import appenddata from './components/script.js';
+ console.log(data);
+ var div=select("#Dealsoftheday");
+appenddata(data.dealoftheday,div);
+var div2=select("#Exclusivebrands");
+appenddata(data.exclusivebrands,div2);
+</script>
