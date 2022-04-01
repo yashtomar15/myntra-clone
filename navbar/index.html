@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <title>navbar</title> -->
+<!-- <link rel="stylesheet" href="./style/navbar.css" /> -->
 <style>
- *{
+
+*{
         font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     }
 .dropbtn {
@@ -52,12 +55,12 @@
 }
 
 #logo1{
-  width: 63px;
-  height: 36px;
+  width: 60px;
+  height: 35px;
   margin-left: 50px;
   float: left;
   margin-top: 20px;
-  margin-right: 45px;
+  margin-right: 25px;
 }
 .sub1{
   border: none;
@@ -354,8 +357,8 @@ p{
 }
 input{
   border:none ;
-  width: 400px;
-  margin-right: 20px;
+  width: 300px;
+  /* margin-right: 20px; */
 }
 #details{
   font-size: 16px;
@@ -1145,7 +1148,6 @@ padding-top: 1px;
       <img id="bag" src="data:image/png;base64,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" alt="">
       <button onclick="bagway()">Bag</button>
     </div>
-
 </body>
 </html>
 <script>
