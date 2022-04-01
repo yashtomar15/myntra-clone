@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+      #container{
+          display:flex;
+          /* border:1px solid black; */
+          width:96%;
+          margin:auto;
+        
+      }
+      #container #DATA{
+        width:15%;
+        /* border:2px solid red; */
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        height:60%;
+       
+      }
+      #container #products{
+        width:85%;
+        /* border:2px solid green; */
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        display:grid;
+        grid-template-columns: repeat(4,24%);
+        gap:10px;
+        margin-left: 15px;
+       
+      }
+      #container #products>div{
+        /* border:2px solid blue; */
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        height:300px
+        
+      }
+      #filter_sidebar{
+          display:block;
+          /* border:1px solid black; */
+         margin-top: 20px;
+         position: relative;
+        
+      }
+      #filter_sidebar>input>span{
+        fontSize:15px;
+
+      }
+      #filter_sidebar>input{
+        margin-top:10px;
+      }
+  </style>
+  <div>
+    <div id="container">
+      <div id="DATA">
+        <div id="filter_sidebar">
+          <label for=""><h4>FILTERS</h4></label>
+          <input class="checkk" id="roadster" type="radio" />Men
+          <br />
+          <input class="checkk" id="puma" type="radio" />Women
+          <br />
+          <input class="checkk" id="hm" type="radio" />Boys
+          <br />
+          <input class="checkk" id="hm" type="radio" />Girls
+          <br />
+          <hr>
+      </div>
+      <div id="filter_sidebar">
+        <label for=""><h4>BRAND</h4></label>
+        <input class="checkk" id="roadster" type="checkbox" />Roadster
+        <span>(1983)</span><br />
+        <input class="checkk" id="puma" type="checkbox" />Puma
+        <span>(1489)</span> <br />
+        <input class="checkk" id="hm" type="checkbox" />WROGN
+        <span>(1438)</span>
+        <br />
+        <input class="checkk" id="clovia" type="checkbox" />HRX by Hrithik Roshan
+        <span>(1367)</span> <br />
+        <input class="checkk" id="kalini" type="checkbox" />QUANCIOUS
+        <span>(1255)</span> <br />
+        <input class="checkk" id="dressberry" type="checkbox" />Friskers
+        <span>(1159)</span> <br />
+        <input class="checkk" id="celfie" type="checkbox" />Tommy Hifiger
+        <span>(1054)</span><br />
+        <input class="checkk" id="mast" type="checkbox" />Huetrap
+        <span>(1041)</span> <br />
+        <hr>
+      </div>
+      <div id="filter_sidebar">
+          <label for=""><h4>CATEGORIES</h4></label>
+          <input class="checkk" id="Tshirts" type="checkbox" />Tshirts
+          <span>(76543)</span><br />
+          <input class="checkk" id="Shirts" type="checkbox" />Shirts
+          <span>(60954)</span> <br />
+          <input class="checkk" id="Mobile_Accessories" type="checkbox" />Mobile Accessories
+          <span>(26077)</span>
+          <br />
+          <input class="checkk" id="Bedsheets" type="checkbox" />Bedsheets
+          <span>(17261)</span> <br />
+          <input class="checkk" id="Jeans" type="checkbox" />Jeans
+          <span>(16342)</span> <br />
+          <input class="checkk" id="Trousers" type="checkbox" />Trousers
+          <span>(15628)</span> <br />
+          <input class="checkk" id="Casual Shoes" type="checkbox" />Casual Shoes
+          <span>(14814)</span><br />
+          <input class="checkk" id="Sweatshirts" type="checkbox" />Sweatshirts
+          <span>(14333)</span> <br />
+          <hr>
+        </div>
+      <div id="filter_sidebar">
+          <label for=""><h4>PRICE</h4></label>
+          <input class="checkk" id="Tshirts" type="checkbox" />Rs 249 to 2562
+          <span>(2924)</span><br />
+          <input class="checkk" id="Shirts" type="checkbox" />Rs 2562 to 4875
+          <span>(320)</span> <br />
+          <input class="checkk" id="Mobile_Accessories" type="checkbox" />Rs 4875 to 7188
+          <span>(26077)</span>
+          <br />
+          <input class="checkk" id="Bedsheets" type="checkbox" />Rs 7188 to 9501
+          <span>(7)</span> <br />
+          <hr>
+      </div>
+      <div id="filter_sidebar">
+          <label for=""><h4>COLOR</h4></label>
+          <input class="checkk" id="Tshirts" type="checkbox" />Blue
+          <span>(202)</span><br />
+          <input class="checkk" id="Shirts" type="checkbox" />Black
+          <span>(26)</span><br />
+          <input class="checkk" id="Mobile_Accessories" type="checkbox" />Navy blue
+          <span>(23)</span><br />
+          <input class="checkk" id="Bedsheets" type="checkbox" />Grey
+          <span>(22)</span><br />
+           <input class="checkk" id="Bedsheets" type="checkbox" />Charcoal
+           <span>(2)</span><br />
+           <hr>
+      </div>
+      <div id="filter_sidebar">
+          <label for=""><h4>DISCOUNT RANGE</h4></label>
+          <input class="checkk" id="Tshirts" type="radio" />10% and above
+          <br />
+          <input class="checkk" id="Shirts" type="radio" />20% and above
+          <br />
+          <input class="checkk" id="Mobile_Accessories" type="radio" />30% and above
+          <br />
+          <input class="checkk" id="Bedsheets" type="radio" />40% and above
+           <br />
+           <input class="checkk" id="Bedsheets" type="radio" />50% and above
+      </div>
+
+      </div>
+      
+        <div id="products"></div>
+    </div>
+
+
+  </body>
+  </html>
+  <script>
+
+var products = [
+        {
+        imglink :["https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16591246/2021/12/23/5f92ab9d-4c1c-4ffd-a5fd-6a994fa7052e16402325488993-packComfortStretchSkinnyFitJeans1.jpg",
+        "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16591246/2021/12/23/00640cf1-927e-4e38-846b-a32b2c97e26516402325490053-packComfortStretchSkinnyFitJeans3.jpg"],
+        s : "M",
+        name : "Boys 3-pack Comfort Stretch Skinny Fit Jeans",
+        price : 1609
+
+
+        },
+         {
+        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17003156/2022/2/1/f5fc665e-43bf-40b8-bc82-a0726da456a01643705243115Tshirts1.jpg",
+                  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17003156/2022/2/1/51103051-c03f-480a-a408-5c9eb9a938821643705243108Tshirts6.jpg"],
+        s : "M",
+        name : "Collar Slim T-Shirt",
+        price : 563
+        },
+        {
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888102/2022/2/4/32ee4666-e652-4bef-bd82-0b35836721661643955087351-Louis-Philippe-Men-Shirts-771643955086930-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888102/2022/2/4/0aa0d61f-4476-432c-a071-36931ecfac171643955087307-Louis-Philippe-Men-Shirts-771643955086930-5.jpg"],
+        s : "M",
+        name : " Louis Philippe",
+        price :556
+        },
+        {
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888112/2022/2/4/c23fa148-bf42-4d57-a305-7e938aac426b1643955427524-Louis-Philippe-Men-Shirts-7361643955426927-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888112/2022/2/4/4162afa7-eebb-4a0d-b418-ad28875fce9c1643955427489-Louis-Philippe-Men-Shirts-7361643955426927-5.jpg"],
+        s : "M",
+        name : "Louis Philippe",
+        price : 967
+        },
+        {
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1843248/2020/3/23/9210b99c-432d-4ab0-93e8-148b7fe727be1584970277646ManyavarMenBlueWovenStraightKurta1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1843248/2020/3/23/0050fa49-ca75-4086-ab23-371d0f4253a11584970277713ManyavarMenBlueWovenStraightKurta2.jpg"],
+        s : "M",
+        name : " Woven Straight Kurta",
+        price : 235
+        },
+        {
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15434686/2022/2/1/514f3d28-2462-4d28-aebb-d11c8586c08f1643690490640-Ode-by-House-of-Pataudi-Men-Lime-Green-Solid-Regular-Kurta-5-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15434686/2022/2/1/a4ac8b30-201c-4d76-8462-54c17820275f1643690490610-Ode-by-House-of-Pataudi-Men-Lime-Green-Solid-Regular-Kurta-5-4.jpg",],
+        s : "M",
+        name : "Round-Neck Straight Kurta",
+        price : 456
+        },
+        {
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14673460/2021/7/15/fa4ceab1-7be6-4c48-a798-eed19f560ee41626327797067-Manyavar-Men-Dhotis-7871626327796013-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14673460/2021/7/15/2893bf35-07f1-4024-842a-22199e06961f1626327796997-Manyavar-Men-Dhotis-7871626327796013-4.jpg",],
+        s : "M",
+        name : "Dhoti Pants",
+        price : 452
+        },
+        {
+        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16302366/2021/11/30/ac1dd1f0-4472-4ac0-8224-c7c83416347c1638261377539Dhotis1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16302366/2021/11/30/70a7a0df-c654-4b5d-99ad-3ca6a88d588b1638261377692Dhotis5.jpg",],
+        s : "M",
+        name :  "Gold Toned Pure Silk Dhoti",
+        price : 421
+        },
+        {
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14281324/2021/12/7/bb331e72-c31d-4f9e-be40-e90ccee146051638880329684-HRX-By-Hrithik-Roshan-Lifestyle-Men-oxy-fire-Rapid-Dry-Solid-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14281324/2021/12/7/14dbb2d4-4fe3-43b7-9e9c-e4927797fa8e1638880329603-HRX-By-Hrithik-Roshan-Lifestyle-Men-oxy-fire-Rapid-Dry-Solid-5.jpg",],
+        s : "M",
+        name : "",
+        price : 789
+        },
+        {
+        imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/4453297/2019/12/2/77b5d9e0-8d65-4a36-94e7-290ed271db6b1575267599079-HRX-by-Hrithik-Roshan-Men-Olive-Green-Solid-Active-Bomber-Ja-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/4453297/2019/12/2/fff8b47c-4590-4bf1-9dbd-b8cc23f0eef91575267599038-HRX-by-Hrithik-Roshan-Men-Olive-Green-Solid-Active-Bomber-Ja-2.jpg",],
+        s : "M",
+        name : "shirt",
+        price :325
+        },
+        {
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15615048/2021/9/25/998a78d8-157d-4dad-9178-42b130e3915a1632570452832StreetArmorbyPantaloonsMenBlackStripedSportyJacket1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15615048/2021/9/25/a64253af-ec67-4dec-881b-8e0045ba4e5b1632570453105StreetArmorbyPantaloonsMenBlackStripedSportyJacket2.jpg",],
+        s : "M",
+        name : "Sporty Jacket",
+        price : 236
+        },
+        {
+        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/788b1ef1-331a-45ac-b225-f205f35063901546937930482-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-3.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/06e2a088-e851-4ede-a16b-bedb83203b611546937930451-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-4.jpg",],
+        s : "M",
+        name : "Running Joggers",
+        price : 652
+        },
+        {
+        imglink :[   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/ee026dfd-53d5-431f-8f49-793d1b1a3ca91579692118057-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-3.jpg",],
+        s : "M",
+        name : "casual T-shirt",
+        price : 653
+        },
+        {
+        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846958/2020/8/6/267a39c1-c9f0-4f08-aeba-3d74547b6c051596693087479-HRX-by-Hrithik-Roshan-Men-Jackets-8291596693079279-3.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846958/2020/8/6/9f58a150-a21b-4142-a31b-a48420f8b62f1596693085956-HRX-by-Hrithik-Roshan-Men-Jackets-8291596693079279-4.jpg",],
+        s : "M",
+        name : " Bomber Jacket",
+        price : 216
+        },
+        {
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846948/2020/9/17/b431435b-1034-4ae2-b8fa-327e93ed6c1e1600332870635-HRX-by-Hrithik-Roshan-Men-Sweatshirts-1831600332868391-3.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846948/2020/9/17/4244372a-07e6-4985-be31-a1bd401704391600332870552-HRX-by-Hrithik-Roshan-Men-Sweatshirts-1831600332868391-4.jpg"],
+        s : "M",
+        name : "Hooded Sweatshirt",
+        price : 259
+        },
+        {
+        imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/788b1ef1-331a-45ac-b225-f205f35063901546937930482-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-3.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/06e2a088-e851-4ede-a16b-bedb83203b611546937930451-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-4.jpg",],
+        s : "M",
+        name : "Running Joggers",
+        price : 452
+        },
+        {
+        imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/ee026dfd-53d5-431f-8f49-793d1b1a3ca91579692118057-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-3.jpg",],
+        s : "M",
+        name : "Printed T-shirt",
+        price : 453
+        },
+        {
+        imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15746172/2021/10/7/a621b7fd-babb-4bb3-940e-b16afb7947d31633609833495HMMenBlueRelaxedFitHoodie1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15746172/2021/10/7/b019b315-fb56-481a-9de4-97f588b636551633609832286HMMenBlueRelaxedFitHoodie2.jpg",],
+        s : "M",
+        name : "Fit Hoodie",
+        price : 258
+        },
+        {
+        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589420/2022/2/16/09f33d71-8884-4f17-91bc-15c06dc0dca41645015048593-Tommy-Hilfiger-Men-Tshirts-5971645015048165-3.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589420/2022/2/16/ecd3d10e-0b0c-41ec-b892-ed565d29be921645015048615-Tommy-Hilfiger-Men-Tshirts-5971645015048165-1.jpg"],
+        s : "M",
+        name : "Tommy Hilfiger",
+        price : 452
+        },
+        {
+        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589418/2021/8/17/62b7926e-ef9c-4378-b682-5dc3a00312bd1629186278260-Tommy-Hilfiger-Men-Tshirts-1731629186277755-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589418/2021/8/17/239f17e1-92fc-4230-a9ff-11245eb6a7d51629186278243-Tommy-Hilfiger-Men-Tshirts-1731629186277755-3.jpg"],
+        s : "M",
+        name : "Tommy Hilfiger",
+        price :1253
+        },
+    ]
+  function appenddata(products)
+    {
+        products.map((e) =>{
+            //console.log(e)
+            var mainDiv = document.createElement("div")
+            mainDiv.style.cursor ="pointer"
+            var img = document.createElement("img")
+             img.setAttribute("class" , "hov")
+
+            img.src = e.imglink[0]
+            img.style.height="60%";
+            img.style.width="60%";
+            var div2 = document.createElement("div")
+            div2.style.margin = "auto"
+            div2.setAttribute = ("id" , "lowerbox")
+
+            var s = document.createElement("h4")
+            s.innerText = e.s
+            var name = document.createElement("p")
+            name.innerText = e.name
+
+            div2.append(s,name)
+            var price = document.createElement("h5")
+            price.innerText = e.price
+
+            mainDiv.append(img , div2 ,price)
+
+            document .querySelector("#products").append(mainDiv)
+            mainDiv.addEventListener("mouseenter" , function(){
+                div2.innerHTML = null
+                console.log("v")
+                var arrimg = ["https://content.shop4reebok.com/static/Product-GL2296/reebok_GL2296_1.jpg.plp",
+                "https://content.shop4reebok.com/static/Product-GV5726/reebok_GV5726_1.jpg.plp",
+                "https://content.shop4reebok.com/static/Product-GT2338/reebok_GT2338_1.jpg.plp",
+               ]
+
+                img.src = e.imglink[1]
+
+
+
+                //div2.style.border = "solid" ;
+                //div2.style.backgroundColor = "red"
+                div2.style.width = "300px";
+                div2.style.display ="flex"
+                div2.style.marginLeft = "20px"
+                var butt = document.createElement("button")
+                //butt.style.backgroundColor = "red"
+                butt.innerHTML = "ADD TO WISHLIST"
+                butt.addEventListener("click" , function(e){
+                    description(e)
+                })
+                function description(e){
+                    console.log(products)
+
+                    var desArr = JSON.parse(localStorage.getItem("description")) ||[] 
+
+                    localStorage.setItem("product" , JSON.stringify(desArr))
+                }
+
+
+
+
+
+
+                var img2 = document.createElement("img")
+                img2.src = "https://cdn.iconscout.com/icon/free/png-64/heart-suit-card-37956.png"
+                div2.append(butt , img2) 
+
+                butt.setAttribute("id", "button")
+                div2.append(butt)
+
+
+                //div2.innerHTML = img2
+
+
+
+            })
+
+            mainDiv.addEventListener("mouseleave",previousdata);
+            function previousdata(){
+
+                div2.innerHTML = null
+                //div2.style.margin ="0px"
+                img.src = e.imglink[0]
+
+                 div2.append(s,name)
+            }
+
+
+        })
+
+
+
+
+    }
+    appenddata(products)
+    function sort()
+    {
+        let sorting = document.querySelector("#sorting").value
+
+        console.log(sorting)
+        if(sorting == "low to high")
+        {
+            products.sort(function(a,b){
+                return a.price - b.price
+            })
+            appenddata(products)
+        }
+
+    }
+    sort()
+</script>
