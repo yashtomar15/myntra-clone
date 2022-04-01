@@ -195,29 +195,43 @@
             div1.innerText = "XS"
             div1.style.marginRight = "20px"
             div1.style.border = "1px solid"
+            div1.style.padding = "20px"
+            div1.style.borderRadius = "40%"
             var div2 = document.createElement("div")
             div2.style.border = "1px solid"
             div2.innerText = "S"    
             div2.style.marginRight = "20px"
+            div2.style.padding = "20px"
+            div2.style.borderRadius = "40%"
             var div3 = document.createElement("div")
             div3.innerText = "M"
             div3.style.marginRight = "20px"
             div3.style.border = "1px solid"
+            div3.style.padding = "20px"
+            div3.style.borderRadius = "40%"
             var div4 = document.createElement("div")
             div4.innerText = "L"
             div4.style.marginRight = "20px"
             div4.style.border = "1px solid"
+            div4.style.padding = "20px"
+            div4.style.borderRadius = "40%"
             var div5 = document.createElement("div")
             div5.innerText = "XL"
             div5.style.marginRight = "20px"
             div5.style.border = "1px solid"
+            div5.style.padding = "20px"
+            div5.style.borderRadius = "40%"
             var div6 = document.createElement("div")
             div6.innerText = "XXL"
             div6.style.marginRight = "20px"
             div6.style.border = "1px solid"
+            div6.style.borderRadius = "40%"
+            div6.style.padding = "20px"
             var div7 = document.createElement("div")
             div7.innerText = "3XL"
             div7.style.border = "1px solid"
+            div7.style.borderRadius = "40%"
+            div7.style.padding = "20px"
 
             size.append(div1,div2,div3,div4,div5,div6,div7)
             right.append(size)
@@ -226,9 +240,11 @@
             buttondiv.style.marginTop = "30px"
             var cartbutton = document.createElement("button")
             cartbutton.innerText = "ADD TO BAG"
-            cartbutton.style.backgroundColor = "orange"
+            cartbutton.style.backgroundColor = "red"
             cartbutton.style.cursor = "pointer"
             cartbutton.style.height = "40px"
+            cartbutton.style.boxSizing = "border-box"
+            cartbutton.style.boxShadow = "5px"
             cartbutton.addEventListener("click" , function(){
                 cartArr.push(elem)
                 localStorage.setItem("cart" ,JSON.stringify(cartArr))

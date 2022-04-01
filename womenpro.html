@@ -7,10 +7,14 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         *{
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 1000px;
         }
         .bip{
             display: flex;
@@ -59,7 +63,7 @@
             
         }
         #sorting{
-            margin-left: 1000%;
+            margin-left: 1120%;
         }
         #filter_sidebar{
           display:block;
@@ -95,13 +99,13 @@
     <div class="bip">
         <div><h3>FILTERS</h3></div>
         <div>
-            <select name="sort by" id="sorting" placeholder = "recommended">
-               <option value="recommended">recommended </option>
-               <option value="whats'new">whats'new</option>
-               <option value="popularity">popularity</option>
-               <option value="better discount">better discount</option>
-               <option value="low to high">low to high</option>
-               <option value="high to low">high to low</option>
+            <select name="sort by" id="sorting">
+               <option value="recommended" id="recommended">recommended </option>
+               <option value="whats'new" id="whats'new">whats'new</option>
+               <option value="popularity" id="popularity">popularity</option>
+               <option value="better discount" id="better discount">better discount</option>
+               <option value="l2h" id="low to high">low to high</option>
+               <option value="high to low" id="high to low">high to low</option>
             </select>
         </div>
     </div>
@@ -364,10 +368,12 @@
 
 
     ]
+    var desArr =[]
+        var proArr = []
     function appenddata(products)
     {
-        var desArr =[]
-        var proArr = []
+        var fetchingdiv=document.querySelector("#products")
+        fetchingdiv.innerHTML=null;
         products.map((e) =>{
             //console.log(e)
             var mainDiv = document.createElement("div")
@@ -405,7 +411,7 @@
             
             mainDiv.append(img , div2 ,price)
             
-            document .querySelector("#products").append(mainDiv)
+            fetchingdiv.append(mainDiv)
             mainDiv.addEventListener("mouseenter" , function(){
                 div2.innerHTML = null
                 console.log("v")
@@ -433,6 +439,8 @@
 
                 var img2 = document.createElement("img")
                 img2.src = "https://cdn.iconscout.com/icon/free/png-64/heart-suit-card-37956.png"
+                img2.style.width = "10px"
+                img2.style.
                 div2.append(butt , img2) 
                 
                 butt.setAttribute("id", "button")
@@ -473,21 +481,42 @@
 
     }
     appenddata(products)
-    function sort()
-    {
-        let sorting = document.querySelector("#sorting").value
 
-        console.log(sorting)
-        if(sorting == "low to high")
+    // let sorting = document.querySelector("#sorting").value
+    // console.log(sorting)
+    // function sort()
+    // {
+    //     let sorting = document.querySelector("#sorting").value
+
+    //     console.log(sorting)
+    //     if(sorting === "low to high")
+    //     {
+    //         products.sort(function(a,b){
+    //             return a.price - b.price
+    //         })
+    //         appenddata(products)
+    //     }
+        
+    // }
+    // sort()
+    document.querySelector("#sorting").addEventListener("click", sortByPrice);
+    function sortByPrice() {
+        
+            var sorting = document.querySelector("#sorting").value;
+            console.log(sorting);
+            if(sorting === "l2h")
         {
             products.sort(function(a,b){
                 return a.price - b.price
+               
             })
-            appenddata(products)
+            
+            appenddata(products)  
         }
+
         
     }
-    sort()
     
+
     
 </script>
