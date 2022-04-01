@@ -1,20 +1,57 @@
 #slideshow>img{
-    /* width:100%; */
     height: 350px;
 }
-#container{
-    width:500px;
-}
-#container>div{
-    width:100%;
+.flex_prod{
 display:flex;  
 justify-content: space-between;  
 }
-#container>#Dealsoftheday>img{
-    width:38%;
+.flex_prod>img{
+    width:167px
 }
-#container>#Exclusivebrands{
+#Dealsoftheday>img{
+    width:185px;
+}
+#stylecasthottest>img{
+    width:14.3%;
+}
+#toppicks>img{
+    width:191px;
+}
+#giftingcards>img{
+    width:20%;
+}
+img{
+    width:100%;
+}
+.grid_prod{
     display:grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: auto;
 }
+#slashedprices{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: auto;
+}
+#latestarrivals{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+}
+#occasion,#beauty,#coloursseason{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+}
+#influencerstyle>img{
+    width:222px;
+}
+h4{
+    font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 45px 0 60px 30px;
+    max-height: 5em;
+    font-weight: 500;
+  }
