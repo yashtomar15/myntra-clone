@@ -17,16 +17,24 @@
         }
         #products{
             display: grid;
-            margin-left: 230px;
+            width: 80%;
+            margin-left: 20px;
+            padding-left: 20px;
             grid-template-columns: repeat(4,1fr);
-            gap: -300px;
+            padding-right: 20px;
+            border: 1px solid;
+            box-sizing: border-box;
+            box-shadow: 5px;
+            
         }
         #pageno{
             margin-left: 750px;
         }
-        .hovclass{
-            height: 100%;
+        .hov{
+            height: 70%;
             width: 100%;
+            box-sizing: border-box;
+            box-shadow: 10px;
         }
         #hovdiv{
             width: 100%;
@@ -41,6 +49,36 @@
         #filter{
             margin-left: 1200px;
         }
+        #women{
+            display: flex;
+        }
+        #sidebar{
+            width: 20%;
+            margin-right: 180px;
+            height: 1000px;
+            
+        }
+        #sorting{
+            margin-left: 1000%;
+        }
+        #filter_sidebar{
+          display:block;
+          /* border:1px solid black; */
+         margin-top: 0px;
+         position: relative;
+         border-right: 1px solid;
+         border-top: 1px red solid;
+        
+      }
+      #filter_sidebar>input>span{
+        fontSize:15px;
+
+      }
+      #filter_sidebar>input{
+        margin-top:10px;
+      }
+
+
         
     </style>
 </head>
@@ -68,8 +106,108 @@
         </div>
     </div>
     
-
-    <div id="products"></div>
+    <div id="women">
+        <div id="sidbar">
+            <div id="DATA">
+                <div id="filter_sidebar">
+                  <label for=""><h4>CATEGORIES</h4></label>
+                  <input class="checkk" id="roadster" type="radio" />Men
+                  <br />
+                  <input class="checkk" id="puma" type="radio" />Women
+                  <br />
+                  <input class="checkk" id="hm" type="radio" />Boys
+                  <br />
+                  <input class="checkk" id="hm" type="radio" />Girls
+                  <br />
+                  <hr>
+              </div>
+              <div id="filter_sidebar">
+                <label for=""><h4>BRAND</h4></label>
+                <input class="checkk" id="roadster" type="checkbox" />Roadster
+                <span>(1983)</span><br />
+                <input class="checkk" id="puma" type="checkbox" />Puma
+                <span>(1489)</span> <br />
+                <input class="checkk" id="hm" type="checkbox" />WROGN
+                <span>(1438)</span>
+                <br />
+                <input class="checkk" id="clovia" type="checkbox" />HRX by Hrithik Roshan
+                <span>(1367)</span> <br />
+                <input class="checkk" id="kalini" type="checkbox" />QUANCIOUS
+                <span>(1255)</span> <br />
+                <input class="checkk" id="dressberry" type="checkbox" />Friskers
+                <span>(1159)</span> <br />
+                <input class="checkk" id="celfie" type="checkbox" />Tommy Hifiger
+                <span>(1054)</span><br />
+                <input class="checkk" id="mast" type="checkbox" />Huetrap
+                <span>(1041)</span> <br />
+                <hr>
+              </div>
+              <div id="filter_sidebar">
+                  <label for=""><h4>CATEGORIES</h4></label>
+                  <input class="checkk" id="Tshirts" type="checkbox" />Tshirts
+                  <span>(76543)</span><br />
+                  <input class="checkk" id="Shirts" type="checkbox" />Shirts
+                  <span>(60954)</span> <br />
+                  <input class="checkk" id="Mobile_Accessories" type="checkbox" />Mobile Accessories
+                  <span>(26077)</span>
+                  <br />
+                  <input class="checkk" id="Bedsheets" type="checkbox" />Bedsheets
+                  <span>(17261)</span> <br />
+                  <input class="checkk" id="Jeans" type="checkbox" />Jeans
+                  <span>(16342)</span> <br />
+                  <input class="checkk" id="Trousers" type="checkbox" />Trousers
+                  <span>(15628)</span> <br />
+                  <input class="checkk" id="Casual Shoes" type="checkbox" />Casual Shoes
+                  <span>(14814)</span><br />
+                  <input class="checkk" id="Sweatshirts" type="checkbox" />Sweatshirts
+                  <span>(14333)</span> <br />
+                  <hr>
+                </div>
+              <div id="filter_sidebar">
+                  <label for=""><h4>PRICE</h4></label>
+                  <input class="checkk" id="Tshirts" type="checkbox" />Rs 249 to 2562
+                  <span>(2924)</span><br />
+                  <input class="checkk" id="Shirts" type="checkbox" />Rs 2562 to 4875
+                  <span>(320)</span> <br />
+                  <input class="checkk" id="Mobile_Accessories" type="checkbox" />Rs 4875 to 7188
+                  <span>(26077)</span>
+                  <br />
+                  <input class="checkk" id="Bedsheets" type="checkbox" />Rs 7188 to 9501
+                  <span>(7)</span> <br />
+                  <hr>
+              </div>
+              <div id="filter_sidebar">
+                  <label for=""><h4>COLOR</h4></label>
+                  <input class="checkk" id="Tshirts" type="checkbox" />Blue
+                  <span>(202)</span><br />
+                  <input class="checkk" id="Shirts" type="checkbox" />Black
+                  <span>(26)</span><br />
+                  <input class="checkk" id="Mobile_Accessories" type="checkbox" />Navy blue
+                  <span>(23)</span><br />
+                  <input class="checkk" id="Bedsheets" type="checkbox" />Grey
+                  <span>(22)</span><br />
+                   <input class="checkk" id="Bedsheets" type="checkbox" />Charcoal
+                   <span>(2)</span><br />
+                   <hr>
+              </div>
+              <div id="filter_sidebar">
+                  <label for=""><h4>DISCOUNT RANGE</h4></label>
+                  <input class="checkk" id="Tshirts" type="radio" />10% and above
+                  <br />
+                  <input class="checkk" id="Shirts" type="radio" />20% and above
+                  <br />
+                  <input class="checkk" id="Mobile_Accessories" type="radio" />30% and above
+                  <br />
+                  <input class="checkk" id="Bedsheets" type="radio" />40% and above
+                   <br />
+                   <input class="checkk" id="Bedsheets" type="radio" />50% and above
+              </div>
+        
+              </div>
+        </div>
+        <div id="products"></div>
+    </div>
+    
     <div id="pageno"> Page 1 2</div>
      
 </body>
@@ -263,7 +401,7 @@
 
             div2.append(s,name)
             var price = document.createElement("h5")
-            price.innerText = e.price
+            price.innerText = "Price :" + e.price
             
             mainDiv.append(img , div2 ,price)
             
