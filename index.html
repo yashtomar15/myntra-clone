@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./style/index.css" />
+</head>
+<body>
+    <div id="slideshow"></div>
+    <div id="container">
+    <h4>DEAL OF THE DAY</h4>
+    <div id="Dealsoftheday" class="flex_prod"></div>
+     <h4>BEST OF MYNTRA EXCLUSIVE BRANDS</h4>
+     <div id="Exclusivebrands" class="grid_prod"></div>
+     <h4>TOP PICKS</h4>
+     <div id="toppicks" class="grid_prod"></div>
+     <h4>CATEGORIES TO BAG</h4>
+     <div id="categoriesbag" class="grid_prod"></div>
+     <h4>DEALS ON TOP BRANDS</h4>
+     <div id="topbrands" class="grid_prod"></div>
+     <h4>BRANDS AT SLASHED PRICES</h4>
+     <div id="slashedprices" class="grid_prod"></div>
+     <h4>BEST BUYS</h4>
+     <div id="bestbuys" class="grid_prod"></div>
+     <h4>MYNTRA LUXE</h4>
+     <div id="myntraluxe" class="grid_prod"></div>
+     <h4>GIFTING CARDS</h4>
+     <div id="giftingcards" class="flex_prod"></div>
+     <h4>DEALS ON LATEST ARRIVALS</h4>
+     <div id="latestarrivals" class="grid_prod"></div>
+     <h4>SPRING SUMMER 2022- FIRST ON MYNTRA</h4>
+     <div id="springsummer" class="grid_prod"></div>
+     <h4>STYLECAST HOTTEST FINDS</h4>
+     <div id="stylecasthottest" class="flex_prod"></div>
+     <h4>TRENDS FOR HER</h4>
+     <div id="trendsforher" class="flex_prod"></div>
+     <h4>TRENDS FOR HIM</h4>
+     <div id="trendsforhim" class="flex_prod"></div>
+     <h4>BEST OF KIDSWEAR</h4>
+     <div id="kidswear" class="flex_prod"></div>
+     <h4>NEW IN TOP BRANDS</h4>
+     <div id="topBrands" class="flex_prod"></div>
+     <h4>SPRING SUMMER SEASON CHECKLIST</h4>
+     <div id="summerchecklist" class="flex_prod"></div>
+     <h4>NEWNESS FOR EVERY OCCASION</h4>
+     <div id="occasion" class="grid_prod"></div>
+     <h4>LATEST IN BEAUTY & GROOMING</h4>
+     <div id="beauty" class="grid_prod"></div>
+     <h4>UNMISSABLE THIS SEASON</h4>
+     <div id="unmissableseason" class="flex_prod"></div>
+     <h4>COLOURS OF THE SEASON</h4>
+     <div id="coloursseason" class="grid_prod"></div>
+     <h4>TOP INFLUENCERS EXCLUSIVE STYLES</h4>
+     <div id="influencerstyle" class="flex_prod"></div>
+     <h4>BUDGET PICKS INFLUENCERS LOVE</h4>
+     <div id="budgetpicks" class="flex_prod"></div>
+     <h4>TRENDING OUTFITS BY INFLUENCERS</h4>
+     <div id="trendingoutfits" class="flex_prod"></div>
+    </div>
+</body>
+</html>
+<script src="./script/data.js"></script>
+<script src="./script/index.js"></script>
+<script type="module">
+    function select(id){
+        return document.querySelector(id);
+    }
+    var data=JSON.parse(localStorage.getItem("homedata"));
+ import appenddata from './components/script.js';
+ console.log(data);
+ var div=select("#Dealsoftheday");
+appenddata(data.dealoftheday,div);
+var div2=select("#Exclusivebrands");
+appenddata(data.exclusivebrands,div2);
+var div3=select("#toppicks");
+appenddata(data.toppicks,div3);
+var div4=select("#categoriesbag");
+appenddata(data.categoriestoBag,div4);
+var div5=select("#topbrands");
+appenddata(data.dealsontopBrands,div5);
+var div6=select("#slashedprices");
+appenddata(data.brandsAtslashedprices,div6);
+var div7=select("#bestbuys");
+appenddata(data.bestBuys,div7);
+var div8=select("#myntraluxe");
+appenddata(data.myntaLuxe,div8);
+var div9=select("#giftingcards");
+appenddata(data.giftingCards,div9);
+var div10=select("#latestarrivals");
+appenddata(data.latestArrivals,div10);
+var div11=select("#springsummer");
+appenddata(data.springSummer,div11);
+var div12=select("#stylecasthottest");
+appenddata(data.stylecastHottest,div12);
+var div13=select("#trendsforher");
+appenddata(data.trendsforher,div13);
+var div14=select("#trendsforhim");
+appenddata(data.trendsforhim,div14);
+var div15=select("#kidswear");
+appenddata(data.kidswear,div15);
+var div16=select("#topBrands");
+appenddata(data.newinTopbrands,div16);
+var div17=select("#summerchecklist");
+appenddata(data.summerChecklist,div17);
+var div18=select("#occasion");
+appenddata(data.newnessforOccasion,div18);
+var div19=select("#beauty");
+appenddata(data.beautyGrooming,div19);
+var div20=select("#unmissableseason");
+appenddata(data.unmissableseason,div20);
+var div21=select("#coloursseason");
+appenddata(data.coloursOftheSeason,div21);
+var div22=select("#influencerstyle");
+appenddata(data.influencerStyles,div22);
+var div23=select("#budgetpicks");
+appenddata(data.budgetpicks,div23);
+var div24=select("#trendingoutfits");
+appenddata(data.trendingOutfits,div24);
+
+</script>
