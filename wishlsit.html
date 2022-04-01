@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WISHLIST PAGE</title>
+    <style>
+        #wishList{
+            display: flex;
+            gap: 10px;
+        }
+        #wishData{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            text-align: center;
+            gap: 10px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #wishData div{
+            background-color: wheat;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <!-- import header here -->
+    </div>
+    <div id="wishList">
+        <h2>My WishList</h2>
+        <p>items</p>
+    </div>
+    <div  id="wishData">
+        <!-- fetch all the data here -->
+    </div>
+    <div id="footer">
+        <!-- import footer here -->
+   </div>
+</body>
+</html>
+<script>
+    
+     let data = document.getElementById("wishData");
+    let wishData = JSON.parse(localStorage.getItem("productwishlisted")) || [];
+    console.log(wishData);
+function wish(){
+    wishData.map(function(product,i){
+  
+  let div = document.createElement("div");
+  let img  = document.createElement("img");
+   img.src = product.imglink[0];
+   let n = document.createElement("h3");
+   n.innerHTML =  `Type :-${product.name}`;
+   let price = document.createElement("p");
+   price.innerHTML = `Price :- ${product.price}`;
+   let remove = document.createElement("button");
+   remove.setAttribute("class","button");
+    remove.innerText = product.remove;
+   remove.innerHTML = "Remove";
+
+  remove.addEventListener("click",function(event){
+    wishData.splice(i,1);
+     localStorage.setItem("productwishlisted",JSON.stringify(wishData));
+     window.location.reload();
+  })
+
+   div.append(img,n,price,remove);
+   data.append(div);
+ });
+}
+wish();
+
+</script>
