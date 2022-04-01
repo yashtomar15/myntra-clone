@@ -1,3 +1,4 @@
+
 var data=JSON.parse(localStorage.getItem("homedata"));
 
 function appenddata (product,div){
