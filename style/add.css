@@ -1,0 +1,255 @@
+#contaddresh{
+    margin-left: 35%;
+    border: 1px solid silver;
+    width: 30%;
+    padding-left: 3%;
+}
+input{
+    font-size:x-large;
+margin-bottom: 3%;
+}
+#first{
+   
+    font-size: larger;
+    padding-left: 5%;
+}
+#city{
+font-size: larger;
+padding-left: 5%;
+}
+#state{
+    font-size: larger;
+    padding-left: 5%;
+}
+#p{
+    font-size: 30%;
+}
+#last{
+    font-size: x-large;
+    width: 92%;
+    background-color: red;
+    color: rgb(253, 253, 253);
+}
+body{
+
+}
+#footbar{
+   
+   padding-left: 10%;
+}
+.fo{
+   
+  width: 6%;  
+}
+#cont{
+    border: 1px solid green;
+    margin: 10%;
+    padding-bottom: %;
+    text-align: center;
+}
+body{
+    font-family: Whitney,Helvetica,Arial,sans-serif!important;
+    padding: 10px;
+}
+img{
+    width: 4%;
+}
+#nav{
+    border: solid ;
+    display: flex;
+    gap: 10px;
+}
+.midNav{
+    margin: auto;
+    display: flex;
+    gap: 100px;
+}
+.secure{
+    margin: 20PX;
+    display: flex;
+    font-weight: bold;
+    gap: 10px;
+}
+.secure img{
+    width: 17%;
+}
+#bag{
+    width: 80%;
+    border: solid ;
+    margin: auto;
+    height: 700px;
+    margin-top: 10px;
+}
+#end{
+    /* border: solid ; */
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+}
+#end img{
+    width: 6%;
+    height: 40px;
+    margin: auto;
+}
+    a{
+    text-decoration: none;
+}
+.header {
+    border-bottom: 1px solid #F5F5F6;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+.myntraLogo {
+    width: 50px;
+    height: 40px;
+    float: left;
+    margin-left: 10px;
+}
+.headerCenter {
+    float: left;
+    line-height: 45px;
+    margin-left: 35%;
+}
+.headerRight {
+    float: right;
+    line-height: 12px;
+    margin-right: 10px;
+}
+a, h4 {
+    text-decoration: none;
+    font-family: Whitney,Helvetica,Arial,sans-serif!important;
+    color: #696B79;
+    word-spacing: 5px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size:small;
+}
+.image2 {
+    width: 30px;
+    margin-top: 10px;
+}
+h4 {
+    margin-left: 5px;
+}
+.footer {
+    border-top: 1px solid #F5F5F6;
+    margin: 0 0 10px 0;
+}
+.footer .container3 {
+    display: inline-block;
+}
+.images {
+    width: 70px;
+    margin-top: 10px;
+    height: 40px;
+}
+.container3 {
+    margin-left: 140px;
+}
+.contact {
+    float: right;
+    font-size: 14px;
+    padding-top: 20px;
+    
+}
+#more {
+    display: none;
+}
+#myBtn {
+    color: #ff3f6c;
+    background-color: white;
+    border: none;
+} 
+.container4 {
+    border: 1px solid #f2f2f5;
+    width: 53%;
+    font-family: Whitney,Helvetica,Arial,sans-serif!important;
+    text-rendering: optimizeLegibility;
+    font-size: 13px;
+    margin: 30px 20px 20px 80px;
+    padding-left: 10px;
+    color: #696B79;
+    background-color: white;
+}
+.parent {
+    display: grid;
+    grid-template: "a f f"
+                   "b f f"
+                   "c f f"
+                   "d f f"
+                   "e f f";
+}
+#child1 {
+    grid-area: a;
+}
+#child2 {
+    grid-area: b;
+}
+#child3 {
+    grid-area: c;
+}
+#child4 {
+    grid-area: d;
+}
+#child5 {
+    grid-area: e;
+}
+#child6 {
+    grid-area: f;
+}
+.btn {
+    border-bottom: 1px  #eaeaec !important;
+    border: none;
+    background-color: #dedee2;;
+    width: 90%;
+    height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: #ff3f6c;
+    font-size: 14px;
+    align-items: center;
+    font-weight: 600;
+  }
+  .btn:hover {
+      background: white;
+    border-left: 5px solid #ff3f6c;
+    }
+    #formClass, #formClass1{
+        width: 70%;
+        height: 40px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        border: 2px solid #F5F5F6; 
+    }
+#valid {
+    width: 40%;
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 2px solid #F5F5F6;
+}
+#cvv {
+    width: 24%;
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 2px solid #F5F5F6;
+}
+#myBtn2 {
+    border: none;
+    background-color: #ff3f6c;
+    color: white;
+    width: 76%;
+    height: 40px;
+    margin-top: 20px ;
+    border-radius: 3px;
+}
+.grid {
+    border: 1px solid #F5F5F6;
+}

@@ -89,7 +89,7 @@
                     <p style="margin-left: 100px;" id="totalmrp">RS 0</p>
                 </div>
               
-                <button style="color: aliceblue; background-color: brown; width: 90%; height: 40px;">PLACE ORDER</button>
+                <button id="PlaceOrder" style="color: aliceblue; background-color: brown; width: 90%; height: 40px;">PLACE ORDER</button>
             </div>
         </div>
     </div>
@@ -159,6 +159,11 @@
  }
 
 wish();
+
+document.querySelector("#PlaceOrder").addEventListener("click",placeorder);
+function placeorder(){
+    window.location.href="address.html";
+}
 
  
 
