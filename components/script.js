@@ -1,4 +1,4 @@
-// homepage code
+// homepage  code
 function appenddata (product,div){
     product.forEach((elm)=>{
      var image=document.createElement("img");
