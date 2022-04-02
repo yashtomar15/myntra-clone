@@ -51,8 +51,33 @@
       #filter_sidebar>input{
         margin-top:10px;
       }
+      #OK{
+      border: 2px solid black;
+      padding: 20px;
+      position: relative;
+      margin-left: 30px;
+      margin-right: 30px;
+      }
+      #OK > div {
+      display: flex;
+      justify-content: space-between;
+    }
   </style>
-  <div>
+  <div id="OK">
+    <p>Home / Clothing / <span style="font-weight: bold">Kids </span></p>
+      <div>
+        <h3>FILTERS</h3>
+        <div id="sortId">
+          <label for="">Sort by</label>
+          <select id="sortByPrice">
+            <option value="rel">Recommended</option>
+            <option value="low">Low To High</option>
+            <option value="high">High To Low</option>
+            <option value="disc">Discount</option>
+          </select>
+        </div>
+      </div>
+    </div>
     <div id="container">
       <div id="DATA">
         <div id="filter_sidebar">
@@ -170,136 +195,136 @@ var products = [
 
         },
          {
-        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17003156/2022/2/1/f5fc665e-43bf-40b8-bc82-a0726da456a01643705243115Tshirts1.jpg",
-                  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17003156/2022/2/1/51103051-c03f-480a-a408-5c9eb9a938821643705243108Tshirts6.jpg"],
+        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14191952/2022/1/11/a93cecd5-ace2-4a4e-b2be-ceb8e2fe2cca1641884180047-HELLCAT-Boys-Pack-of-2-T-shirts-3471641884179980-2.jpg",
+                  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14191952/2021/4/26/9d336f2e-62d1-46d6-a9ef-12308b4795f81619436960258HELLCATBoysMulticolouredPrintedRoundNeckT-shirt2.jpg"],
         s : "M",
         name : "Collar Slim T-Shirt",
         price : 563
         },
         {
-        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888102/2022/2/4/32ee4666-e652-4bef-bd82-0b35836721661643955087351-Louis-Philippe-Men-Shirts-771643955086930-1.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888102/2022/2/4/0aa0d61f-4476-432c-a071-36931ecfac171643955087307-Louis-Philippe-Men-Shirts-771643955086930-5.jpg"],
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17137550/2022/2/11/b124b0f4-830d-44ed-a669-e8585d66cf4f1644579708683HellcatBoysRoundNeckBlendedCottonTshirt-ComboPackof51.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17137550/2022/2/11/18ce7844-fbee-4f79-b961-b824e4b9d1181644579708780HellcatBoysRoundNeckBlendedCottonTshirt-ComboPackof52.jpg"],
         s : "M",
         name : " Louis Philippe",
         price :556
         },
         {
-        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888112/2022/2/4/c23fa148-bf42-4d57-a305-7e938aac426b1643955427524-Louis-Philippe-Men-Shirts-7361643955426927-1.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888112/2022/2/4/4162afa7-eebb-4a0d-b418-ad28875fce9c1643955427489-Louis-Philippe-Men-Shirts-7361643955426927-5.jpg"],
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/images/style/properties/GKIDZ-Pack-of-5-Printed-T-shirts_5c84da358c0fae1d7441a9b5892683a4_images.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/images/style/properties/GKIDZ-Pack-of-5-Printed-T-shirts_e06446e722d0ac9ff37ef66c01d90b36_images.jpg"],
         s : "M",
         name : "Louis Philippe",
         price : 967
         },
         {
-        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1843248/2020/3/23/9210b99c-432d-4ab0-93e8-148b7fe727be1584970277646ManyavarMenBlueWovenStraightKurta1.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1843248/2020/3/23/0050fa49-ca75-4086-ab23-371d0f4253a11584970277713ManyavarMenBlueWovenStraightKurta2.jpg"],
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15552594/2021/9/21/35b0d182-4b52-4767-b550-7746dec36d9b1632223680366maxBoysMulticolouredTypographyV-NeckAppliqueT-shirt1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15552594/2021/9/21/57293d31-73e5-4bc2-92d3-a4128f2ad9e31632223680757maxBoysMulticolouredTypographyV-NeckAppliqueT-shirt6.jpg"],
         s : "M",
-        name : " Woven Straight Kurta",
+        name : " Boys 5 Printed T-shirt",
         price : 235
         },
         {
-        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15434686/2022/2/1/514f3d28-2462-4d28-aebb-d11c8586c08f1643690490640-Ode-by-House-of-Pataudi-Men-Lime-Green-Solid-Regular-Kurta-5-1.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15434686/2022/2/1/a4ac8b30-201c-4d76-8462-54c17820275f1643690490610-Ode-by-House-of-Pataudi-Men-Lime-Green-Solid-Regular-Kurta-5-4.jpg",],
+        imglink :[ "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17142724/2022/3/4/1ce20122-e229-4838-8d5c-0f598a0cb6e11646372697404BONKIDSBoysYellowPrintedCottonT-shirt1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17142724/2022/3/4/d93bffad-6384-4402-ab82-05c3909dd8071646372697412BONKIDSBoysYellowPrintedCottonT-shirt2.jpg",],
         s : "M",
-        name : "Round-Neck Straight Kurta",
+        name : "Boys Yellow Printed Cotton T-shirt",
         price : 456
         },
         {
-        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14673460/2021/7/15/fa4ceab1-7be6-4c48-a798-eed19f560ee41626327797067-Manyavar-Men-Dhotis-7871626327796013-1.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14673460/2021/7/15/2893bf35-07f1-4024-842a-22199e06961f1626327796997-Manyavar-Men-Dhotis-7871626327796013-4.jpg",],
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14973322/2021/7/29/259cf0dd-7553-46b2-910d-35f1d9ccad4c1627559097139BonOrganikBoysWhiteRawEdgeT-shirt1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14973322/2021/7/29/8d6d4659-efcf-46a2-8b29-34f88f35b3231627559097101BonOrganikBoysWhiteRawEdgeT-shirt3.jpg",],
         s : "M",
-        name : "Dhoti Pants",
+        name : "Donald Printed Pure Cotton T-shirt",
         price : 452
         },
         {
-        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16302366/2021/11/30/ac1dd1f0-4472-4ac0-8224-c7c83416347c1638261377539Dhotis1.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16302366/2021/11/30/70a7a0df-c654-4b5d-99ad-3ca6a88d588b1638261377692Dhotis5.jpg",],
+        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15552556/2021/9/21/b8518562-4dde-453d-a531-2f3983e1ec6a1632223704403maxBoysMulticolouredTypographyPrintedAppliqueT-shirt1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15552556/2021/9/21/c98fab7a-7047-4e16-8f88-99293cb0fe1b1632223704463maxBoysMulticolouredTypographyPrintedAppliqueT-shirt2.jpg",],
         s : "M",
-        name :  "Gold Toned Pure Silk Dhoti",
+        name :  "Pack of 3 Boys Printed T-shirt",
         price : 421
         },
         {
-        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14281324/2021/12/7/bb331e72-c31d-4f9e-be40-e90ccee146051638880329684-HRX-By-Hrithik-Roshan-Lifestyle-Men-oxy-fire-Rapid-Dry-Solid-1.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14281324/2021/12/7/14dbb2d4-4fe3-43b7-9e9c-e4927797fa8e1638880329603-HRX-By-Hrithik-Roshan-Lifestyle-Men-oxy-fire-Rapid-Dry-Solid-5.jpg",],
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/7/19/0449c939-7fa1-4755-bb5d-53b0025db3e01595110038743-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/7/19/932c213a-ff8b-4dc1-9eeb-1cb2ec42a2821595110038798-2.jpg",],
         s : "M",
-        name : "",
+        name : "Boys Pack Of 3 Printed Round Neck T-shirts",
         price : 789
         },
         {
-        imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/4453297/2019/12/2/77b5d9e0-8d65-4a36-94e7-290ed271db6b1575267599079-HRX-by-Hrithik-Roshan-Men-Olive-Green-Solid-Active-Bomber-Ja-1.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/4453297/2019/12/2/fff8b47c-4590-4bf1-9dbd-b8cc23f0eef91575267599038-HRX-by-Hrithik-Roshan-Men-Olive-Green-Solid-Active-Bomber-Ja-2.jpg",],
+        imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14973318/2021/7/29/bb71e4b6-1349-4e12-9bfc-c095d212872c1627559296422BonOrganikBoysGreyAppliqueT-shirt1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14973318/2021/7/29/1fc83d62-3361-4842-8369-da37c0aabb751627559296101BonOrganikBoysGreyAppliqueT-shirt3.jpg",],
         s : "M",
-        name : "shirt",
+        name : "Boys Grey Marvel Printed T-shirt",
         price :325
         },
         {
-        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15615048/2021/9/25/998a78d8-157d-4dad-9178-42b130e3915a1632570452832StreetArmorbyPantaloonsMenBlackStripedSportyJacket1.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15615048/2021/9/25/a64253af-ec67-4dec-881b-8e0045ba4e5b1632570453105StreetArmorbyPantaloonsMenBlackStripedSportyJacket2.jpg",],
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17607430/2022/3/22/36dd7ac1-e7f5-4901-9ff6-27ff9114b9ff1647945833110CottonT-shirt1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17607430/2022/3/22/4b1b44c2-6bca-4b44-a498-ec87fbaf17ce1647945833119CottonT-shirt2.jpg",],
         s : "M",
-        name : "Sporty Jacket",
+        name : "Boys Orange Cotton T-shirt",
         price : 236
         },
         {
-        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/788b1ef1-331a-45ac-b225-f205f35063901546937930482-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-3.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/06e2a088-e851-4ede-a16b-bedb83203b611546937930451-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-4.jpg",],
+        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17132466/2022/2/22/4e548fdc-0788-4e65-b545-59cb7087cdd11645542918682-HELLCAT-Boys-Pack-of-3-Printed-Bio-Finish-T-shirts-310164554-11.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17132466/2022/2/11/05f9a1ff-8dd0-4ef5-a4b9-ee2283e4bdef1644564805488HELLCATBoysYellowTypography3PrintedBioFinishPocketsT-shirt2.jpg",],
         s : "M",
-        name : "Running Joggers",
+        name : "Boys Pack of 3 Printed Bio Finish T-shirts",
         price : 652
         },
         {
-        imglink :[   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/ee026dfd-53d5-431f-8f49-793d1b1a3ca91579692118057-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-3.jpg",],
+        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17445276/2022/3/9/b2b5a632-e87f-4bf7-9333-9db6f90795871646810910051AllenSollyJuniorBoysWhitePoloCollarAppliqueT-shirt1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17445276/2022/3/9/a11ba4cc-bff7-44b2-9993-931d540df4051646810910069AllenSollyJuniorBoysWhitePoloCollarAppliqueT-shirt2.jpg",],
         s : "M",
-        name : "casual T-shirt",
+        name : "Boys White Polo Collar T-shirt",
         price : 653
         },
         {
-        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846958/2020/8/6/267a39c1-c9f0-4f08-aeba-3d74547b6c051596693087479-HRX-by-Hrithik-Roshan-Men-Jackets-8291596693079279-3.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846958/2020/8/6/9f58a150-a21b-4142-a31b-a48420f8b62f1596693085956-HRX-by-Hrithik-Roshan-Men-Jackets-8291596693079279-4.jpg",],
+        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17268416/2022/2/24/82b027d2-d27d-4dd7-ba7f-a462fd2f200e1645695087696CottonjerseyT-shirt1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17268416/2022/2/24/16a535db-341b-4582-9cdb-9b4c5b85eb701645695087688CottonjerseyT-shirt2.jpg",],
         s : "M",
-        name : " Bomber Jacket",
+        name : "Boys Navy Blue Cotton Jersey T-shirt",
         price : 216
         },
         {
-        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846948/2020/9/17/b431435b-1034-4ae2-b8fa-327e93ed6c1e1600332870635-HRX-by-Hrithik-Roshan-Men-Sweatshirts-1831600332868391-3.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846948/2020/9/17/4244372a-07e6-4985-be31-a1bd401704391600332870552-HRX-by-Hrithik-Roshan-Men-Sweatshirts-1831600332868391-4.jpg"],
+        imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14191936/2021/12/23/f85a8a09-34db-4b28-a299-7f87d0528d9b1640248953971-HELLCAT-Boys-Pack-of-2-T-shirts-5251640248953714-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14191936/2021/12/23/a4927285-1287-4e64-969d-cb37b6d814bd1640248953963-HELLCAT-Boys-Pack-of-2-T-shirts-5251640248953714-2.jpg"],
         s : "M",
-        name : "Hooded Sweatshirt",
+        name : "Boys Pack of 2 T-shirts",
         price : 259
         },
         {
-        imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/788b1ef1-331a-45ac-b225-f205f35063901546937930482-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-3.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/06e2a088-e851-4ede-a16b-bedb83203b611546937930451-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-4.jpg",],
+        imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13649446/2022/3/31/1b58e66f-6389-46db-8fb0-9ad4cf15dffc1648698825507-YK-Boys-Black--White-Pure-Cotton-Typography-Print-Round-Neck-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13649446/2022/3/31/6a768c49-45c3-4c12-b56b-8d15b1384c3d1648698825499-YK-Boys-Black--White-Pure-Cotton-Typography-Print-Round-Neck-2.jpg",],
         s : "M",
-        name : "Running Joggers",
+        name : "Round Neck Pure Cotton T-shirt",
         price : 452
         },
         {
-        imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/ee026dfd-53d5-431f-8f49-793d1b1a3ca91579692118057-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-3.jpg",],
+        imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15377396/2021/12/29/f0ddf095-cf34-407f-a645-448de011155c1640758649169-Pantaloons-Junior-Boys-Navy-Blue--White-Typography-Printed-P-2.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15377396/2021/9/7/da4ea5e6-8097-4398-8792-24fcd9f3f90a1630953575952PantaloonsJuniorBoysNavyBlueTypographyPrintedPocketsT-shirt2.jpg",],
         s : "M",
-        name : "Printed T-shirt",
+        name : " Printed Pure Cotton T-shirt",
         price : 453
         },
         {
-        imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15746172/2021/10/7/a621b7fd-babb-4bb3-940e-b16afb7947d31633609833495HMMenBlueRelaxedFitHoodie1.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15746172/2021/10/7/b019b315-fb56-481a-9de4-97f588b636551633609832286HMMenBlueRelaxedFitHoodie2.jpg",],
+        imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17607444/2022/3/22/67fe62d7-5324-48da-b96e-76ef16c69cde1647945878876PrintedT-shirt1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17607444/2022/3/22/37aa9f3f-287c-4069-8176-7f4b7c0622c01647945878885PrintedT-shirt2.jpg",],
         s : "M",
-        name : "Fit Hoodie",
+        name : "Boys White & Blue Printed Cotton Round Neck T-Shirt",
         price : 258
         },
         {
-        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589420/2022/2/16/09f33d71-8884-4f17-91bc-15c06dc0dca41645015048593-Tommy-Hilfiger-Men-Tshirts-5971645015048165-3.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589420/2022/2/16/ecd3d10e-0b0c-41ec-b892-ed565d29be921645015048615-Tommy-Hilfiger-Men-Tshirts-5971645015048165-1.jpg"],
+        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16929826/2022/1/25/5f9f414d-a2bb-4d3f-9b50-45e570dc20791643106356970CottonT-shirt1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16929826/2022/1/25/ebcee0a8-821c-4c26-9fa6-be8cefc874c51643106356396CottonT-shirt2.jpg"],
         s : "M",
-        name : "Tommy Hilfiger",
+        name : "Boys Mustard Solid Cotton T-shirt",
         price : 452
         },
         {
-        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589418/2021/8/17/62b7926e-ef9c-4378-b682-5dc3a00312bd1629186278260-Tommy-Hilfiger-Men-Tshirts-1731629186277755-1.jpg",
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589418/2021/8/17/239f17e1-92fc-4230-a9ff-11245eb6a7d51629186278243-Tommy-Hilfiger-Men-Tshirts-1731629186277755-3.jpg"],
+        imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17037972/2022/3/9/58de33cd-5e3a-4556-97ad-edc0a14e9be31646815320424-US-Polo-Assn-Kids-Boys-Tshirts-8551646815319906-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17037972/2022/3/9/00388514-c132-4e25-9c12-af99a68281ba1646815320415-US-Polo-Assn-Kids-Boys-Tshirts-8551646815319906-2.jpg"],
         s : "M",
-        name : "Tommy Hilfiger",
+        name : "Pure Cotton T-shirt",
         price :1253
         },
     ]
@@ -349,7 +374,9 @@ var products = [
                 div2.style.display ="flex"
                 div2.style.marginLeft = "20px"
                 var butt = document.createElement("button")
-                //butt.style.backgroundColor = "red"
+                // butt.style.backgroundColor = "red"
+                
+                butt.style.width="70px"
                 butt.innerHTML = "ADD TO WISHLIST"
                 butt.addEventListener("click" , function(e){
                     description(e)

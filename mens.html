@@ -27,7 +27,7 @@
    #catToBag{
         display: flex;
         width:100%;
-        gap:50px;
+        gap:20px;
         margin-left: 50px;
         margin-right: 50px;
         cursor: pointer;
@@ -46,6 +46,105 @@
         margin-top: 50px;
         cursor: pointer;
    }
+   img{
+       height:250px;
+       width:250px;
+   }
+   /* footer */
+   *{
+        font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    }
+    #footermain{
+        display:block;
+        /* border:1px solid black; */
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    
+    #links1{
+        width: 73%;
+        height: 400px;
+        
+        margin: auto;
+        display: flex;
+    }
+    .online{
+        width: 180px;
+        height: 400px;
+        text-align: left;
+        
+    }
+    .online p{
+        font-size: 12px;
+        font-weight: 500;
+
+    }
+    button{
+        border: none;
+        color: grey;
+    }
+    #social{
+        width: 350px;
+        line-height: 12px;
+        
+    }
+    #play1{
+        width: 300px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+    #social>p{
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 1px;
+    }
+    #keep1{
+        width: 150px;
+    }
+    #firstlast{
+        width: 270px;
+    }
+    #ori1{
+        display: flex;
+        font-weight: 500;
+    }
+    #ori1 img{
+        width: 48px;
+        height: 40px;
+        margin-top: 20px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    #ret1{
+        display: flex;
+        font-weight: 500;
+    }
+    #ret1 img{
+        width: 48px;
+        height: 49px;
+        margin-top: 20px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+
+    #popular1{
+        width: 73%;
+        height: 180px;
+        
+        margin: auto;
+        color: #696B79;
+    }
+    #contact1{
+        width: 73%;
+        height: 80px;
+        
+        margin: auto;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        color: #696B79;
+    }
+
 </style>
 <body>
     <div id="header">
@@ -56,8 +155,7 @@
     </div>
     <div id="studioShow">
 
-    </div>
-    <div id="ddownP">
+   
         
     </div>
     <div class="slideshow-container">
@@ -74,7 +172,7 @@
          
         </div>
         
-        <div class="mySlides fade">
+        <!-- <div class="mySlides fade">
           
           <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/5b36764f-1116-4342-bf27-5186b065fc3e1647456798674-Smartwatches_Dk.jpg">
          
@@ -107,17 +205,17 @@
           </div>
         
         </div>
-        <br>
+        <br> -->
         
         <div style="text-align:center">
           <span class="dot"></span> 
           <span class="dot"></span> 
+          <!-- <span class="dot"></span> 
           <span class="dot"></span> 
           <span class="dot"></span> 
           <span class="dot"></span> 
           <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
+          <span class="dot"></span>  -->
         </div>
 
     <div id="container">
@@ -171,9 +269,9 @@
             <div>
                 <img class="catImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/ae14f627-9fd9-41ce-80a4-f107c316c7eb1594222907625-Casual-shoes.jpg" alt="">
             </div>
-            <div>
+            <!-- <div>
                 <img class="catImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/f0f9b81a-b9d5-4b8b-94d5-ea878fa9b18e1594222834121-Infant-Essential.jpg" alt="">
-            </div>
+            </div> -->
         </div>
         <h1 class="tag">EXPLORE TOP BRANDS</h1>
         <div class="biggestDeal">
@@ -284,6 +382,84 @@
             </div>
         </div>
     </div>
+    <div id="footermain">
+        <div id="links1">
+            <div class="online">
+                <p>ONLINE SHOPPING</p>
+                <button onclick="subway()">Men</button>
+                <br>
+                <button onclick="subway1()">Women</button>
+                <br>
+                <button onclick="subway2()">Kids</button>
+                <br>
+                <button onclick="subway3()">Home & Living</button>
+                <br>
+                <button onclick="subway4()">Beauty</button>
+                <br>
+                <button onclick="subway()">Gift Cards</button>
+                <br>
+                <button class="sub1" onclick="subway4()" >Myntra Insider <sup style="color: white;background-color: red;">New</sup></button>
+            </div>
+            <div class="online">
+                <p>USEFUL LINKS</p>
+                <button onclick="subway()">Contact Us</button>
+                <br>
+                <button onclick="subway1()">FAQ</button>
+                <br>
+                <button onclick="subway2()">T&C</button>
+                <br>
+                <button onclick="subway3()">Terms Of Use</button>
+                <button onclick="subway4()">Track Orders</button>
+                <br>
+                <button onclick="subway()">Shipping</button>
+                <br>
+                <button onclick="subway()">Cancellation</button>
+                <br>
+                <button onclick="subway1()">Returns</button>
+                <br>
+                <button onclick="subway2()">Whitehat</button>
+                <br>
+                <button onclick="subway3()">Blogs</button>
+                <br>
+                <button onclick="subway4()">Careers</button>
+                <br>
+                <button onclick="subway()">Privacy policy</button>
+                <br>
+                <button onclick="subway4()">Site Map</button>
+                <br>
+                <button onclick="subway()">Corporate Information</button>
+            </div>
+            <div id="social">
+                <p>EXPERIENCE MYNTRA APP ON MOBILE</p>
+                <img id="play1" src="https://www.seekpng.com/png/detail/20-202991_get-it-on-google-play-logo-png-vector.png" alt="">
+                <p>KEEP IN TOUCH</p>
+                <img id="keep1" src="data:image/png;base64,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" alt="">
+            </div>
+            <div id="firstlast">
+                <div id="ori1">
+                    <img src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png" alt="">
+                    <p>100% ORIGINAL guarantee for all products at myntra.com</p>
+                </div>
+                <div id="ret1">
+                    <img src="https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png" alt="">
+                    <p>Return within 30days of receiving your order</p>
+                </div>
+            </div>
+        </div>
+        <div id="popular1">
+            <h5>POPULAR SEARCHES</h5>
+            <p>
+                Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags | Ladies Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets | Tops | Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse | Gowns | Rings | Cricket Shoes | Forever 21 | Eye Makeup | Photo Frames | Punjabi Suits | Bikini | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles | Bras | Suit | Chinos | Shoes | Adidas Shoes | Woodland Shoes | Jewellery | Designers Sarees
+            </p>
+        </div>
+        <div id="contact1">
+            <div style="display: flex">
+                <p>In case of any concern,</p>
+                <h4 style="color: blue;">Contact Us</h4>
+            </div>
+            <div>© 2022 www.myntra.com. All rights reserved.</div>
+        </div>
+    </div>
 </body>
 </html>
 <script>
@@ -304,7 +480,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000);
+    setTimeout(showSlides, 4000);
 }
 
 
