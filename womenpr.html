@@ -10,84 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./navbar/navbar.css" >
+    <link rel="stylesheet" href="./footer/mainfooter.css" >
+   <link rel="stylesheet" href="./style/womenpr.css" >
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        *{
-            font-family: 'Roboto', sans-serif;
-            font-weight: 1000px;
-        }
-        .bip{
-            display: flex;
-        }
-        #products{
-            display: grid;
-            width: 80%;
-            margin-left: 20px;
-            padding-left: 20px;
-            grid-template-columns: repeat(4,1fr);
-            padding-right: 20px;
-            border: 1px solid;
-            box-sizing: border-box;
-            box-shadow: 5px;
-            
-        }
-        #pageno{
-            margin-left: 750px;
-        }
-        .hov{
-            height: 70%;
-            width: 100%;
-            box-sizing: border-box;
-            box-shadow: 10px;
-        }
-        #hovdiv{
-            width: 100%;
-            height: 10%;
-
-        }
-        #button{
-            height : 100%;
-            width: 25%;
-            margin-left: 20px;
-        }
-        #filter{
-            margin-left: 1200px;
-        }
-        #women{
-            display: flex;
-        }
-        #sidebar{
-            width: 20%;
-            margin-right: 180px;
-            height: 1000px;
-            
-        }
-        #sorting{
-            margin-left: 1120%;
-        }
-        #filter_sidebar{
-          display:block;
-          /* border:1px solid black; */
-         margin-top: 0px;
-         position: relative;
-         border-right: 1px solid;
-         border-top: 1px red solid;
-        
-      }
-      #filter_sidebar>input>span{
-        font-size: 15px;
-
-      }
-      #filter_sidebar>input{
-        margin-top:10px;
-      }
-
-
-        
-    </style>
 </head>
 <body>
-    <div id="navbar"></div>
+   <!-- navabar folder -->
+   <div id="navbar_placeholder"></div>
+
     <div class="bip">
         <div><h5>Home /</h5>  </div>
         <div> <h5>Women /</h5></div>
@@ -98,7 +29,7 @@
     </h4></div>
     <div class="bip">
         <div><h3>FILTERS</h3></div>
-        <div>
+        <!-- <div>
             <select name="sort by" id="sorting">
                <option value="recommended" id="recommended">recommended </option>
                <option value="whats'new" id="whats'new">whats'new</option>
@@ -107,7 +38,7 @@
                <option value="l2h" id="low to high">low to high</option>
                <option value="high to low" id="high to low">high to low</option>
             </select>
-        </div>
+        </div> -->
     </div>
     
     <div id="women">
@@ -213,11 +144,67 @@
     </div>
     
     <div id="pageno"> Page 1 2</div>
+
+        <!-- footer folder -->
+        <div id="mainfooter_placeholder"></div>
      
 </body>
 </html>
-<script>
+<script  type="module">
+
+import {Navbar} from './navbar/script.js';
+var navbarfolder=document.querySelector("#navbar_placeholder");
+navbarfolder.innerHTML=Navbar();
+
+document.querySelector("#navbarlogo").addEventListener("click",home1);
+function home1(){
+  document.querySelector("#sub1").style.fontweight="600";
+    window.location.href="https://www.myntra.com/"
     
+};
+document.querySelector("#Subway").addEventListener("click",display);
+function display(){
+    window.location.href="https://www.myntra.com/men-tshirts/"
+    
+};
+document.querySelector("#Subway1").addEventListener("click",display1);
+function display1(){
+    window.location.href="https://www.myntra.com/women-kurtas-kurtis-suits"  
+};
+
+document.querySelector("#Subway2").addEventListener("click",display2);
+function display2(){
+    window.location.href="https://www.myntra.com/kids?f=Categories%3ATshirts%3A%3AGender%3Aboys%2Cboys%20girls&plaEnabled=false"  
+};
+document.querySelector("#Subway3").addEventListener("click",display3);
+function display3(){
+    window.location.href="https://www.myntra.com/bedsheets";  
+};
+document.querySelector("#Subway4").addEventListener("click",display4);
+function display4(){
+    window.location.href="https://www.myntra.com/lipstick";  
+};
+
+document.querySelector("#studiobtn").addEventListener("click",display5);
+function display5(){
+    window.location.href="https://www.myntra.com/studio/home";  
+};
+document.querySelector("#loginnav").addEventListener("click",Loginnav);
+  function Loginnav(){
+    window.location.href="https://www.myntra.com/"
+  }
+  // wishlist page
+document.querySelector("#details").addEventListener("click",Wishlist);
+function Wishlist(){
+  window.location.href="wishlsit.html"
+}
+// signup page
+document.querySelector("#details1").addEventListener("click",Bag);
+function Bag(){
+  window.location.href="cart.html"
+}
+// footer importing..
+import {mainFooter} from './footer/script.js'
 
     var products = [
         {
@@ -291,6 +278,7 @@
         s : "W",
         name : "mn kurti",
         price :325
+
         },
         {
         imglink :["https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12436238/2021/4/7/a97deb64-763b-42a1-ba17-6074ea0ea5491617797978818-Biba-Women-Grey--Pink-Layered-Printed-A-Line-Kurta-582161779-1.jpg",
@@ -388,9 +376,6 @@
                     localStorage.setItem("productwishlisted" , JSON.stringify(desArr))    
                     
                 })
-
-
-            
             mainDiv.style.cursor ="pointer"
             var img = document.createElement("img")
             img.setAttribute("class" , "hov")
@@ -422,21 +407,9 @@
                
                 img.src = e.imglink[1]
                
-                
-                
-                //div2.style.border = "solid" ;
-                //div2.style.backgroundColor = "red"
                 div2.style.width = "300px";
                 div2.style.display ="flex"
                 div2.style.marginLeft = "20px"
-                
-                
-                
-
-
-
-
-
                 var img2 = document.createElement("img")
                 img2.src = "https://cdn.iconscout.com/icon/free/png-64/heart-suit-card-37956.png"
                 img2.style.width = "10px"
@@ -444,13 +417,7 @@
                 div2.append(butt , img2) 
                 
                 butt.setAttribute("id", "button")
-                div2.append(butt)
-
-                
-                //div2.innerHTML = img2
-
-
-               
+                div2.append(butt);   
             })
            
             mainDiv.addEventListener("mouseleave",previousdata);
@@ -469,16 +436,8 @@
                 proArr.push(e)
                 localStorage.setItem("product" , JSON.stringify(proArr))
                 window.location.href = "productdescription.html"
-
-
-            })
-            
-            
+            })  
         })
-
-
-
-
     }
     appenddata(products)
 
@@ -499,24 +458,23 @@
         
     // }
     // sort()
-    document.querySelector("#sorting").addEventListener("click", sortByPrice);
-    function sortByPrice() {
+    // document.querySelector("#sorting").addEventListener("click", sortByPrice);
+    // function sortByPrice() {
         
-            var sorting = document.querySelector("#sorting").value;
-            console.log(sorting);
-            if(sorting === "l2h")
-        {
-            products.sort(function(a,b){
-                return a.price - b.price
+    //         var sorting = document.querySelector("#sorting").value;
+    //         console.log(sorting);
+    //         if(sorting === "l2h")
+    //     {
+    //         products.sort(function(a,b){
+    //             return a.price - b.price
                
-            })
+    //         })
             
-            appenddata(products)  
-        }
-
-        
-    }
-    
-
+    //         appenddata(products)  
+    //     }      
+    // }
+// footer code
+var mainfooterfolder=document.querySelector("#mainfooter_placeholder");
+mainfooterfolder.innerHTML=mainFooter();
     
 </script>

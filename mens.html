@@ -1,53 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mens</title>
+    <link rel="stylesheet" href="./style/menshome.css" >
+    <link rel="stylesheet" href="./navbar/navbar.css" />
+    <link rel="stylesheet" href="./footer/mainfooter.css" />
 </head>
-<style>
-   
-    #container{
-        display: inline;
-        grid-template-columns: repeat(5,1fr);
-        gap:5px;
-       /* padding-left: 30px; */
-       margin: auto;
-       
-    }
-    .biggestDeal{
-        display: grid;
-        width:100%;
-        grid-template-columns: repeat(5,1fr);
-        margin-left: 50px;
-        margin-right: 50px;
-        column-gap: 10px;
-        row-gap: 10px;
-        cursor: pointer;
-     
-    }
-   #catToBag{
-        display: flex;
-        width:100%;
-        gap:50px;
-        margin-left: 50px;
-        margin-right: 50px;
-        cursor: pointer;
-   }
-   #luxe{
-        display: grid;
-        width:100%;
-        grid-template-columns: repeat(5,1fr);
-        margin-left: 50px;
-        margin-right: 50px;
-        cursor: pointer;
-   }
-   .slideshow-container{
-         margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 50px;
-        cursor: pointer;
-   }
-</style>
 <body>
+   <!-- navabar folder -->
+   <div id="navbar_placeholder"></div>
+
     <div id="header">
         
     </div>
@@ -121,8 +86,8 @@
         </div>
 
     <div id="container">
-        <h1 class="tag">BIGGEST DEALS ON TOP BRANDS</h1>
-        <div class="biggestDeal">
+        <h4 >BIGGEST DEALS ON TOP BRANDS</h4>
+        <div id="biggestDeal" class="grid_prod">
             <div>
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/1dce9c3e-77fa-48f1-85a3-d3c136c1d73e1598892377652-USPA.jpg" alt="">
             </div>
@@ -154,8 +119,8 @@
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/14/5544cd64-d95b-461d-802a-8025fdfeb3331605363272844-Home---Nike.jpg" alt="">
             </div>
         </div>
-        <h1 class="tag">CATEGORIES TO BAG</h1>
-        <div id="catToBag">
+        <h4 class="tag">CATEGORIES TO BAG</h4>
+        <div id="catToBag" class="flex_prod">
             <div>
                 <img class="catImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/89f1bd9d-3a28-456d-888a-beff717a06f81594222908155-Shirts.jpg" alt="">
             </div>
@@ -175,8 +140,8 @@
                 <img class="catImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/f0f9b81a-b9d5-4b8b-94d5-ea878fa9b18e1594222834121-Infant-Essential.jpg" alt="">
             </div>
         </div>
-        <h1 class="tag">EXPLORE TOP BRANDS</h1>
-        <div class="biggestDeal">
+        <h4 class="tag">EXPLORE TOP BRANDS</h4>
+        <div id="topbrands" class="grid_prod">
             <div>
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/a88b9390-5adb-493b-a1b3-702c59ccf53a1598348260502-Nike.jpg" alt="">
             </div>
@@ -193,8 +158,8 @@
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/5/774f42c4-f459-4514-9b90-cf8a60a5f68c1596644478087-hrx30.jpg" alt="">
             </div>
         </div>
-        <h1 class="tag">MYNTRA LUXE</h1>
-        <div id="luxe">
+        <h4 class="tag">MYNTRA LUXE</h4>
+        <div id="luxe"class="grid_prod" >
             <div>
                 <img class="luxeImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/85fa3b9b-9e7c-43a5-9de0-1cb32f3180151637149111314-MP-Farah.jpg" alt="">
             </div>
@@ -211,8 +176,8 @@
                 <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/ab5c5029-d24f-4789-979c-d4910801ea191637149111321-MP-HUGOBoss.jpg" alt="">
             </div>
         </div>
-        <h1 class="tag">TRENDING IN INDIAN WEAR</h1>
-        <div class="biggestDeal">
+        <h4 class="tag">TRENDING IN INDIAN WEAR</h4>
+        <div id="INDIANWEAR" class="grid_prod">
             <div>
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/a9f68785-e282-425a-b270-c978c387b0f31597840342635-Content-ethnicwear-color-whites.jpg" alt="">
             </div>
@@ -229,8 +194,8 @@
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/9e4fb95e-6268-49c5-9ed1-e6b1bd4b5efd1595935030880-Content-ethnicwear-trend-fashionmeetcomfort.jpg" alt="">
             </div>
         </div>
-        <h1 class="tag">TRENDING IN SPORTS WEAR</h1>
-        <div class="biggestDeal">
+        <h4 class="tag">TRENDING IN SPORTS WEAR</h4>
+        <div id="biggestDealSPorts" class="grid_prod">
             <div>
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/8becef46-f822-4874-b92a-a7cc7f58819d1597841103131-Content-sportswear-brand-nike.png" alt="">
             </div>
@@ -247,8 +212,8 @@
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/8/21/eedc6c0c-c28b-4ccb-952f-a302c96c59ba1598030134978-Content-mostselling-Sportswear-Nikerevolution.jpeg" alt="">
             </div>
         </div>
-        <h1 class="tag">TRENDING IN FOOTWEAR</h1>
-        <div class="biggestDeal">
+        <h4 class="tag">TRENDING IN FOOTWEAR</h4>
+        <div id="biggestDealfootwear" class="grid_prod">
             <div>
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/647e166b-f645-443a-892d-df84ee345e781595935221231-Content-Footwear-men-Neutral-shades.jpg" alt="">
             </div>
@@ -265,8 +230,8 @@
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/49dd1ce9-d627-4c6e-b544-4be7e1f24a091597840342867-Content-footwear-essentials-flipflops.jpg" alt="">
             </div>
         </div>
-        <h1 class="tag">TRENDING IN ACCESSORIES</h1>
-        <div class="biggestDeal">
+        <h4 class="tag">TRENDING IN ACCESSORIES</h4>
+        <div id="biggestDealaccesories" class="grid_prod">
             <div>
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/2bcf907c-bc21-44cb-9021-7575a963b0ef1595934830671-Content-Accesories-Unisex-True-wirless-lets-get-free.jpg" alt="">
             </div>
@@ -284,9 +249,84 @@
             </div>
         </div>
     </div>
+
+      <!-- footer folder -->
+      <div id="mainfooter_placeholder"></div>
 </body>
 </html>
-<script>
+
+<script type="module">
+// Navbar import
+import {Navbar} from './navbar/script.js';
+var navbarfolder=document.querySelector("#navbar_placeholder");
+navbarfolder.innerHTML=Navbar();
+
+document.querySelector("#navbarlogo").addEventListener("click",home1);
+function home1(){
+  document.querySelector("#sub1").style.fontweight="600";
+    window.location.href="https://www.myntra.com/"   
+};
+document.querySelector("#Subway").addEventListener("click",display);
+function display(){
+    window.location.href="mensprod.html"
+};
+document.querySelector("#MENSPAGE").addEventListener("dblclick",displaydbl);
+function displaydbl(){
+    window.location.href="mens.html"
+};
+document.querySelector("#Subway1").addEventListener("click",display1);
+function display1(){
+    window.location.href="womenpr.html"  
+};
+document.querySelector("#Womenpage").addEventListener("dblclick",displaydb1);
+function displaydb1(){
+    window.location.href="womenhome.html"  
+};
+
+document.querySelector("#Subway2").addEventListener("click",display2);
+function display2(){
+    window.location.href="https://www.myntra.com/kids?f=Categories%3ATshirts%3A%3AGender%3Aboys%2Cboys%20girls&plaEnabled=false"  
+};
+document.querySelector("#kidspage").addEventListener("dblclick",displaydb2);
+function displaydb2(){
+    window.location.href="kids.html"  
+};
+document.querySelector("#Subway3").addEventListener("click",display3);
+function display3(){
+    window.location.href="https://www.myntra.com/bedsheets";  
+};
+document.querySelector("#homeliving").addEventListener("dblclick",displaydb3);
+function displaydb3(){
+    window.location.href="https://www.myntra.com/shop/home-living";  
+};
+document.querySelector("#Subway4").addEventListener("click",display4);
+function display4(){
+    window.location.href="https://www.myntra.com/lipstick";  
+};
+
+document.querySelector("#studiobtn").addEventListener("click",display5);
+function display5(){
+    window.location.href="https://www.myntra.com/studio/home";  
+};
+// signup pgae
+document.querySelector("#loginnav").addEventListener("click",Loginnav);
+  function Loginnav(){
+    window.location.href="login.html";
+  }
+  // wishlist page
+document.querySelector("#details").addEventListener("click",Wishlist);
+function Wishlist(){
+  window.location.href="wishlist.html"
+}
+// add to cart page
+document.querySelector("#details1").addEventListener("click",Bag);
+function Bag(){
+  window.location.href="cart.html"
+}
+// footer importing..
+import {mainFooter} from './footer/script.js'
+
+    // slideshow
     var slideIndex = 0;
 showSlides();
 
@@ -314,5 +354,7 @@ document.querySelector(".dealImg").addEventListener("click" , function(){
 
 
     // document.getElementsByClassName("dealImg").addEventListener("click",goToMensPage);
-    
+    // footer code
+var mainfooterfolder=document.querySelector("#mainfooter_placeholder");
+mainfooterfolder.innerHTML=mainFooter();
 </script>

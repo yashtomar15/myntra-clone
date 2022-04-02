@@ -1,0 +1,40 @@
+
+#container{
+    display:flex;
+    /* border:1px solid black; */
+    width:90%;
+    margin:auto;
+  
+}
+#container #DATA{
+  width:15%;
+  border:1px solid grey;
+  height:60%;
+ 
+}
+#container #products{
+  width:85%;
+  display:grid;
+  grid-template-columns: repeat(4,24%);
+  gap:10px;
+  margin-left: 15px;
+ 
+}
+#container #products>div{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 15px;
+  height:300px
+  
+}
+#filter_sidebar{
+    display:block;
+             margin-top: 20px;
+   position: relative;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#filter_sidebar>input>span{
+  font-Size:15px;
+
+}
+#filter_sidebar>input{
+  margin-top:10px;
+}

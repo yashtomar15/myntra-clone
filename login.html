@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="./footer/mainfooter.css" />
+    <link rel="stylesheet" href="./navbar/navbar.css" />
     <style>
-        body{
+        #Loginform{
             background-color: rgb(247, 240, 232);
         }
         #login{
@@ -56,10 +58,10 @@
     </style>
 </head>
 <body>
+    <!-- navabar folder -->
+    <div id="navbar_placeholder"></div>
+    <div id="Login_form">
     <form>
-        <div id="header">
-               <!-- import header here -->
-        </div>
         <div id="login">
             <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2022/3/16/d4edb37c-aee8-4989-86f4-33b117edd4bc1647415464555-Banner_Login-Landing-page--1-.jpg"/>
            <label><h2> login </h2><h4> or </h4><h2>Signup</h2></label> 
@@ -74,24 +76,94 @@
            
             <P>Have trouble logging in ?<a  href="">Get help</a></P>
          </div>
-
-         <div id="footer">
-              <!-- import footer here -->
-         </div>
     </form>
-   
+</div>
+   <!-- footer folder -->
+   <div id="footer_placeholder"></div>
            
 </body>
 </html>
-<script src="login.js"></script>
+<script src="./script/login.js"></script>
 <script type="module">
+// Navbar import
+import {Navbar} from './navbar/script.js';
+var navbarfolder=document.querySelector("#navbar_placeholder");
+navbarfolder.innerHTML=Navbar();
+
+document.querySelector("#navbarlogo").addEventListener("click",home1);
+function home1(){
+  document.querySelector("#sub1").style.fontweight="600";
+    window.location.href="https://www.myntra.com/"
+    
+};
+document.querySelector("#Subway").addEventListener("click",display);
+function display(){
+    window.location.href="mens.html"
+};
+document.querySelector("#menspage").addEventListener("dblclick",displaydb);
+function displaydb(){
+    window.location.href="mensprod.html"
+};
+document.querySelector("#Subway1").addEventListener("click",display1);
+function display1(){
+    window.location.href="womenpr.html"  
+};
+document.querySelector("#Womenpage").addEventListener("dblclick",displaydb1);
+function displaydb1(){
+    window.location.href="womenhome.html"  
+};
+
+document.querySelector("#Subway2").addEventListener("click",display2);
+function display2(){
+    window.location.href="https://www.myntra.com/kids?f=Categories%3ATshirts%3A%3AGender%3Aboys%2Cboys%20girls&plaEnabled=false"  
+};
+document.querySelector("#kidspage").addEventListener("dblclick",displaydb2);
+function displaydb2(){
+    window.location.href="kids.html"  
+};
+document.querySelector("#Subway3").addEventListener("click",display3);
+function display3(){
+    window.location.href="https://www.myntra.com/bedsheets";  
+};
+document.querySelector("#homeliving").addEventListener("dblclick",displaydb3);
+function displaydb3(){
+    window.location.href="https://www.myntra.com/shop/home-living";  
+};
+document.querySelector("#Subway4").addEventListener("click",display4);
+function display4(){
+    window.location.href="https://www.myntra.com/lipstick";  
+};
+
+document.querySelector("#studiobtn").addEventListener("click",display5);
+function display5(){
+    window.location.href="https://www.myntra.com/studio/home";  
+};
+// signup pgae
+document.querySelector("#loginnav").addEventListener("click",Loginnav);
+  function Loginnav(){
+    window.location.href="login.html";
+  }
+  // wishlist page
+document.querySelector("#details").addEventListener("click",Wishlist);
+function Wishlist(){
+  window.location.href="wishlist.html"
+}
+// add to cart page
+document.querySelector("#details1").addEventListener("click",Bag);
+function Bag(){
+  window.location.href="cart.html"
+}
+// footer importing..
+import {Footer} from './footer/script.js'
+
+//  login code
    let login = JSON.parse(localStorage.getItem("loginData")) || [];
    document.querySelector("form").addEventListener("submit",()=>{
        let form = document.querySelector("form");
        let number = form.number.value;
        event.preventDefault();
        var flag = false;
-       console.log(login.length);
+    //    console.log(login.length);
        for(let i=0;i<login.length;i++)
        {
            if(login[i].number === number)
@@ -110,7 +182,7 @@
                 if (chk) 
                 {
                     // link here landing page 
-                    // window.location.href = "";
+                    window.location.href = "index.html";
                     alert("login Successful");
                 }
                 else 
@@ -125,4 +197,7 @@
        }
        
    });
+//  footer code
+   var footerfolder=document.querySelector("#footer_placeholder");
+footerfolder.innerHTML=Footer();
 </script>

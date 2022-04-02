@@ -17,6 +17,7 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  cursor:pointer;
 }
 
 .dropdown-content {
@@ -45,6 +46,7 @@
   width: 1000px;
   height: 450px;
   display: flex;
+  cursor:pointer;
 }
 
 #logo1{
@@ -57,9 +59,11 @@
 }
 .sub1{
   border: none;
+  cursor:pointer;
 }
 .subhead{
   color: red;
+  cursor:pointer;
 }
 #topwear{
   width: 170px;
@@ -67,6 +71,7 @@
   margin-left: 20px;
   text-align: left;
   line-height: 25px;
+  cursor:pointer;
 }
 p{
   margin-bottom: 1px;
@@ -77,6 +82,7 @@ p{
   margin-left: 20px;
   text-align: left;
   line-height: 25px;
+  cursor:pointer;
 }
 #bottomwear{
   width: 150px;
@@ -85,7 +91,7 @@ p{
   text-align: left;
   line-height: 25px;
   margin-bottom: 1px;
-  
+  cursor:pointer;
 }
 #innerwear{
   width: 180px;
@@ -93,6 +99,7 @@ p{
   margin-left: 20px;
   text-align: left;
   line-height: 25px;
+  cursor:pointer;
 }
 #footwear{
   width: 170px;
@@ -100,25 +107,30 @@ p{
   margin-left: 20px;
   text-align: left;
   line-height: 25px;
+  cursor:pointer;
 }
 #personal{
   margin-left: 20px;
   text-align: left;
   margin-top: 1px;
+  cursor:pointer;
 }
 #sunglass1{
   margin-left: 20px;
   text-align: left;
   margin-top: 1px;
+  cursor:pointer;
 }
 #watches1{
   margin-left: 20px;
   text-align: left;
+  cursor:pointer;
   margin-top: 1px;
 }
 #plus1{
   margin-left: 20px;
   text-align: left;
+  cursor:pointer;
   margin-top: 35px;
 }
 #sports{
@@ -126,6 +138,7 @@ p{
   height: 250px;
   margin-left: 35px;
   text-align: left;
+  cursor:pointer;
   line-height: 25px;
 }
 #gadgets{
@@ -133,6 +146,7 @@ p{
   height: 250px;
   margin-left: 35px;
   text-align: left;
+  cursor:pointer;
   line-height: 25px;
 }
 #fashion{
@@ -140,6 +154,7 @@ p{
   height: 310px;
   margin-left: 20px;
   text-align: left;
+  cursor:pointer;
   line-height: 25px;
 }
 #topwear button:hover{
@@ -181,6 +196,7 @@ p{
  
 }
 .dropbtnW:hover{
+  cursor:pointer;
   border-bottom: 5px solid purple;
 } 
 .subheadW{
@@ -241,6 +257,7 @@ p{
   padding: 16px;
   font-size: 16px;
   border: none;
+  cursor:pointer;
  
 }
 .dropbtnS:hover{
@@ -248,6 +265,7 @@ p{
 } 
 .dropdownS{
   position: relative;
+  cursor:pointer;
   display: inline-block;
 }
 
@@ -257,6 +275,7 @@ p{
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  cursor:pointer;
   z-index: 1;
 }
 
@@ -264,11 +283,13 @@ p{
   font-weight: 500;font-size: 14px;color: #282c3f;
   padding: 12px 16px;
   text-decoration: none;
+  cursor:pointer;
   display: block;
 }
 
 .dropdownS-content a:hover {
   background-color: #ddd;
+  cursor:pointer;
   
   }
 
@@ -278,21 +299,27 @@ p{
   height: 650px;
   display: flex;
   text-align: center;
-  
+  cursor:pointer;
+
 }
 .dropbtnP {
   background-color:white;
   font-weight: 500;font-size: 14px;
   padding: 16px;
   border: none;
+  cursor:pointer;
  
 }
 .dropbtnP:hover{
   border-bottom: 5px solid red;
+  cursor:pointer;
+
 } 
 .dropdownP{
   position: relative;
   display: inline-block;
+  cursor:pointer;
+
 }
 
 .dropdownP-content {
@@ -302,6 +329,8 @@ p{
   min-width: 250px;
   box-shadow: 8px 8px 16px 8px rgba(0.2,0.2,0.2,0.2);
   z-index: 1;
+  cursor:pointer;
+
 }
 
 .dropdownP-content a {
@@ -309,10 +338,13 @@ p{
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  cursor:pointer;
+
 }
 
 .dropdownP-content a:hover {
   background-color: #ddd;
+  cursor:pointer;
   
   }
 
@@ -323,6 +355,8 @@ p{
   display: flex;
   text-align: left;
   background-color:white;
+  cursor:pointer;
+
 }
 
 
@@ -344,6 +378,8 @@ p{
   height: 40px;
   font-weight: 600;
   border: 1px solid lightgrey;
+  cursor:pointer;
+
 }
 #searchimg{
  
@@ -351,11 +387,11 @@ p{
   height: 15px;
   margin-right: 10px;
 }
-input{
+input{ 
   border:none ;
   width: 300px;
-  /* margin-right: 20px; */
-}
+  margin-right: 20px; 
+} 
 #details{
   font-size: 10px;
   width: 50px;

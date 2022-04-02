@@ -7,7 +7,7 @@ function Navbar(){
     </div>
     <!-- Men's page -->
       <div class="dropdown">
-        <button class="dropbtn" id="menspage" >MEN</button>
+        <button class="dropbtn" id="MENSPAGE" >MEN</button>
         <div class="dropdown-content" id="Subway">
       
           <div>

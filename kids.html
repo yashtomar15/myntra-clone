@@ -2,80 +2,14 @@
 <html lang="en">
 <head>
     <title>kids Page</title>
+    <link rel="stylesheet" href="./style/menshome.css" />
+    <link rel="stylesheet" href="./navbar/navbar.css" />
+    <link rel="stylesheet" href="./footer/mainfooter.css" />
 </head>
-<style>
-    #container{
-        display: inline;
-        grid-template-columns: repeat(5,1fr);
-        gap:5px;
-       /* padding-left: 30px; */
-       margin: auto;
-    }
-    .biggestDeal{
-        display: flex;
-        width: 100px;
-        margin-left: 50px;
-        margin-right: 50px;
-        row-gap: 10px;
-    }
-    .biggestDeal1{
-        display: flex;
-        width: 100px;
-        margin-left: 50px;
-        margin-right: 50px;
-        row-gap: 10px;
-    }
-    .biggestDeal2{
-        display: flex;
-        width: 100px;
-        margin-left: 50px;
-        margin-right: 50px;
-        row-gap: 10px;
-    }
-    .biggestDeal3{
-        display: grid;
-        width: 100px;
-        grid-template-columns: repeat(5,auto);
-        margin-left: 50px;
-        margin-right: 50px;
-        row-gap: 10px;
-    }
-    .biggestDeal4{
-        display: flex;
-        width: 100px;
-        margin-left: 50px;
-        margin-right: 50px;
-        row-gap: 10px;
-    }
-    .biggestDeal5{
-        display: flex;
-        width: 100px;
-        margin-left: 50px;
-        margin-right: 50px;
-        row-gap: 10px;
-    }
-    .biggestDeal6{
-        display: flex;
-        width: 100px;
-        margin-left: 50px;
-        margin-right: 50px;
-        row-gap: 10px;
-    }
-    .biggestDeal7{
-        display: flex;
-        width: 100px;
-        margin-left: 50px;
-        margin-right: 50px;
-        row-gap: 10px;
-    }
-    
-   .slideshow-container{
-         margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 50px;
-   }
-</style>
 <body>
+       <!-- navabar folder -->
+   <div id="navbar_placeholder"></div>
+
     <div id="header">
         
     </div>
@@ -143,7 +77,7 @@
 
     <div id="container">
         <h1 class="tag">FAVOURITE BRANDS</h1>
-        <div class="biggestDeal">
+        <div id="biggestDealFavorite" class="flex_prod">
             <div>
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/ab69d015-a975-4bda-990c-49e68938f6b31604926460802-19-FavBrands-AllenSollyJuniors.jpg" alt="">
             </div>
@@ -173,7 +107,7 @@
             </div>
         </div>
         <h1 class="tag">TOP PICKS</h1>
-        <div class="biggestDeal1">
+        <div id="biggestDeal1toppick" class="flex_prod">
             <div>
                 <img class="catImg" src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2021/9/14/9edbe124-6ebb-44e4-bf39-31b845a0ff471631609495052-Mst-KIDS-ETHNIC-WEAR_MST-15TH.jpg" alt="">
             </div>
@@ -197,7 +131,7 @@
             </div>
         </div>
         <h1 class="tag">ICONIC BRANDS</h1>
-        <div class="biggestDeal2">
+        <div id="biggestDeal2iconic" class="flex_prod">
             <div>
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/f79446fb-46b9-455a-a6c0-4ffe3f58dd071604906586106-23-IconicBrands-H_M.jpg" alt="">
             </div>
@@ -218,7 +152,7 @@
             </div>
         </div>
         <h1 class="tag">FASHION & ESSENTIALS</h1>
-        <div class="biggestDeal3">
+        <div id="biggestDeal3fashio" class="grid_prod">
             <div>
                 <img class="luxeImg" src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/f20838ab-108c-4fe6-bd74-0dc7551a2bbd1604906586589-34-Essentials-Masks.jpg" alt="">
             </div>
@@ -252,7 +186,7 @@
 
         </div>
         <h1 class="tag">EXPLORE MORE</h1>
-        <div class="biggestDeal4">
+        <div id="biggestDeal4explore" class="flex_prod">
             <div>
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/630c5d84-b4fa-4ba8-aa92-c91cd134b9201604906586823-39-Banner-LogoMania.jpg" alt="">
             </div>
@@ -261,7 +195,7 @@
             </div>
         </div>
         <h1 class="tag">THE KIDS SPACE</h1>
-        <div class="biggestDeal5">
+        <div id="biggestDeal5kids" class="flex_prod">
             <div>
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/817ada39-86d3-4162-b10f-443c7d658f541604906587912-59b-Banner-KidsSpace.jpg" alt="">
             </div>
@@ -270,7 +204,7 @@
             </div>
         </div>
         <h1 class="tag">BUDGET BUY</h1>
-        <div class="biggestDeal6">
+        <div id="biggestDeal6budgetBUY" class="flex_prod">
             <div>
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/df528847-96b6-48cc-9104-064ad788804c1604906588040-61-BudgetBuys-TshirtsUnder499.jpg" alt="">
             </div>
@@ -291,7 +225,7 @@
             </div>
         </div>
         <h1 class="tag">SHOP MORE BRANDS</h1>
-        <div class="biggestDeal7">
+        <div id="biggestDeal7MoreBrands" class="flex_prod">
             <div>
                 <img class="dealImg" src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/7/19/00da8e7c-c7b2-4386-be22-29e6ce7f93491626685981220-Top-Nav_Life-Style.jpg" alt="">
             </div>
@@ -312,9 +246,83 @@
             </div>
         </div>
     </div>
+
+    
+      <!-- footer folder -->
+      <div id="mainfooter_placeholder"></div>
 </body>
 </html>
-<script>
+<script type="module">
+// Navbar import
+import {Navbar} from './navbar/script.js';
+var navbarfolder=document.querySelector("#navbar_placeholder");
+navbarfolder.innerHTML=Navbar();
+
+document.querySelector("#navbarlogo").addEventListener("click",home1);
+function home1(){
+  document.querySelector("#sub1").style.fontweight="600";
+    window.location.href="https://www.myntra.com/"   
+};
+document.querySelector("#Subway").addEventListener("click",display);
+function display(){
+    window.location.href="mensprod.html"
+};
+document.querySelector("#MENSPAGE").addEventListener("dblclick",displaydbl);
+function displaydbl(){
+    window.location.href="mens.html"
+};
+document.querySelector("#Subway1").addEventListener("click",display1);
+function display1(){
+    window.location.href="womenpr.html"  
+};
+document.querySelector("#Womenpage").addEventListener("dblclick",displaydb1);
+function displaydb1(){
+    window.location.href="womenhome.html"  
+};
+
+document.querySelector("#Subway2").addEventListener("click",display2);
+function display2(){
+    window.location.href="https://www.myntra.com/kids?f=Categories%3ATshirts%3A%3AGender%3Aboys%2Cboys%20girls&plaEnabled=false"  
+};
+document.querySelector("#kidspage").addEventListener("dblclick",displaydb2);
+function displaydb2(){
+    window.location.href="kids.html"  
+};
+document.querySelector("#Subway3").addEventListener("click",display3);
+function display3(){
+    window.location.href="https://www.myntra.com/bedsheets";  
+};
+document.querySelector("#homeliving").addEventListener("dblclick",displaydb3);
+function displaydb3(){
+    window.location.href="https://www.myntra.com/shop/home-living";  
+};
+document.querySelector("#Subway4").addEventListener("click",display4);
+function display4(){
+    window.location.href="https://www.myntra.com/lipstick";  
+};
+
+document.querySelector("#studiobtn").addEventListener("click",display5);
+function display5(){
+    window.location.href="https://www.myntra.com/studio/home";  
+};
+// signup pgae
+document.querySelector("#loginnav").addEventListener("click",Loginnav);
+  function Loginnav(){
+    window.location.href="login.html";
+  }
+  // wishlist page
+document.querySelector("#details").addEventListener("click",Wishlist);
+function Wishlist(){
+  window.location.href="wishlist.html"
+}
+// add to cart page
+document.querySelector("#details1").addEventListener("click",Bag);
+function Bag(){
+  window.location.href="cart.html"
+}
+// footer importing..
+import {mainFooter} from './footer/script.js'
+
     var slideIndex = 0;
 showSlides();
 
@@ -334,4 +342,7 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 2000);
 }
+
+var mainfooterfolder=document.querySelector("#mainfooter_placeholder");
+mainfooterfolder.innerHTML=mainFooter();
 </script>
