@@ -72,7 +72,7 @@ function Footer(){
     <div id="contact1">
         <div style="display: flex">
             <p>In case of any concern,</p>
-            <h4 style="color: blue;">Contact Us</h4>
+            <h6 style="color: #526cd0; margin-left:10px; margin-top:2px;">Contact Us</h6>
         </div>
         <div>© 2022 www.myntra.com. All rights reserved.</div>
     </div>
@@ -85,48 +85,48 @@ function mainFooter(){
     <div id="links1">
         <div class="online">
             <p>ONLINE SHOPPING</p>
-            <button >Men</button>
+            <button class="fotterButtons">Men</button>
             <br>
-            <button >Women</button>
+            <button class="fotterButtons">Women</button>
             <br>
-            <button >Kids</button>
+            <button class="fotterButtons">Kids</button>
             <br>
-            <button >Home & Living</button>
+            <button class="fotterButtons" >Home & Living</button>
             <br>
-            <button >Beauty</button>
+            <button class="fotterButtons">Beauty</button>
             <br>
-            <button >Gift Cards</button>
+            <button class="fotterButtons">Gift Cards</button>
             <br>
-            <button class="sub1"  >Myntra Insider <sup style="color: white;background-color: red;">New</sup></button>
+            <button class="sub1 fotterButtons"  >Myntra Insider <sup style="color: white;background-color: red;">New</sup></button>
         </div>
         <div class="online">
             <p>USEFUL LINKS</p>
-            <button >Contact Us</button>
+            <button class="fotterButtons">Contact Us</button>
             <br>
-            <button >FAQ</button>
+            <button class="fotterButtons">FAQ</button>
             <br>
-            <button >T&C</button>
+            <button class="fotterButtons">T&C</button>
             <br>
-            <button >Terms Of Use</button>
-            <button >Track Orders</button>
+            <button class="fotterButtons">Terms Of Use</button>
+            <button class="fotterButtons">Track Orders</button>
             <br>
-            <button >Shipping</button>
+            <button class="fotterButtons">Shipping</button>
             <br>
-            <button >Cancellation</button>
+            <button class="fotterButtons">Cancellation</button>
             <br>
-            <button >Returns</button>
+            <button class="fotterButtons">Returns</button>
             <br>
-            <button >Whitehat</button>
+            <button class="fotterButtons">Whitehat</button>
             <br>
-            <button >Blogs</button>
+            <button class="fotterButtons">Blogs</button>
             <br>
-            <button >Careers</button>
+            <button class="fotterButtons">Careers</button>
             <br>
-            <button >Privacy policy</button>
+            <button class="fotterButtons">Privacy policy</button>
             <br>
-            <button >Site Map</button>
+            <button class="fotterButtons">Site Map</button>
             <br>
-            <button >Corporate Information</button>
+            <button class="fotterButtons">Corporate Information</button>
         </div>
         <div id="social">
             <p>EXPERIENCE MYNTRA APP ON MOBILE</p>
@@ -146,55 +146,54 @@ function mainFooter(){
         </div>
     </div>
     <div id="popular1">
-        <h5 style="color: black;">POPULAR SEARCHES</h5>
-        <p>
+        <h6 style="color: black; font-weight:300px">POPULAR SEARCHES</h6>
+        <p class="peraFontSize">
             Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags | Ladies Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets | Tops | Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse | Gowns | Rings | Cricket Shoes | Forever 21 | Eye Makeup | Photo Frames | Punjabi Suits | Bikini | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles | Bras | Suit | Chinos | Shoes | Adidas Shoes | Woodland Shoes | Jewellery | Designers Sarees
         </p>
     </div>
     <div id="contact1">
         <div style="display: flex">
-            <p>In case of any concern,</p>
-            <h4 style="color: blue;">Contact Us</h4>
+            <p>In case of any concern</p>
+            <h6 style="color: #526cd0; margin-left:10px; margin-top:3px; cursor:pointer">Contact Us</h6>
         </div>
         <div>© 2022 www.myntra.com. All rights reserved.</div>
     </div>
     <div id="address1">
-        <h5 style="color: black;">Registered Office Address</h5>
+        <h6 style="color: black; font-weight:300px">Registered Office Address</h6>
         <div style="display: flex;justify-content: space-between;">
-            <p>Buildings Alyssa,<br>
+            <p class="peraFontSize">Buildings Alyssa,<br>
                 Begonia and Clover situated in Embassy Tech Village,<br>
                 Outer Ring Road,<br>
                 Devarabeesanahalli Village,<br>
                 Varthur Hobli,<br>
                 Bengaluru - 560103, India</p>
-            <h5 style="padding-top: 100px;">CIN: U72300KA2007PTC041799 <br>
+            <h5 style="padding-top: 100px;" class="peraFontSize">CIN: U72300KA2007PTC041799 <br>
                 Telephone: +91-80-61561999</h5>
         </div>
     </div>
     <div class="details2">
-        <strong style="font-size: 14px;color: #535766;">ONLINE SHOPPING MADE EASY AT MYNTRA</strong>
+        <strong style="font-size: 14px;color: #535766;" class="headingMargin">ONLINE SHOPPING MADE EASY AT MYNTRA</strong>
         <br>
-        <p>If you would like to experience the best of online shopping for men, women and kids in India, you are at the right place. Myntra is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, footwear, accessories, jewellery, personal care products and more. It is time to redefine your style statement with our treasure-trove of trendy items. Our online store brings you the latest in designer products straight out of fashion houses. You can shop online at Myntra from the comfort of your home and get your favourites delivered right to your doorstep.</p>
+        <p class="peraFontSize">If you would like to experience the best of online shopping for men, women and kids in India, you are at the right place. Myntra is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, footwear, accessories, jewellery, personal care products and more. It is time to redefine your style statement with our treasure-trove of trendy items. Our online store brings you the latest in designer products straight out of fashion houses. You can shop online at Myntra from the comfort of your home and get your favourites delivered right to your doorstep.</p>
     </div>
     <div id="details3">
-        <strong style="font-size: 14px;color: #535766;">BEST ONLINE SHOPPING SITE IN INDIA FOR FASHION</strong>
+        <strong style="font-size: 14px;color: #535766;" class="headingMargin">BEST ONLINE SHOPPING SITE IN INDIA FOR FASHION</strong>
         <br>
-        <p>Be it clothing, footwear or accessories, Myntra offers you the ideal combination of fashion and functionality for men, women and kids. You will realise that the sky is the limit when it comes to the types of outfits that you can purchase for different occasions.</p>
+        <p class="peraFontSize">Be it clothing, footwear or accessories, Myntra offers you the ideal combination of fashion and functionality for men, women and kids. You will realise that the sky is the limit when it comes to the types of outfits that you can purchase for different occasions.</p>
         <ol>
-            <li><strong style="font-size: 14px;color: #535766;">Smart men's clothing</strong>- At Myntra you will find myriad options in smart formal shirts and trousers, cool T-shirts and jeans, or kurta and pyjama combinations for men. Wear your attitude with printed T-shirts. Create the back-to-campus vibe with varsity T-shirts and distressed jeans. Be it gingham, buffalo, or window-pane style, checked shirts are unbeatably smart. Team them up with chinos, cuffed jeans or cropped trousers for a smart casual look. Opt for a stylish layered look with biker jackets. Head out in cloudy weather with courage in water-resistant jackets. Browse through our innerwear section to find supportive garments which would keep you confident in any outfit.</li>
-            <li><strong style="font-size: 14px;color: #535766;">Trendy women's clothing </strong>- Online shopping for women at Myntra is a mood-elevating experience. Look hip and stay comfortable with chinos and printed shorts this summer. Look hot on your date dressed in a little black dress, or opt for red dresses for a sassy vibe. Striped dresses and T-shirts represent the classic spirit of nautical fashion. Choose your favourites from among Bardot, off-shoulder, shirt-style, blouson, embroidered and peplum tops, to name a few. Team them up with skinny-fit jeans, skirts or palazzos. Kurtis and jeans make the perfect fusion-wear combination for the cool urbanite. Our grand sarees and lehenga-choli selections are perfect to make an impression at big social events such as weddings. Our salwar-kameez sets, kurtas and Patiala suits make comfortable options for regular wear</li>
-            <li><strong style="font-size: 14px;color: #535766;">Fashionable footwear </strong>- While clothes maketh the man, the type of footwear you wear reflects your personality. We bring you an exhaustive lineup of options in casual shoes for men, such as sneakers and loafers. Make a power statement at work dressed in brogues and oxfords. Practice for your marathon with running shoes for men and women. Choose shoes for individual games such as tennis, football, basketball, and the like. Or step into the casual style and comfort offered by sandals, sliders, and flip-flops. Explore our lineup of fashionable footwear for ladies, including pumps, heeled boots, wedge-heels, and pencil-heels. Or enjoy the best of comfort and style with embellished and metallic flats.</li>
-            <li><strong style="font-size: 14px;color: #535766;">Stylish accessories </strong>- Myntra is one of the best online shopping sites for classy accessories that perfectly complement your outfits. You can select smart analogue or digital watches and match them up with belts and ties. Pick up spacious bags, backpacks, and wallets to store your essentials in style. Whether you prefer minimal jewellery or grand and sparkling pieces, our online jewellery collection offers you many impressive options.</li>
-            <li><strong style="font-size: 14px;color: #535766;">Fun and frolic</strong> - Online shopping for kids at Myntra is a complete joy. Your little princess is going to love the wide variety of pretty dresses, ballerina shoes, headbands and clips. Delight your son by picking up sports shoes, superhero T-shirts, football jerseys and much more from our online store. Check out our lineup of toys with which you can create memories to cherish.
-            </li>
-            <li><strong style="font-size: 14px;color: #535766;">Beauty begins here </strong>- You can also refresh, rejuvenate and reveal beautiful skin with personal care, beauty and grooming products from Myntra. Our soaps, shower gels, skin care creams, lotions and other ayurvedic products are specially formulated to reduce the effect of aging and offer the ideal cleansing experience. Keep your scalp clean and your hair uber-stylish with shampoos and hair care products. Choose makeup to enhance your natural beauty.</li>
+            <li style="margin-top:10px;"><strong style="font-size: 14px;color: #535766;">Smart men's clothing</strong>- <span class="peraFontSize">At Myntra you will find myriad options in smart formal shirts and trousers, cool T-shirts and jeans, or kurta and pyjama combinations for men. Wear your attitude with printed T-shirts. Create the back-to-campus vibe with varsity T-shirts and distressed jeans. Be it gingham, buffalo, or window-pane style, checked shirts are unbeatably smart. Team them up with chinos, cuffed jeans or cropped trousers for a smart casual look. Opt for a stylish layered look with biker jackets. Head out in cloudy weather with courage in water-resistant jackets. Browse through our innerwear section to find supportive garments which would keep you confident in any outfit. </span></li>
+            <li style="margin-top:10px;"><strong style="font-size: 14px;color: #535766;">Trendy women's clothing </strong>-<span class="peraFontSize"> Online shopping for women at Myntra is a mood-elevating experience. Look hip and stay comfortable with chinos and printed shorts this summer. Look hot on your date dressed in a little black dress, or opt for red dresses for a sassy vibe. Striped dresses and T-shirts represent the classic spirit of nautical fashion. Choose your favourites from among Bardot, off-shoulder, shirt-style, blouson, embroidered and peplum tops, to name a few. Team them up with skinny-fit jeans, skirts or palazzos. Kurtis and jeans make the perfect fusion-wear combination for the cool urbanite. Our grand sarees and lehenga-choli selections are perfect to make an impression at big social events such as weddings. Our salwar-kameez sets, kurtas and Patiala suits make comfortable options for regular wear </span></li>
+            <li style="margin-top:10px;"><strong style="font-size: 14px;color: #535766;">Fashionable footwear </strong>- <span class="peraFontSize">While clothes maketh the man, the type of footwear you wear reflects your personality. We bring you an exhaustive lineup of options in casual shoes for men, such as sneakers and loafers. Make a power statement at work dressed in brogues and oxfords. Practice for your marathon with running shoes for men and women. Choose shoes for individual games such as tennis, football, basketball, and the like. Or step into the casual style and comfort offered by sandals, sliders, and flip-flops. Explore our lineup of fashionable footwear for ladies, including pumps, heeled boots, wedge-heels, and pencil-heels. Or enjoy the best of comfort and style with embellished and metallic flats.</span></li>
+            <li style="margin-top:10px;"><strong style="font-size: 14px;color: #535766;">Stylish accessories </strong>- <span class="peraFontSize">Myntra is one of the best online shopping sites for classy accessories that perfectly complement your outfits. You can select smart analogue or digital watches and match them up with belts and ties. Pick up spacious bags, backpacks, and wallets to store your essentials in style. Whether you prefer minimal jewellery or grand and sparkling pieces, our online jewellery collection offers you many impressive options. </span></li>
+            <li style="margin-top:10px;"><strong style="font-size: 14px;color: #535766;">Fun and frolic</strong> - <span class="peraFontSize">Online shopping for kids at Myntra is a complete joy. Your little princess is going to love the wide variety of pretty dresses, ballerina shoes, headbands and clips. Delight your son by picking up sports shoes, superhero T-shirts, football jerseys and much more from our online store. Check out our lineup of toys with which you can create memories to cherish.
+            </span></li>
+            <li><strong style="font-size: 14px;color: #535766;">Beauty begins here </strong>- <span class="peraFontSize">You can also refresh, rejuvenate and reveal beautiful skin with personal care, beauty and grooming products from Myntra. Our soaps, shower gels, skin care creams, lotions and other ayurvedic products are specially formulated to reduce the effect of aging and offer the ideal cleansing experience. Keep your scalp clean and your hair uber-stylish with shampoos and hair care products. Choose makeup to enhance your natural beauty. </span></li>
         </ol>
-        <p>Myntra is one of the best online shopping sites in India which could help transform your living spaces completely. Add colour and personality to your bedrooms with bed linen and curtains. Use smart tableware to impress your guest. Wall decor, clocks, photo frames and artificial plants are sure to breathe life into any corner of your home.</p>
     </div>
     <div class="details2">
-        <strong style="font-size: 14px;color: #535766;">AFFORDABLE FASHION AT YOUR FINGERTIPS</strong>
+        <strong style="font-size: 14px;color: #535766;" >AFFORDABLE FASHION AT YOUR FINGERTIPS</strong>
         <br>
-        <p>Myntra is one of the unique online shopping sites in India where fashion is accessible to all. Check out our new arrivals to view the latest designer clothing, footwear and accessories in the market. You can get your hands on the trendiest style every season in western wear. You can also avail the best of ethnic fashion during all Indian festive occasions. You are sure to be impressed with our seasonal discounts on footwear, trousers, shirts, backpacks and more. The end-of-season sale is the ultimate experience when fashion gets unbelievably affordable.</p>
+        <p class="peraFontSize">Myntra is one of the unique online shopping sites in India where fashion is accessible to all. Check out our new arrivals to view the latest designer clothing, footwear and accessories in the market. You can get your hands on the trendiest style every season in western wear. You can also avail the best of ethnic fashion during all Indian festive occasions. You are sure to be impressed with our seasonal discounts on footwear, trousers, shirts, backpacks and more. The end-of-season sale is the ultimate experience when fashion gets unbelievably affordable.</p>
     </div>
 </div>`
 }

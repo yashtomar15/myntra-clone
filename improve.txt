@@ -1,0 +1,16 @@
+1.homepage- 
+  1.onclick on image page should be redirect to it's respective product page
+  2.autamate slide replace from any ui library
+  navbar pages should have onclik event instead od double click
+2.product page mens/womens-
+  1.complete ui
+  2.on click on product should redirect to its product page
+  
+3. product page ui
+4. add to cart should work. 
+
+mens data reference-: https://masai-project.herokuapp.com/product_data
+
+womens data reference-: https://blooming-island-90693.herokuapp.com/Women
+
+

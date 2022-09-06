@@ -16,7 +16,7 @@
    .flex_prod{
        display:flex;
    }
-   h4{
+   .tag{
     font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     color: #3e4152;
     letter-spacing: .15em;

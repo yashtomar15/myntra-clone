@@ -3,59 +3,91 @@
     font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   }
   #MENSPAGE{
-    cursor:pointer;
+    cursor:pointer ;
   }
 .dropbtn {
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  background-color:white;
-  font-weight: 500;font-size: 14px;color: #282c3f;
- margin-top: 20px;
- cursor: pointer;
+  padding: 16px ;
+  font-size: 16px ;
+  border: none ;
+  background-color:white ;
+  font-weight: 500;font-size: 14px;color: #282c3f ;
+ margin-top: 20px ;
+ cursor: pointer ;
 }
 .dropbtn:hover{
-  border-bottom: 5px solid red;
-  cursor: pointer;
+  border-bottom: 5px solid red ;
+  cursor: pointer ;
 }
 
 .dropdown {
-  position: relative;
+  position: relative ;
   display: inline-block;
-  cursor:pointer;
+  cursor:pointer ;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1; cursor: pointer;
+  display: none ;
+  position: absolute ;
+  background-color: white ;
+  min-width: 160px !;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+  z-index: 1; cursor: pointer ;
 }
 
 .dropdown-content a {
-  font-weight: 500;font-size: 14px;color: #282c3f;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  cursor: pointer;
+  font-weight: 500;font-size: 14px;color: #282c3f ;
+  padding: 12px 16px ;
+  text-decoration: none ;
+  display: block ;
+  cursor: pointer !;
 }
 
 
 .dropdown-content a:hover {
-  background-color: #ddd;
-  cursor: pointer;
+  background-color: #ddd ;
+  cursor: pointer ;
   }
 
 .dropdown:hover .dropdown-content {
-  display: block;
-  width: 1000px;
-  height: 450px;
-  display: flex;
-  cursor:pointer;
+  display: block ;
+  width: 1000px ;
+  height: 450px ;
+  display: flex ;
+  cursor:pointer ;
 }
 
+.dropdownHomeLiving{
+  display: none ;
+  position: absolute ;
+  background-color: white ;
+  min-width: 160px !;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+  z-index: 1; cursor: pointer ;
+}
+.dropdown:hover .dropdownHomeLiving{
+  display: block ;
+  width: 1000px ;
+  height: 450px ;
+  margin-left: -100px;
+  display: flex ;
+  cursor:pointer ;
+}
+.dropdownBeauty{
+  display: none ;
+  position: absolute ;
+  background-color: white ;
+  min-width: 160px !;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+  z-index: 1; cursor: pointer ;
+}
+.dropdown:hover .dropdownBeauty{
+  display: block ;
+  width: 1000px ;
+  height: 450px ;
+  margin-left: -300px;
+  display: flex ;
+  cursor:pointer ;
+}
 #logo1{
   width: 60px;
   height: 35px;
@@ -66,20 +98,26 @@
   cursor: pointer;
 }
 .sub1{
-  border: none;
-  cursor:pointer;
+  border: none ;
+  cursor:pointer ;
+  font-size:14px;
+  font-weight: 300;
+  background-color: inherit;
 }
+
+
 .subhead{
-  color: red;
-  cursor:pointer;
+  color: red ; 
+  cursor:pointer ;
 }
 #topwear{
-  width: 170px;
-  height: 250px;
-  margin-left: 20px;
-  text-align: left;
-  line-height: 25px;
-  cursor:pointer;
+  width: 170px ;
+  height: 250px ;
+  margin-left: 20px ;
+  text-align: left ;
+  line-height: 25px ;
+  cursor:pointer ;
+  margin-top:15px;
 }
 p{
   margin-bottom: 1px;
@@ -92,6 +130,7 @@ p{
   text-align: left;
   line-height: 25px;
   cursor:pointer;
+  margin-top:20px;
 }
 #bottomwear{
   width: 150px;
@@ -101,6 +140,7 @@ p{
   line-height: 25px;
   margin-bottom: 1px;
   cursor:pointer;
+  margin-top:15px;
 }
 #innerwear{
   width: 180px;
@@ -109,6 +149,7 @@ p{
   text-align: left;
   line-height: 25px;
   cursor:pointer;
+  margin-top:15px;
 }
 #footwear{
   width: 170px;
@@ -116,16 +157,18 @@ p{
   margin-left: 20px;
   text-align: left;
   line-height: 25px;
+  margin-top:15px;
   cursor:pointer;
 }
 #personal{
   margin-left: 20px;
   text-align: left;
-  margin-top: 1px;
   cursor:pointer;
+  margin-top:35px;
 }
 #sunglass1{
   margin-left: 20px;
+  margin-top:15px;
   text-align: left;
   margin-top: 1px;
   cursor:pointer;
@@ -134,12 +177,14 @@ p{
   margin-left: 20px;
   text-align: left;
   cursor:pointer;
+  margin-top:15px;
   margin-top: 1px;
 }
 #plus1{
   margin-left: 20px;
   text-align: left;
   cursor:pointer;
+  /* margin-top:15px; */
   margin-top: 35px;
 }
 #sports{
@@ -149,6 +194,7 @@ p{
   text-align: left;
   cursor:pointer;
   line-height: 25px;
+  margin-top:20px;
 }
 #gadgets{
   width: 170px;
@@ -156,6 +202,7 @@ p{
   margin-left: 35px;
   text-align: left;
   cursor:pointer;
+  margin-top:20px;
   line-height: 25px;
 }
 #fashion{
@@ -164,6 +211,7 @@ p{
   margin-left: 20px;
   text-align: left;
   cursor:pointer;
+  margin-top:20px;
   line-height: 25px;
 }
 #topwear button:hover{
@@ -238,10 +286,10 @@ p{
   cursor:pointer;
 }
 .dropbtnH:hover{
-  border-bottom: 5px solid yellow;
+  border-bottom: 5px solid rgb(216, 216, 53);
 } 
 .subheadH{
-  color: yellow;
+  color: rgb(206, 206, 0);
 }
 
 
@@ -360,10 +408,13 @@ p{
 
 .dropdownP:hover .dropdownP-content {
   display: block;
-  width: 280px;
+  width: 300px;
   height: 450px;
   display: flex;
   text-align: left;
+  /* padding-right: 100px; */
+  /* position:relative; */
+margin-left:-80px;
   background-color:white;
   cursor:pointer;
 
@@ -461,4 +512,44 @@ font-weight: 500;
 font-size: 14px;
 border: none;
 font-weight: 400;
+}
+
+.navbarButtons{
+  margin:0px 0px 0px -15px;
+  color:
+  #777b86;
+  background-color: white;
+}
+.navbarButtons:hover{
+  color: red;
+}
+
+
+#loginButton #loginnav{
+  padding: 5px 10px 5px 10px ;
+  color: red;
+  margin-left: 22px;
+  margin-top: 15px; 
+  background-color:white
+}
+
+.profileDropdown{
+  margin-right:50px;
+}
+
+.profileHeading>p:nth-child(1){
+  font-size: 15px;
+  font-weight: 600;
+  margin:20px 0px 0px 20px;
+}
+.profileHeading>p:nth-child(2){
+  font-size: 14px;
+  font-weight: 300;
+  margin:20px 0px 0px 20px;
+}
+
+.profileMargin{
+  margin:0px 0px 0px -15px;
+  color:
+  #777b86;
 }

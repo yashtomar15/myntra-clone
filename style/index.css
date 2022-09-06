@@ -1,3 +1,7 @@
+#container{
+    width:99%;
+    /* margin: auto; */
+}
 #slideshow>img{
     height: 350px;
 }
@@ -10,6 +14,7 @@ justify-content: space-between;
 }
 #Dealsoftheday>img{
     width:185px;
+    /* width:105px; */
 }
 #stylecasthottest>img{
     width:14.3%;
@@ -47,7 +52,8 @@ img{
 #influencerstyle>img{
     width:222px;
 }
-h4{
+
+  .prodHeadings{
     font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     color: #3e4152;
     letter-spacing: .15em;
@@ -56,3 +62,4 @@ h4{
     max-height: 5em;
     font-weight: 500;
   }
+  
