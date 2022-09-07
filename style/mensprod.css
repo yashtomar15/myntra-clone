@@ -1,40 +1,130 @@
+.mensProdSLiderButtons{
+  border:1px solid black;
+   border-radius:100px; 
+   width:5px; 
+   height:10px; 
+}
 
-#container{
-    display:flex;
-    /* border:1px solid black; */
-    width:90%;
-    margin:auto;
-  
+.mensContainer{
+  display: flex;
+  /* border:1px solid black; */
+  /* height: 1000px; */
+  margin: 20px 0px 0px 0px;
+  width:100%;
 }
-#container #DATA{
-  width:15%;
-  border:1px solid grey;
-  height:60%;
- 
-}
-#container #products{
-  width:85%;
-  display:grid;
-  grid-template-columns: repeat(4,24%);
-  gap:10px;
-  margin-left: 15px;
- 
-}
-#container #products>div{
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 15px;
-  height:300px
-  
-}
-#filter_sidebar{
-    display:block;
-             margin-top: 20px;
-   position: relative;
-   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-#filter_sidebar>input>span{
-  font-Size:15px;
 
+.mensFilter{
+  width: 20%;
+  height: 700px;
+border:1px solid red;
 }
-#filter_sidebar>input{
-  margin-top:10px;
+.mensProductsCont{
+  width:80%;
+  border:1px solid blue;
 }
+.mensProducts{
+width:97%;
+/* height:700px; */
+/* border: 1px solid green; */
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: auto;
+column-gap: 40px;
+row-gap: 25px;
+margin: 20px 0px 0px 23px;
+}
+.productMainDiv{
+  height: 403px;
+}
+.mensProductImages{
+  width:220px;
+  height:300px;
+}
+.mensPriceCont{
+  display: flex;
+}
+
+.mensDetailsDiv{
+  margin: 10px 0px 0px 10px;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+}
+
+.mensTitle{
+  font-size:14px;
+  font-weight: 350;
+  color:
+  #606371;
+  /* color:red */
+}
+.mensBrand{
+  font-weight:650;
+  font-size:15px;
+  /* color:blue */
+}
+
+.mensPriceCont{
+  font-weight:700;
+  font-size:14px;
+  /* position:absolute; */
+  /* color:red */
+}
+.mensPriceCont>span:nth-child(2){
+  font-weight:300;
+  font-size:13px;
+  color:#606371
+}
+.mensPriceCont>span:nth-child(3){
+  font-weight:300;
+  font-size:13px;
+  color:#e85956;
+}
+
+.ratingDiv{
+  width:85px;
+  /* height:25px; */
+  background-color: white; 
+  margin:-20px 0px 0px 10px;
+  position: relative;
+  top:-15px;
+  font-size:11px;
+  font-weight:700;
+  padding: 3px;
+  padding-top:5px;
+}
+
+.checked{
+  color:#3d8080;
+  margin-left: 5px;
+  margin-right:3px
+}
+
+.wishlistBtn{
+   padding:5px 0px 5px 0px;
+  width: 80%;
+  margin-left: 8%;
+  /* margin-top: -600px; */
+  position: relative;
+  top:-40px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #535766;
+  color: white;
+  border: none; 
+  border-radius: 2px; 
+}
+.productsCategories{
+  border: 1px solid red
+}
+
+.productsCategories>h6{
+font-size:14px;
+font-weight: 700;
+color: #282c3f;
+margin: 7% 0% 0% 8%;
+}
+
+.productsCategories>div{
+  /* display: flex; */
+  margin: 15px 0px 0px 8%;
+}
+
