@@ -2,6 +2,20 @@
  *{
     font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   }
+  /* #navbar {
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+ }​ */
+ #navbar_placeholder{
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
   #MENSPAGE{
     cursor:pointer ;
   }
@@ -552,4 +566,28 @@ font-weight: 400;
   margin:0px 0px 0px -15px;
   color:
   #777b86;
+}
+
+.cartCounts{
+  /* border: 1px solid black; */
+  width: 14px;
+  height: 19px;
+  /* padding: -2px -2px 1px 1px; */
+  padding-left:6px;
+  padding-top:-1px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 50px;
+  background-color: 
+  #e62e6a;
+  color: white;
+  position: relative;
+  top: -90px;
+  left: 1290px;
+  /* display: none; */
+
+}
+
+#details ,#details1{
+  cursor: pointer;
 }

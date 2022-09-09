@@ -14,3 +14,5 @@ mens data reference-: https://masai-project.herokuapp.com/product_data
 womens data reference-: https://blooming-island-90693.herokuapp.com/Women
 
 
+new-->
+- navbar should be persist but it's not. 

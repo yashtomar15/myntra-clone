@@ -10,12 +10,16 @@
     
     <link rel="stylesheet" href="./navbar/navbar.css" />
     <link rel="stylesheet" href="./style/index.css" />
-    <link rel="stylesheet" href="./footer/mainfooter.css" />  
+    <link rel="stylesheet" href="./footer/mainfooter.css" />
+    
+     <!--scripts  -->
+    <script src="./script/data.js"></script>
+    <!-- <script src="./script/index.js" ></script>  -->
 </head>
 <body>
     <!-- navabar folder -->
     <div id="navbar_placeholder"></div>
-    
+    <div style="margin-top:92px;"></div>
 <!-- slideshow -->
     <div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -118,8 +122,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
 </html>
-<!-- <script src="./script/data.js"></script> -->
-<script src="./script/index.js" ></script>
 
 <script type="module">
 
@@ -140,33 +142,34 @@ function display(){
 
 document.querySelector("#Subway1").addEventListener("click",display1);
 function display1(){
-    window.location.href="womenpr.html"  
+    // window.location.href="womenpr.html"  
+    alert('Data is only available for mens now, please check mens page');
 };
 
 
 document.querySelector("#Subway2").addEventListener("click",display2);
 function display2(){
-    alert("Data is only available for mens, womens and kids, so please check on mens and womens page");
+    alert("Data is only available for mens now, so please check on mens page");
 };
 
 document.querySelector("#Subway3").addEventListener("click",display3);
 function display3(){ 
-    alert("Data is only available for mens, womens and kids, so please check on mens and womens page");
+  alert("Data is only available for mens now, so please check on mens page");
 };
 document.querySelector("#homeliving").addEventListener("click",displaydb3);
 function displaydb3(){
     // window.location.href="https://www.myntra.com/shop/home-living";  
-    alert("Data is only available for mens, womens and kids, so please check on mens and womens page");
+    alert("Data is only available for mens now, so please check on mens page");
 };
 document.querySelector("#Subway4").addEventListener("click",display4);
 function display4(){
     // window.location.href="https://www.myntra.com/lipstick";  
-    alert("Data is only available for mens, womens and kids, so please check on mens and womens page");
+    alert("Data is only available for mens now, so please check on mens page");
 };
 document.querySelector("#beautypage").addEventListener("click",displaydb4);
 function displaydb4(){
     // window.location.href="https://www.myntra.com/personal-care";  
-    alert("Data is only available for mens, womens and kids, so please check on mens and womens page");
+    alert("Data is only available for mens now, so please check on mens page");
 };
 document.querySelector("#studiobtn").addEventListener("click",display5);
 function display5(){
@@ -187,6 +190,9 @@ document.querySelector("#details1").addEventListener("click",Bag);
 function Bag(){
   window.location.href="addcart.html"
 }
+
+let cartCountDiv=document.querySelector('.cartCounts');
+cartCountDiv.style.display='none';
 
 // Homepage products
 function select(id){

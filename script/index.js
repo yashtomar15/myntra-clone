@@ -1,4 +1,4 @@
-var data=JSON.parse(localStorage.getItem("homedata"));
+// var data=JSON.parse(localStorage.getItem("homedata"));
 // console.log(data.slideshow);
 
 // slideshow

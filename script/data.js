@@ -298,7 +298,7 @@ trendingOutfits:["https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progress
 localStorage.setItem("homedata",JSON.stringify(homepage));
 
 
-  export const productsData={
+ const productsData={
     mens:[
         {
           "id": "01",
@@ -22164,148 +22164,150 @@ localStorage.setItem("homedata",JSON.stringify(homepage));
         }
       ]
 }
-
-var products = [
-  {
-  imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7546900/2019/1/24/c9be0d6e-30a4-4242-b4e0-1c166b73f2781548320874402-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7546900/2019/1/24/e8fca578-9400-4658-8a80-a932e52d4b151548320874353-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-4.jpg"],
-  s : "M",
-  name : "one8 x PUMA",
-  price : 236
+localStorage.setItem("productsData",JSON.stringify(productsData));
 
 
-  },
-   {
-  imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17003156/2022/2/1/f5fc665e-43bf-40b8-bc82-a0726da456a01643705243115Tshirts1.jpg",
-            "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17003156/2022/2/1/51103051-c03f-480a-a408-5c9eb9a938821643705243108Tshirts6.jpg"],
-  s : "M",
-  name : "Collar Slim T-Shirt",
-  price : 563
-  },
-  {
-  imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888102/2022/2/4/32ee4666-e652-4bef-bd82-0b35836721661643955087351-Louis-Philippe-Men-Shirts-771643955086930-1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888102/2022/2/4/0aa0d61f-4476-432c-a071-36931ecfac171643955087307-Louis-Philippe-Men-Shirts-771643955086930-5.jpg"],
-  s : "M",
-  name : " Louis Philippe",
-  price :556
-  },
-  {
-  imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888112/2022/2/4/c23fa148-bf42-4d57-a305-7e938aac426b1643955427524-Louis-Philippe-Men-Shirts-7361643955426927-1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888112/2022/2/4/4162afa7-eebb-4a0d-b418-ad28875fce9c1643955427489-Louis-Philippe-Men-Shirts-7361643955426927-5.jpg"],
-  s : "M",
-  name : "Louis Philippe",
-  price : 967
-  },
-  {
-  imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1843248/2020/3/23/9210b99c-432d-4ab0-93e8-148b7fe727be1584970277646ManyavarMenBlueWovenStraightKurta1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1843248/2020/3/23/0050fa49-ca75-4086-ab23-371d0f4253a11584970277713ManyavarMenBlueWovenStraightKurta2.jpg"],
-  s : "M",
-  name : " Woven Straight Kurta",
-  price : 235
-  },
-  {
-  imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15434686/2022/2/1/514f3d28-2462-4d28-aebb-d11c8586c08f1643690490640-Ode-by-House-of-Pataudi-Men-Lime-Green-Solid-Regular-Kurta-5-1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15434686/2022/2/1/a4ac8b30-201c-4d76-8462-54c17820275f1643690490610-Ode-by-House-of-Pataudi-Men-Lime-Green-Solid-Regular-Kurta-5-4.jpg",],
-  s : "M",
-  name : "Round-Neck Straight Kurta",
-  price : 456
-  },
-  {
-  imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14673460/2021/7/15/fa4ceab1-7be6-4c48-a798-eed19f560ee41626327797067-Manyavar-Men-Dhotis-7871626327796013-1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14673460/2021/7/15/2893bf35-07f1-4024-842a-22199e06961f1626327796997-Manyavar-Men-Dhotis-7871626327796013-4.jpg",],
-  s : "M",
-  name : "Dhoti Pants",
-  price : 452
-  },
-  {
-  imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16302366/2021/11/30/ac1dd1f0-4472-4ac0-8224-c7c83416347c1638261377539Dhotis1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16302366/2021/11/30/70a7a0df-c654-4b5d-99ad-3ca6a88d588b1638261377692Dhotis5.jpg",],
-  s : "M",
-  name :  "Gold Toned Pure Silk Dhoti",
-  price : 421
-  },
-  {
-  imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14281324/2021/12/7/bb331e72-c31d-4f9e-be40-e90ccee146051638880329684-HRX-By-Hrithik-Roshan-Lifestyle-Men-oxy-fire-Rapid-Dry-Solid-1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14281324/2021/12/7/14dbb2d4-4fe3-43b7-9e9c-e4927797fa8e1638880329603-HRX-By-Hrithik-Roshan-Lifestyle-Men-oxy-fire-Rapid-Dry-Solid-5.jpg",],
-  s : "M",
-  name : "Formal Shirt",
-  price : 789
-  },
-  {
-  imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/4453297/2019/12/2/77b5d9e0-8d65-4a36-94e7-290ed271db6b1575267599079-HRX-by-Hrithik-Roshan-Men-Olive-Green-Solid-Active-Bomber-Ja-1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/4453297/2019/12/2/fff8b47c-4590-4bf1-9dbd-b8cc23f0eef91575267599038-HRX-by-Hrithik-Roshan-Men-Olive-Green-Solid-Active-Bomber-Ja-2.jpg",],
-  s : "M",
-  name : "shirt",
-  price :325
-  },
-  {
-  imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15615048/2021/9/25/998a78d8-157d-4dad-9178-42b130e3915a1632570452832StreetArmorbyPantaloonsMenBlackStripedSportyJacket1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15615048/2021/9/25/a64253af-ec67-4dec-881b-8e0045ba4e5b1632570453105StreetArmorbyPantaloonsMenBlackStripedSportyJacket2.jpg",],
-  s : "M",
-  name : "Sporty Jacket",
-  price : 236
-  },
-  {
-  imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/788b1ef1-331a-45ac-b225-f205f35063901546937930482-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-3.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/06e2a088-e851-4ede-a16b-bedb83203b611546937930451-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-4.jpg",],
-  s : "M",
-  name : "Running Joggers",
-  price : 652
-  },
-  {
-  imglink :[   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/ee026dfd-53d5-431f-8f49-793d1b1a3ca91579692118057-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-3.jpg",],
-  s : "M",
-  name : "casual T-shirt",
-  price : 653
-  },
-  {
-  imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846958/2020/8/6/267a39c1-c9f0-4f08-aeba-3d74547b6c051596693087479-HRX-by-Hrithik-Roshan-Men-Jackets-8291596693079279-3.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846958/2020/8/6/9f58a150-a21b-4142-a31b-a48420f8b62f1596693085956-HRX-by-Hrithik-Roshan-Men-Jackets-8291596693079279-4.jpg",],
-  s : "M",
-  name : " Bomber Jacket",
-  price : 216
-  },
-  {
-  imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846948/2020/9/17/b431435b-1034-4ae2-b8fa-327e93ed6c1e1600332870635-HRX-by-Hrithik-Roshan-Men-Sweatshirts-1831600332868391-3.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846948/2020/9/17/4244372a-07e6-4985-be31-a1bd401704391600332870552-HRX-by-Hrithik-Roshan-Men-Sweatshirts-1831600332868391-4.jpg"],
-  s : "M",
-  name : "Hooded Sweatshirt",
-  price : 259
-  },
-  {
-  imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/788b1ef1-331a-45ac-b225-f205f35063901546937930482-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-3.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/06e2a088-e851-4ede-a16b-bedb83203b611546937930451-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-4.jpg",],
-  s : "M",
-  name : "Running Joggers",
-  price : 452
-  },
-  {
-  imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/ee026dfd-53d5-431f-8f49-793d1b1a3ca91579692118057-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-3.jpg",],
-  s : "M",
-  name : "Printed T-shirt",
-  price : 453
-  },
-  {
-  imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15746172/2021/10/7/a621b7fd-babb-4bb3-940e-b16afb7947d31633609833495HMMenBlueRelaxedFitHoodie1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15746172/2021/10/7/b019b315-fb56-481a-9de4-97f588b636551633609832286HMMenBlueRelaxedFitHoodie2.jpg",],
-  s : "M",
-  name : "Fit Hoodie",
-  price : 258
-  },
-  {
-  imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589420/2022/2/16/09f33d71-8884-4f17-91bc-15c06dc0dca41645015048593-Tommy-Hilfiger-Men-Tshirts-5971645015048165-3.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589420/2022/2/16/ecd3d10e-0b0c-41ec-b892-ed565d29be921645015048615-Tommy-Hilfiger-Men-Tshirts-5971645015048165-1.jpg"],
-  s : "M",
-  name : "Tommy Hilfiger",
-  price : 452
-  },
-  {
-  imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589418/2021/8/17/62b7926e-ef9c-4378-b682-5dc3a00312bd1629186278260-Tommy-Hilfiger-Men-Tshirts-1731629186277755-1.jpg",
-  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589418/2021/8/17/239f17e1-92fc-4230-a9ff-11245eb6a7d51629186278243-Tommy-Hilfiger-Men-Tshirts-1731629186277755-3.jpg"],
-  s : "M",
-  name : "Tommy Hilfiger",
-  price :1253
-  },
-]
+// var products = [
+//   {
+//   imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7546900/2019/1/24/c9be0d6e-30a4-4242-b4e0-1c166b73f2781548320874402-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7546900/2019/1/24/e8fca578-9400-4658-8a80-a932e52d4b151548320874353-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-4.jpg"],
+//   s : "M",
+//   name : "one8 x PUMA",
+//   price : 236
+
+
+//   },
+//    {
+//   imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17003156/2022/2/1/f5fc665e-43bf-40b8-bc82-a0726da456a01643705243115Tshirts1.jpg",
+//             "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17003156/2022/2/1/51103051-c03f-480a-a408-5c9eb9a938821643705243108Tshirts6.jpg"],
+//   s : "M",
+//   name : "Collar Slim T-Shirt",
+//   price : 563
+//   },
+//   {
+//   imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888102/2022/2/4/32ee4666-e652-4bef-bd82-0b35836721661643955087351-Louis-Philippe-Men-Shirts-771643955086930-1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888102/2022/2/4/0aa0d61f-4476-432c-a071-36931ecfac171643955087307-Louis-Philippe-Men-Shirts-771643955086930-5.jpg"],
+//   s : "M",
+//   name : " Louis Philippe",
+//   price :556
+//   },
+//   {
+//   imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888112/2022/2/4/c23fa148-bf42-4d57-a305-7e938aac426b1643955427524-Louis-Philippe-Men-Shirts-7361643955426927-1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16888112/2022/2/4/4162afa7-eebb-4a0d-b418-ad28875fce9c1643955427489-Louis-Philippe-Men-Shirts-7361643955426927-5.jpg"],
+//   s : "M",
+//   name : "Louis Philippe",
+//   price : 967
+//   },
+//   {
+//   imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1843248/2020/3/23/9210b99c-432d-4ab0-93e8-148b7fe727be1584970277646ManyavarMenBlueWovenStraightKurta1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1843248/2020/3/23/0050fa49-ca75-4086-ab23-371d0f4253a11584970277713ManyavarMenBlueWovenStraightKurta2.jpg"],
+//   s : "M",
+//   name : " Woven Straight Kurta",
+//   price : 235
+//   },
+//   {
+//   imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15434686/2022/2/1/514f3d28-2462-4d28-aebb-d11c8586c08f1643690490640-Ode-by-House-of-Pataudi-Men-Lime-Green-Solid-Regular-Kurta-5-1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15434686/2022/2/1/a4ac8b30-201c-4d76-8462-54c17820275f1643690490610-Ode-by-House-of-Pataudi-Men-Lime-Green-Solid-Regular-Kurta-5-4.jpg",],
+//   s : "M",
+//   name : "Round-Neck Straight Kurta",
+//   price : 456
+//   },
+//   {
+//   imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14673460/2021/7/15/fa4ceab1-7be6-4c48-a798-eed19f560ee41626327797067-Manyavar-Men-Dhotis-7871626327796013-1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14673460/2021/7/15/2893bf35-07f1-4024-842a-22199e06961f1626327796997-Manyavar-Men-Dhotis-7871626327796013-4.jpg",],
+//   s : "M",
+//   name : "Dhoti Pants",
+//   price : 452
+//   },
+//   {
+//   imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16302366/2021/11/30/ac1dd1f0-4472-4ac0-8224-c7c83416347c1638261377539Dhotis1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16302366/2021/11/30/70a7a0df-c654-4b5d-99ad-3ca6a88d588b1638261377692Dhotis5.jpg",],
+//   s : "M",
+//   name :  "Gold Toned Pure Silk Dhoti",
+//   price : 421
+//   },
+//   {
+//   imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14281324/2021/12/7/bb331e72-c31d-4f9e-be40-e90ccee146051638880329684-HRX-By-Hrithik-Roshan-Lifestyle-Men-oxy-fire-Rapid-Dry-Solid-1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14281324/2021/12/7/14dbb2d4-4fe3-43b7-9e9c-e4927797fa8e1638880329603-HRX-By-Hrithik-Roshan-Lifestyle-Men-oxy-fire-Rapid-Dry-Solid-5.jpg",],
+//   s : "M",
+//   name : "Formal Shirt",
+//   price : 789
+//   },
+//   {
+//   imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/4453297/2019/12/2/77b5d9e0-8d65-4a36-94e7-290ed271db6b1575267599079-HRX-by-Hrithik-Roshan-Men-Olive-Green-Solid-Active-Bomber-Ja-1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/4453297/2019/12/2/fff8b47c-4590-4bf1-9dbd-b8cc23f0eef91575267599038-HRX-by-Hrithik-Roshan-Men-Olive-Green-Solid-Active-Bomber-Ja-2.jpg",],
+//   s : "M",
+//   name : "shirt",
+//   price :325
+//   },
+//   {
+//   imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15615048/2021/9/25/998a78d8-157d-4dad-9178-42b130e3915a1632570452832StreetArmorbyPantaloonsMenBlackStripedSportyJacket1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15615048/2021/9/25/a64253af-ec67-4dec-881b-8e0045ba4e5b1632570453105StreetArmorbyPantaloonsMenBlackStripedSportyJacket2.jpg",],
+//   s : "M",
+//   name : "Sporty Jacket",
+//   price : 236
+//   },
+//   {
+//   imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/788b1ef1-331a-45ac-b225-f205f35063901546937930482-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-3.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/06e2a088-e851-4ede-a16b-bedb83203b611546937930451-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-4.jpg",],
+//   s : "M",
+//   name : "Running Joggers",
+//   price : 652
+//   },
+//   {
+//   imglink :[   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/ee026dfd-53d5-431f-8f49-793d1b1a3ca91579692118057-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-3.jpg",],
+//   s : "M",
+//   name : "casual T-shirt",
+//   price : 653
+//   },
+//   {
+//   imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846958/2020/8/6/267a39c1-c9f0-4f08-aeba-3d74547b6c051596693087479-HRX-by-Hrithik-Roshan-Men-Jackets-8291596693079279-3.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846958/2020/8/6/9f58a150-a21b-4142-a31b-a48420f8b62f1596693085956-HRX-by-Hrithik-Roshan-Men-Jackets-8291596693079279-4.jpg",],
+//   s : "M",
+//   name : " Bomber Jacket",
+//   price : 216
+//   },
+//   {
+//   imglink :[ "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846948/2020/9/17/b431435b-1034-4ae2-b8fa-327e93ed6c1e1600332870635-HRX-by-Hrithik-Roshan-Men-Sweatshirts-1831600332868391-3.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846948/2020/9/17/4244372a-07e6-4985-be31-a1bd401704391600332870552-HRX-by-Hrithik-Roshan-Men-Sweatshirts-1831600332868391-4.jpg"],
+//   s : "M",
+//   name : "Hooded Sweatshirt",
+//   price : 259
+//   },
+//   {
+//   imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/788b1ef1-331a-45ac-b225-f205f35063901546937930482-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-3.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7610386/2019/1/8/06e2a088-e851-4ede-a16b-bedb83203b611546937930451-HRX-Active-by-Hrithik-Roshan-Men-Black-Solid-Rapid-dry-Runni-4.jpg",],
+//   s : "M",
+//   name : "Running Joggers",
+//   price : 452
+//   },
+//   {
+//   imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700871/2020/1/22/ee026dfd-53d5-431f-8f49-793d1b1a3ca91579692118057-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-3.jpg",],
+//   s : "M",
+//   name : "Printed T-shirt",
+//   price : 453
+//   },
+//   {
+//   imglink :[  "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15746172/2021/10/7/a621b7fd-babb-4bb3-940e-b16afb7947d31633609833495HMMenBlueRelaxedFitHoodie1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15746172/2021/10/7/b019b315-fb56-481a-9de4-97f588b636551633609832286HMMenBlueRelaxedFitHoodie2.jpg",],
+//   s : "M",
+//   name : "Fit Hoodie",
+//   price : 258
+//   },
+//   {
+//   imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589420/2022/2/16/09f33d71-8884-4f17-91bc-15c06dc0dca41645015048593-Tommy-Hilfiger-Men-Tshirts-5971645015048165-3.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589420/2022/2/16/ecd3d10e-0b0c-41ec-b892-ed565d29be921645015048615-Tommy-Hilfiger-Men-Tshirts-5971645015048165-1.jpg"],
+//   s : "M",
+//   name : "Tommy Hilfiger",
+//   price : 452
+//   },
+//   {
+//   imglink :["https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589418/2021/8/17/62b7926e-ef9c-4378-b682-5dc3a00312bd1629186278260-Tommy-Hilfiger-Men-Tshirts-1731629186277755-1.jpg",
+//   "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14589418/2021/8/17/239f17e1-92fc-4230-a9ff-11245eb6a7d51629186278243-Tommy-Hilfiger-Men-Tshirts-1731629186277755-3.jpg"],
+//   s : "M",
+//   name : "Tommy Hilfiger",
+//   price :1253
+//   },
+// ]
