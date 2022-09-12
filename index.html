@@ -20,6 +20,7 @@
     <!-- navabar folder -->
     <div id="navbar_placeholder"></div>
     <div style="margin-top:92px;"></div>
+
 <!-- slideshow -->
     <div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -63,6 +64,7 @@
             </button> -->
           </div>
     </div>
+
     <div id="container">
     <h4 class="prodHeadings">DEAL OF THE DAY</h4>
     <div id="Dealsoftheday" class="flex_prod"></div>
@@ -127,6 +129,8 @@
 
 // Navbar import
 import {Navbar} from './navbar/script.js';
+
+{
 var navbarfolder=document.querySelector("#navbar_placeholder");
 navbarfolder.innerHTML=Navbar();
 
@@ -193,6 +197,18 @@ function Bag(){
 
 let cartCountDiv=document.querySelector('.cartCounts');
 cartCountDiv.style.display='none';
+
+}
+
+const slideItems=document.querySelectorAll('.carousel-item');
+
+slideItems.forEach((item,ind)=>{
+  slideItems[ind].addEventListener('click',handleSlide);
+})
+
+function handleSlide(){
+  window.location.href="mensprod.html";
+}
 
 // Homepage products
 function select(id){

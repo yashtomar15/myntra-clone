@@ -6,7 +6,7 @@ function appenddata (product,div){
     div.append(image);
     image.addEventListener("click",showmenspage);
     function showmenspage(){
-        window.location.href="https://www.myntra.com/mens-shorts";
+        window.location.href="mensprod.html";
     }
     })
 }
