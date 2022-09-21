@@ -1,0 +1,142 @@
+body{
+    font-family: cursive;
+    padding: 10px;
+}
+#nav img{
+    width: 4%;
+}
+#nav{
+    display: flex;
+    gap: 10px;
+}
+.midNav{
+    margin: auto;
+    display: flex;
+    gap: 100px;
+}
+.secure{
+    margin: 20PX;
+    display: flex;
+    font-weight: bold;
+    gap: 10px;
+}
+.secure img{
+    width: 5%;
+}
+#bag{
+    width: 80%;
+    /* border: solid ; */
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+}
+#end{
+    /* border: solid ; */
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+}
+#end img{
+    width: 6%;
+    height: 40px;
+    margin: auto;
+}
+    a{
+    text-decoration: none;
+   }
+   .deliverTo{
+       display: flex;
+       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+       padding: 10px;
+   }
+   .button{
+       /* margin-left: 200px; */
+       margin-top: 15px;
+    
+   }
+   /* #left{
+       border: solid;
+   } */
+   #right{
+       padding: 10px;
+   }
+   button{
+    border-color: brown;
+    background-color: aliceblue;
+    color: brown;
+    font-family: cursive;
+    
+   }.offers{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+       padding: 10px;
+   }
+   .items{
+       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+       padding: 10px;
+       text-align: center;
+   }
+   img{
+       width: 80%;
+   }
+   #bagData{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       gap: 10px;
+       text-align: center;
+       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+       padding: 10px;
+   }
+#bagData>div{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.help{
+    display: flex;
+}
+.help>P{
+    margin: -5px 5px;
+}
+.donate{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px; 
+}
+.money button{
+   border-radius: 10px;
+   margin: 10px;
+}
+
+.apply{
+    display: flex;
+    }
+.apply button{
+    margin-left: 100px;
+    height: 40px;
+    width: 80px;
+    margin-top: 20px;
+}
+.offers{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px;
+}
+.gift{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px;  
+}
+.gift img{
+    width: 60%;
+}
+#priceDetails > div{
+          display: flex;
+}
+#priceDetails{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px;  
+}
+#total>div{
+    display: flex;
+}
+#total{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px; 
+}

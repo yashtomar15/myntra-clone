@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Shopping Online - shop for womens</title>
+     <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
+ <link rel="stylesheet" href="./style/women.css" >
+ <link rel="stylesheet" href="./navbar/navbar.css" /> 
+<link rel="stylesheet" href="./footer/mainfooter.css" />
+ </head>
+<body style="width:99%; margin:auto">
+    <!-- navabar folder -->
+    <div id="navbar_placeholder"></div>
+    <div style="margin-top: 92px;"></div>
+
+  <!-- <div class="slideshow-container">
+
+    <div class="mySlides fade">
+
+      <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/21/0ec64243-bbcb-434c-87f3-4a1c2eb528921647867295123-Premium-Watches_Desk.jpg" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+     
+      <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/8/4de3b08a-db87-4460-a03f-6aa7dce5b1271646751056779-Casual-Wear_Desk.jpg" style="width:100%">
+     
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/5b36764f-1116-4342-bf27-5186b065fc3e1647456798674-Smartwatches_Dk.jpg">
+     
+    </div>
+
+    <div class="mySlides fade">
+      
+        <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/7/2cf1751e-3a1f-4ac9-aa2e-ffb6f1af14f81646667081683-Stylish-Workwear_Desk.jpg">
+       
+      </div>
+      <div class="mySlides fade">
+      
+        <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/21/5b48957f-fed3-47df-928d-20311436f86c1647867295116-T-Shirts_Desk--1-.jpg">
+       
+      </div>
+      <div class="mySlides fade">
+      
+        <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/7/cbd88414-e662-4b11-b08a-dd6c10de5b321646667081652-Travel-Must-Haves_Desk.jpg">
+       
+      </div>
+      <div class="mySlides fade">
+      
+        <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/6da36c52-d45c-4e10-92de-a7fa7cec68581647537798488-SS22-DesktopBanners-Men.jpg">
+       
+      </div>
+      <div class="mySlides fade">
+      
+        <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/8/cf881720-f143-4b99-b2b4-ac1f026d9cb51646751056786-Sports---Casual-Shoes_Desk--1-.jpg">
+       
+      </div>
+    
+    </div> -->
+    <div class="slideshowContainer">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+              <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/21/0ec64243-bbcb-434c-87f3-4a1c2eb528921647867295123-Premium-Watches_Desk.jpg" 
+              class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/8/4de3b08a-db87-4460-a03f-6aa7dce5b1271646751056779-Casual-Wear_Desk.jpg" 
+              class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/5b36764f-1116-4342-bf27-5186b065fc3e1647456798674-Smartwatches_Dk.jpg"
+              class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/7/2cf1751e-3a1f-4ac9-aa2e-ffb6f1af14f81646667081683-Stylish-Workwear_Desk.jpg"
+              class="d-block w-100" alt="...">
+            </div>
+            
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/21/5b48957f-fed3-47df-928d-20311436f86c1647867295116-T-Shirts_Desk--1-.jpg"
+              class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/7/cbd88414-e662-4b11-b08a-dd6c10de5b321646667081652-Travel-Must-Haves_Desk.jpg"
+              class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/6da36c52-d45c-4e10-92de-a7fa7cec68581647537798488-SS22-DesktopBanners-Men.jpg"
+              class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/8/cf881720-f143-4b99-b2b4-ac1f026d9cb51646751056786-Sports---Casual-Shoes_Desk--1-.jpg"
+              class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <!-- <button class="carousel-control-prev dsdgf" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon adfas" aria-hidden="true"></span>
+            <span class="visually-hidden adsf">Previous</span>
+          </button>
+          <button class="carousel-control-next adsfdf" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon adfa" aria-hidden="true"></span>
+            <span class="visually-hidden adsfa">Next</span>
+          </button> -->
+        </div>
+  </div>
+
+    <h4>BIGGEST DEALS ON TOP BRANDS</h4>
+    <div id="Wbdisplay"></div>
+    <h4>CATEGORIES TO BAG</h4>
+    <div id="cat"></div>
+    <h4>EXPLORE TOP BRANDS</h4>
+    <div id="Topbrandsb" class="flex_prod"></div>
+    <h4>TRENDING IN WESTERN WEAR</h4>
+    <div id="WESTERN" class="flex_prod"></div>
+    <h4>TRENDING IN INDIAN WEAR</h4>
+    <div id="Indian" class="flex_prod"></div>
+    <h4>TRENDING IN SPORTS WEAR</h4>
+    <div id="Sports" class="flex_prod"></div>
+    <h4>TRENDING IN FOOTWEAR</h4>
+    <div id="Footwear" class="flex_prod"></div>
+    <h4>TRENDING IN ACCESSORIES</h4>
+    <div id="access" class="flex_prod"></div>
+    
+    
+    <!-- footer folder -->
+    <div id="mainfooter_placeholder"></div>
+
+           <!-- Bootstrap script -->
+           <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+       
+</body>
+</html>
+
+<script type="module">
+// Navbar import
+import {Navbar} from './navbar/script.js';
+{
+var navbarfolder=document.querySelector("#navbar_placeholder");
+navbarfolder.innerHTML=Navbar();
+
+document.querySelector("#navbarlogo").addEventListener("click",home1);
+function home1(){
+  document.querySelector("#sub1").style.fontweight="600";
+    window.location.href="https://www.myntra.com/"   
+};
+document.querySelector("#Subway").addEventListener("click",display);
+function display(){
+    window.location.href="mensprod.html"
+};
+// document.querySelector("#MENSPAGE").addEventListener("dblclick",displaydbl);
+// function displaydbl(){
+//     window.location.href="mens.html"
+// };
+document.querySelector("#Subway1").addEventListener("click",display1);
+function display1(){
+    // window.location.href="womenpr.html" 
+    alert("Data is only available for mens now, so please check on mens page"); 
+};
+// document.querySelector("#Womenpage").addEventListener("dblclick",displaydb1);
+// function displaydb1(){
+//     window.location.href="womenhome.html"  
+// };
+
+document.querySelector("#Subway2").addEventListener("click",display2);
+function display2(){
+    // window.location.href="https://www.myntra.com/kids?f=Categories%3ATshirts%3A%3AGender%3Aboys%2Cboys%20girls&plaEnabled=false"  
+    alert("Data is only available for mens now, so please check on mens page");
+};
+// document.querySelector("#kidspage").addEventListener("dblclick",displaydb2);
+// function displaydb2(){
+//     window.location.href="kids.html"  
+// };
+document.querySelector("#Subway3").addEventListener("click",display3);
+function display3(){
+    // window.location.href="https://www.myntra.com/bedsheets";  
+    alert("Data is only available for mens now, so please check on mens page");
+
+};
+document.querySelector("#homeliving").addEventListener("click",displaydb3);
+function displaydb3(){
+    // window.location.href="https://www.myntra.com/shop/home-living";  
+    alert("Data is only available for mens now, so please check on mens page");
+};
+document.querySelector("#Subway4").addEventListener("click",display4);
+function display4(){
+    // window.location.href="https://www.myntra.com/lipstick";  
+    alert("Data is only available for mens now, so please check on mens page");
+};
+document.querySelector("#beautypage").addEventListener("click",displaydb4);
+function displaydb4(){
+    // window.location.href="https://www.myntra.com/personal-care";  
+    alert("Data is only available for mens now, so please check on mens page");
+};
+
+document.querySelector("#studiobtn").addEventListener("click",display5);
+function display5(){
+    window.location.href="https://www.myntra.com/studio/home";  
+};
+// signup pgae
+document.querySelector("#loginnav").addEventListener("click",Loginnav);
+  function Loginnav(){
+    window.location.href="login.html";
+  }
+  // wishlist page
+document.querySelector("#details").addEventListener("click",Wishlist);
+function Wishlist(){
+  window.location.href="wishlist.html"
+}
+// add to cart page
+document.querySelector("#details1").addEventListener("click",Bag);
+function Bag(){
+  window.location.href="addcart.html"
+}
+
+let cartCountDiv=document.querySelector('.cartCounts');
+cartCountDiv.style.display='none';
+
+}
+   
+// footer importing..
+      import {mainFooter} from './footer/script.js'
+
+      var womensData = [
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/814b8ff4-1dec-4a6e-86b8-c26f5c40fe4c1598892518923-Biba.jpg",
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/e72c82f2-cfd5-4f9a-b1b0-ba9e2b3e51251598892519506-W.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/48aa9321-1906-4471-be70-20ef124459971598892519217-M_S.jpg",
+      name: "Marks & Spencer",
+      off :"Up to 60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/64ecc170-58af-473f-8144-b1639895a8291598892519457-Veromodo.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/3f125d86-5139-4ee2-8561-5a610c2624421598892519314-Only.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/90c35c24-ac69-4472-a1a0-be82c087ec181598892519026-F21.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/61c793f2-399c-4b8a-9e93-831adef697381598892519164-Levis.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/8f070770-db34-4e20-ab80-59728106460a1598892519078-GAP.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/1aa324e4-6230-4cf9-a50c-a37413eab1381598892519266-Nike.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/581e2bf6-6d47-4a4b-a11f-43200dc9c6791598892519362-Puma.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+  ]
+  
+  womensData.map(function(e){
+          var image = document.createElement("img")
+          image.src = e.image_url
+          document.querySelector("#Wbdisplay").append(image);
+          // image.addEventListener("click" , function(){
+          //   window.location.href = "womenpr.html";
+          // })
+      })
+  
+  var CATEGORIESDATA = [
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/8d992d81-49e6-4dec-89a4-49a8af8beb5d1594222967220-Kurtas-_-Kurta-Sets.jpg",
+     
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/a048cca8-7b5d-417e-9645-ca98f4b6e52c1594222967506-Sarees.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/b0f459a0-9ef0-4392-a9ed-23892a36e79c1594222966859-Dresses.jpg",
+      name: "Marks & Spencer",
+      off :"Up to 60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/a4dedaa4-3710-4061-b7d6-ca8c83ce9d021594222967117-Heels.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/a352f908-57c8-4c66-b052-18137cf15e6c1594222967074-Handbags.jpg",
+     
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/18eb31db-8dcb-4efa-b92d-61c8ebe0ee811594222834368-Shorts.jpg",
+     
+      
+      
+    },
+  ]
+  
+  CATEGORIESDATA.map(function(e){
+    var image = document.createElement("img")
+          image.src = e.image_url
+          document.querySelector("#cat").append(image);
+          // image.addEventListener("click" , function(){
+          //   window.location.href = "womenpr.html";
+          // })
+  
+      })
+  
+  var topbrands = [
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/f6e40444-b1a4-4c91-bb3c-fe213356e7de1598348260541-Only.jpg",
+     
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/5/a6de806a-b58b-460b-97fd-d78d80eab39b1596641021693-Women-s-Ethnic-Wear_Anouk.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/8d13b55d-a6a0-40ae-b39f-16f43e7911681598348260460-MAC.jpg",
+      name: "Marks & Spencer",
+      off :"Up to 60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/046ab589-87d5-4afa-8ab3-10e06fdbe6a61598348260596-W.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/f2fdda02-423c-4f11-8f1b-618ba807e5841598348260323-H_M.jpg",
+     
+      
+      
+    },]
+   
+    topbrands.map(function(e){
+  
+      var image = document.createElement("img")
+          image.src = e.image_url
+          document.querySelector("#Topbrandsb").append(image);
+          // image.addEventListener("click" , function(){
+          //   window.location.href = "womenpr.html";
+          // })
+      })
+  
+  var western = [
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/f7585d6d-78ee-42bd-baf2-07eefada7fb31597840566666-Content-westerncasual-color-moss.jpg",
+     
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/d7f59b96-8e15-470e-a47b-5d5005e4273f1597840566776-Content-westerncasual-mostselling-modblocking.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/8116410f-af2c-4980-95ef-04a4162092491597840566722-Content-westerncasual-color-preppyred.jpg",
+      name: "Marks & Spencer",
+      off :"Up to 60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/8/21/580b804c-c529-421c-b0be-b311cab6e10b1598030134933-Content-mostselling-casualwear-Normalisboring.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/a6d9d467-d37e-4428-b2dd-a9f45756c1fc1595936000278-Content-westernwear-lifestyle-Ecovero.jpg",
+     
+      
+      
+    },]
+  
+    western.map(function(e){
+      var image = document.createElement("img")
+          image.src = e.image_url
+          document.querySelector("#WESTERN").append(image);
+          // image.addEventListener("click" , function(){
+          //   window.location.href = "womenpr.html";
+          // })
+      })
+  
+     
+      var indian = [
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/f0397d0f-9c2a-4c87-956e-9896b615b3061597840342772-Content-ethnicwear-trend-printparadise.jpg",
+     
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/87b0957c-41f7-4522-9f30-f69087a0dce61597840342593-Content-ethnicwear-color-mustard.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/2ff5c4e9-da10-4d12-9aae-86c38f4c281a1597840342549-Content-ethnicwear-brand-fusiondress.jpg",
+      name: "Marks & Spencer",
+      off :"Up to 60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/8/21/99463248-ae80-47de-836f-3bafe2262bff1598029618274-Content-mostselling-Ethnicwear-Kurtasetsbiba.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/e4fe9b08-9d0a-4349-868f-6ac5aa7123ed1595935030800-Content-ethnicwear-trend-Bsummerreadyethnicdresses.jpg",
+     
+      
+      
+    },]
+   
+    indian.map(function(e){
+      var image = document.createElement("img")
+          image.src = e.image_url
+          document.querySelector("#Indian").append(image);
+          // image.addEventListener("click" , function(){
+          //   window.location.href = "womenpr.html";
+          // })
+      })
+  
+      var Sports = [
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/48f02c04-8b83-495b-a2df-27ed8a9837a61597840566563-Content-sportswear-mostselling-skechers.png",
+     
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/7c0ac6d4-94aa-4c56-b6e7-86f7367a1ead1597841103213-Content-sportswear-brand-UA.png",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/ffc6f4f2-9541-47a2-ba12-e3c68c9407461595935799402-Content-sportswear-Women-Under-Armour-daily-wear-Joggers.jpg",
+      name: "Marks & Spencer",
+      off :"Up to 60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/ba7ebb65-b743-4947-b7b0-2f62a3c912cf1595935799269-Content-sportswear-Women-Athleisure.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/0faf749f-5450-4550-8b48-54b2d2e311b51595935799329-Content-sportswear-Women-Running.jpg",
+     
+      
+      
+    },]
+    
+    Sports.map(function(e){
+      var image = document.createElement("img")
+          image.src = e.image_url
+          document.querySelector("#Sports").append(image);
+          // image.addEventListener("click" , function(){
+          //   window.location.href = "womenpr.html";
+          // })
+      })
+  
+  
+      var footwear = [
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/8/20/cb3b10a6-a216-4f20-a4f1-81828bc923581597912691297-Content-footwear-trend-sneakerswomen.jpg",
+     
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/bb73b79f-ff6e-4472-b9da-33f5747c6d861597840342909-Content-footwear-occasion-classics.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/1fb4a81c-d5e2-4e46-93d8-b6a87ca92c021597840342817-Content-footwear-color-colorblock.jpg",
+      name: "Marks & Spencer",
+      off :"Up to 60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/8/21/76d839cb-b561-42a5-aaa3-6d4e49d0c56f1598030134822-Content-mostselling-Footwear-Rocia.jpg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/1b444433-164b-4551-9749-d2915a286ee01595935221365-Content-Footwear-Women-Comfort-Wear.jpg",
+     
+      
+      
+    },]
+   
+    footwear.map(function(e){
+      var image = document.createElement("img")
+          image.src = e.image_url
+          document.querySelector("#Footwear").append(image);
+          // image.addEventListener("click" , function(){
+          //   window.location.href = "womenpr.html";
+          // })
+      })
+  
+   var access = [
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/225f77f5-c299-4849-8586-3ed41b70b1f91597840217917-Content-accessories-brand-imittire.png",
+     
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/b5fb5332-cad0-4c04-bd5e-70189f5efef01597840218056-Content-accessories-mostselling-mangalsutra.png",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/4dbcc869-ba34-43df-8348-56c7816363c41597840218100-Content-accessories-trend-handcraftedjewel.png",
+      name: "Marks & Spencer",
+      off :"Up to 60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/8/21/bc36f35b-f5ce-4168-bd96-d3c1f65ec4e21598030134870-Content-mostselling-Accessories-Rosegoldwatch.jpeg",
+      name: "W",
+      off :"30-60% off" ,
+      
+      
+    },
+    {
+      image_url:
+        "https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/5e68d729-b955-431c-930c-931d8b452d421597840217983-Content-accessories-color-white.png",
+     
+      
+      
+    },]
+  
+    access.map(function(e){
+      var image = document.createElement("img")
+          image.src = e.image_url
+          document.querySelector("#access").append(image);
+          // image.addEventListener("click" , function(){
+          //   window.location.href = "womenpr.html";
+          // })
+      })
+
+
+  // footer code
+  var mainfooterfolder=document.querySelector("#mainfooter_placeholder");
+  mainfooterfolder.innerHTML=mainFooter();
+    
+  </script>

@@ -1,0 +1,593 @@
+
+ *{
+    font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
+  /* #navbar {
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+ }​ */
+ #navbar_placeholder{
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+  #MENSPAGE{
+    cursor:pointer ;
+  }
+.dropbtn {
+  padding: 16px ;
+  font-size: 16px ;
+  border: none ;
+  background-color:white ;
+  font-weight: 500;font-size: 14px;color: #282c3f ;
+ margin-top: 20px ;
+ cursor: pointer ;
+}
+.dropbtn:hover{
+  border-bottom: 5px solid red ;
+  cursor: pointer ;
+}
+
+.dropdown {
+  position: relative ;
+  display: inline-block;
+  cursor:pointer ;
+}
+
+.dropdown-content {
+  display: none ;
+  position: absolute ;
+  background-color: white ;
+  min-width: 160px !;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+  z-index: 1; cursor: pointer ;
+}
+
+.dropdown-content a {
+  font-weight: 500;font-size: 14px;color: #282c3f ;
+  padding: 12px 16px ;
+  text-decoration: none ;
+  display: block ;
+  cursor: pointer !;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd ;
+  cursor: pointer ;
+  }
+
+.dropdown:hover .dropdown-content {
+  display: block ;
+  width: 1000px ;
+  height: 450px ;
+  display: flex ;
+  cursor:pointer ;
+}
+
+.dropdownHomeLiving{
+  display: none ;
+  position: absolute ;
+  background-color: white ;
+  min-width: 160px !;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+  z-index: 1; cursor: pointer ;
+}
+.dropdown:hover .dropdownHomeLiving{
+  display: block ;
+  width: 1000px ;
+  height: 450px ;
+  margin-left: -100px;
+  display: flex ;
+  cursor:pointer ;
+}
+.dropdownBeauty{
+  display: none ;
+  position: absolute ;
+  background-color: white ;
+  min-width: 160px !;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+  z-index: 1; cursor: pointer ;
+}
+.dropdown:hover .dropdownBeauty{
+  display: block ;
+  width: 1000px ;
+  height: 450px ;
+  margin-left: -300px;
+  display: flex ;
+  cursor:pointer ;
+}
+#logo1{
+  width: 60px;
+  height: 35px;
+  margin-left: 50px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.sub1{
+  border: none ;
+  cursor:pointer ;
+  font-size:14px;
+  font-weight: 300;
+  background-color: inherit;
+}
+
+
+.subhead{
+  color: red ; 
+  cursor:pointer ;
+}
+#topwear{
+  width: 170px ;
+  height: 250px ;
+  margin-left: 20px ;
+  text-align: left ;
+  line-height: 25px ;
+  cursor:pointer ;
+  margin-top:15px;
+}
+p{
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+#indian{
+  width: 150px;
+  height: 170px;
+  margin-left: 20px;
+  text-align: left;
+  line-height: 25px;
+  cursor:pointer;
+  margin-top:20px;
+}
+#bottomwear{
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+  text-align: left;
+  line-height: 25px;
+  margin-bottom: 1px;
+  cursor:pointer;
+  margin-top:15px;
+}
+#innerwear{
+  width: 180px;
+  height: 150px;
+  margin-left: 20px;
+  text-align: left;
+  line-height: 25px;
+  cursor:pointer;
+  margin-top:15px;
+}
+#footwear{
+  width: 170px;
+  height: 170px;
+  margin-left: 20px;
+  text-align: left;
+  line-height: 25px;
+  margin-top:15px;
+  cursor:pointer;
+}
+#personal{
+  margin-left: 20px;
+  text-align: left;
+  cursor:pointer;
+  margin-top:35px;
+}
+#sunglass1{
+  margin-left: 20px;
+  margin-top:15px;
+  text-align: left;
+  margin-top: 1px;
+  cursor:pointer;
+}
+#watches1{
+  margin-left: 20px;
+  text-align: left;
+  cursor:pointer;
+  margin-top:15px;
+  margin-top: 1px;
+}
+#plus1{
+  margin-left: 20px;
+  text-align: left;
+  cursor:pointer;
+  /* margin-top:15px; */
+  margin-top: 35px;
+}
+#sports{
+  width: 170px;
+  height: 250px;
+  margin-left: 35px;
+  text-align: left;
+  cursor:pointer;
+  line-height: 25px;
+  margin-top:20px;
+}
+#gadgets{
+  width: 170px;
+  height: 250px;
+  margin-left: 35px;
+  text-align: left;
+  cursor:pointer;
+  margin-top:20px;
+  line-height: 25px;
+}
+#fashion{
+  width: 220px;
+  height: 310px;
+  margin-left: 20px;
+  text-align: left;
+  cursor:pointer;
+  margin-top:20px;
+  line-height: 25px;
+}
+#topwear button:hover{
+  font-weight: 600;
+}
+#indian button:hover{
+  font-weight: 600;
+}
+#bottomwear button:hover{
+  font-weight: 600;
+}
+#bottomwear button:hover{
+  font-weight: 600;
+}
+#innerwear button:hover{
+  font-weight: 600;
+}
+#footwear button:hover{
+  font-weight: 600;
+}
+#sports button:hover{
+  font-weight: 600;
+}
+#gadgets button:hover{
+  font-weight: 600;
+}
+#fashion button:hover{
+  font-weight: 600;
+}
+
+
+
+.dropbtnW {
+  background-color:white;
+  font-weight: 500;font-size: 14px;color: #282c3f;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+ 
+}
+.dropbtnW:hover{
+  cursor:pointer;
+  border-bottom: 5px solid purple;
+} 
+.subheadW{
+  color: purple;
+}
+
+.dropbtnK {
+  background-color:white;
+  font-weight: 500;font-size: 14px;color: #282c3f;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+ 
+}
+.dropbtnK:hover{
+  border-bottom: 5px solid orangered;
+  cursor:pointer;
+} 
+.subheadK{
+  color: orangered;
+}
+
+
+.dropbtnH {
+  background-color:white;
+  font-weight: 500;font-size: 14px;color: #282c3f;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor:pointer;
+}
+.dropbtnH:hover{
+  border-bottom: 5px solid rgb(216, 216, 53);
+} 
+.subheadH{
+  color: rgb(206, 206, 0);
+}
+
+
+.dropbtnB {
+  background-color:white;
+  font-weight: 500;font-size: 14px;color: #282c3f;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor:pointer;
+}
+.dropbtnB:hover{
+  border-bottom: 5px solid turquoise;
+} 
+.subheadB{
+  color:turquoise;
+}
+
+
+.dropbtnS {
+  background-color:white;
+  font-weight: 500;font-size: 14px;color: #282c3f;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor:pointer;
+ 
+}
+.dropbtnS:hover{
+  border-bottom: 5px solid red;
+} 
+.dropdownS{
+  position: relative;
+  cursor:pointer;
+  display: inline-block;
+}
+
+.dropdownS-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  cursor:pointer;
+  z-index: 1;
+}
+
+.dropdownS-content a {
+  font-weight: 500;font-size: 14px;color: #282c3f;
+  padding: 12px 16px;
+  text-decoration: none;
+  cursor:pointer;
+  display: block;
+}
+
+.dropdownS-content a:hover {
+  background-color: #ddd;
+  cursor:pointer;
+  
+  }
+
+.dropdownS:hover .dropdownS-content {
+  display: block;
+  width: 600px;
+  height: 650px;
+  display: flex;
+  text-align: center;
+  cursor:pointer;
+
+}
+.dropbtnP {
+  background-color:white;
+  font-weight: 500;font-size: 14px;
+  padding: 16px;
+  border: none;
+  cursor:pointer;
+ 
+}
+.dropbtnP:hover{
+  border-bottom: 5px solid red;
+  cursor:pointer;
+
+} 
+.dropdownP{
+  position: relative;
+  display: inline-block;
+  cursor:pointer;
+
+}
+
+.dropdownP-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  box-shadow: 8px 8px 16px 8px rgba(0.2,0.2,0.2,0.2);
+  z-index: 1;
+  cursor:pointer;
+
+}
+
+.dropdownP-content a {
+  font-weight: 500;font-size: 14px;color: #282c3f;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor:pointer;
+
+}
+
+.dropdownP-content a:hover {
+  background-color: #ddd;
+  cursor:pointer;
+  
+  }
+
+.dropdownP:hover .dropdownP-content {
+  display: block;
+  width: 300px;
+  height: 450px;
+  display: flex;
+  text-align: left;
+  /* padding-right: 100px; */
+  /* position:relative; */
+margin-left:-80px;
+  background-color:white;
+  cursor:pointer;
+
+}
+
+
+#studioimg{
+  width: 500px;
+  height: 300px;
+  margin-bottom: 20px;
+  /* margin-top: 30px; */
+}
+#studiologo{
+  width:100px;
+  height:100px;
+}
+#studiop{
+  color: gray;
+}
+#studiobtn{
+  width: 200px;
+  height: 40px;
+  font-weight: 600;
+  border: 1px solid lightgrey;
+  cursor:pointer;
+
+}
+#searchimg{
+ 
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+input{ 
+  border:none ;
+  width: 300px;
+  margin-right: 20px; 
+} 
+#details{
+  font-size: 10px;
+  width: 50px;
+  height: 70px;
+  display: inline-block;
+  text-align: center;
+}
+#details button{
+font-size: 14px;
+border: none;
+font-weight: 500;
+}
+#profi{
+  width: 17px;
+  opacity: 70%;
+  
+}
+#wish{
+  width: 20px;
+}
+#bag{
+  width: 15px;
+  opacity: 80%;
+ 
+}
+#details1{
+  font-size: 16px;
+  width: 50px;
+  height: 70px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 20px;
+}
+#details1 button{
+font-size: 14px;
+border: none;
+font-weight: 500;
+}
+#details2{
+  font-size: 16px;
+  width: 60px;
+  height: 80px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+}
+#details2 button{
+font-size: 14px;
+border: none;
+padding-top: 1px;
+font-weight: 500;
+}
+#details3{
+  margin-left: 20px;
+}
+#details3 button{
+font-size: 14px;
+border: none;
+font-weight: 400;
+}
+
+.navbarButtons{
+  margin:0px 0px 0px -15px;
+  color:
+  #777b86;
+  background-color: white;
+}
+.navbarButtons:hover{
+  color: red;
+}
+
+
+#loginButton #loginnav{
+  padding: 5px 10px 5px 10px ;
+  color: red;
+  margin-left: 22px;
+  margin-top: 15px; 
+  background-color:white
+}
+
+.profileDropdown{
+  margin-right:50px;
+}
+
+.profileHeading>p:nth-child(1){
+  font-size: 15px;
+  font-weight: 600;
+  margin:20px 0px 0px 20px;
+}
+.profileHeading>p:nth-child(2){
+  font-size: 14px;
+  font-weight: 300;
+  margin:20px 0px 0px 20px;
+}
+
+.profileMargin{
+  margin:0px 0px 0px -15px;
+  color:
+  #777b86;
+}
+
+.cartCounts{
+  /* border: 1px solid black; */
+  width: 14px;
+  height: 19px;
+  /* padding: -2px -2px 1px 1px; */
+  padding-left:6px;
+  padding-top:-1px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 50px;
+  background-color: 
+  #e62e6a;
+  color: white;
+  position: relative;
+  top: -90px;
+  left: 1290px;
+  /* display: none; */
+
+}
+
+#details ,#details1{
+  cursor: pointer;
+}

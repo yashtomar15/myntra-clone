@@ -1,0 +1,17 @@
+.addBagBtn{
+    padding: 15px 60px 15px 60px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: #e62e6a;
+    border-radius: 5px;
+}
+
+.wishlistBtn{
+    padding: 15px 30px 15px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+}

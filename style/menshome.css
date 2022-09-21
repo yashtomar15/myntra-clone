@@ -1,0 +1,27 @@
+
+.slideshow-container{
+         margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        cursor: pointer;
+   }
+   img{
+       width:100%;
+   }
+   .grid_prod{
+       display:grid;
+       grid-template-columns: repeat(5,1fr);
+       grid-template-rows: auto;
+   }
+   .flex_prod{
+       display:flex;
+   }
+   .tag{
+    font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 45px 0 60px 30px;
+    max-height: 5em;
+    font-weight: 500;
+  }

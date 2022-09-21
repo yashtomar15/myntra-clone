@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./navbar/navbar.css" >
+</head>
+<div id="navbar_placeholder"></div>
+</html>
+<script type="module">
+ 
+ 
+ import {Navbar} from './navbar/script.js';
+var navbarfolder=document.querySelector("#navbar_placeholder");
+navbarfolder.innerHTML=Navbar();
+
+document.querySelector("#navbarlogo").addEventListener("click",home1);
+function home1(){
+  document.querySelector("#sub1").style.fontweight="600";
+    window.location.href="https://www.myntra.com/"
+    
+};
+document.querySelector("#Subway").addEventListener("click",display);
+function display(){
+    window.location.href="https://www.myntra.com/men-tshirts/"
+    
+};
+document.querySelector("#Subway1").addEventListener("click",display1);
+function display1(){
+    window.location.href="https://www.myntra.com/women-kurtas-kurtis-suits"  
+};
+
+document.querySelector("#Subway2").addEventListener("click",display2);
+function display2(){
+    window.location.href="https://www.myntra.com/kids?f=Categories%3ATshirts%3A%3AGender%3Aboys%2Cboys%20girls&plaEnabled=false"  
+};
+document.querySelector("#Subway3").addEventListener("click",display3);
+function display3(){
+    window.location.href="https://www.myntra.com/bedsheets";  
+};
+document.querySelector("#Subway4").addEventListener("click",display4);
+function display4(){
+    window.location.href="https://www.myntra.com/lipstick";  
+};
+
+document.querySelector("#studiobtn").addEventListener("click",display5);
+function display5(){
+    window.location.href="https://www.myntra.com/studio/home";  
+};
+document.querySelector("#loginnav").addEventListener("click",Loginnav);
+  function Loginnav(){
+    window.location.href="https://www.myntra.com/"
+  }
+  // wishlist page
+document.querySelector("#details").addEventListener("click",Wishlist);
+function Wishlist(){
+  window.location.href="wishlsit.html"
+}
+// signup page
+document.querySelector("#details1").addEventListener("click",Bag);
+function Bag(){
+  window.location.href="cart.html"
+}
+
+</script>
+ 

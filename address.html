@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <link rel="stylesheet" href="./style/add.css" />
+</head>
+<body>
+    <div class = "header">
+        <img class = "myntraLogo" src = "https://th.bing.com/th/id/OIP.CuiJSi-Y5jPyhzN7uIGPnAHaHa?w=193&h=193&c=7&r=0&o=5&dpr=1.25&pid=1.7"/>
+        <div class = "headerCenter">
+            <a href = "C:\Users\HP\Desktop\project\bag.html">BAG --------</a>
+            <a  style="color: red;" href = "C:\Users\HP\Desktop\project\address.html">ADDRESS --------</a>
+            <a href = "C:\Users\HP\Desktop\project\payment.html">PAYMENT</a>    
+        </div>
+        <div class = "headerRight">
+            <img class = "image2" src = "https://constant.myntassets.com/checkout/assets/img/sprite-secure.png"/>
+            <h4 style = "float: right;">100% SECURE</h4>
+        </div>
+    </div>
+    <div>
+      
+        <div id="contaddresh">
+            <h3>CONTACT DETAILS</h3> 
+            <input type="text" placeholder="Name*">
+            <input type="number" placeholder="Mobile No*"> 
+    
+            <h3>ADDRESS</h3>
+            <input type="number" placeholder="Pin Code*">
+            <input type="text" placeholder="ADDRESS (House No,Bulding,Street,Area)*">
+            <input type="text" placeholder="Locality/Town*">
+            
+               <br>
+                <select name="city" id="city">
+                    <option value="">Alwar</option>
+                    <option value="">Jaipur</option>
+                    <option value="">Sonipat</option>
+                    <option value="">Amritsar</option>
+                        <option value="">Bangaloru</option>
+                    </select>
+                
+                <select name="state" id="state">
+                    <option value="">Rajasthan</option>
+                    <option value="">Haryana</option>
+                    <option value="">Karanataka</option>
+                    <option value="">Punjab</option>
+                </select>
+    <h4>SAVE ADDRESS AS</h4>
+    <button onclick="home()" id="first">Home</button>
+    <button onclick="home()" id="first">Work</button>
+    <br>
+    <p>
+    <input type="checkbox">Make this my default address
+    </p>
+    
+    
+    <button id="last" onclick="addvo()">ADD ADDRESS</button>
+        </div>
+
+
+                <div class = "footer"> 
+                    <div class = "container3">
+                        <img  class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"/>
+
+                    </div>
+                    
+                        <a class = "contact" href= ""><span>Need Help? Contact Us</span></a>
+                    
+
+                </div>
+</body>
+</html>
+<script>
+    function home(){
+        var btn = document.getElementsById("first");
+     btn.style.color= "red" 
+    }
+function addvo(){
+
+    alert("Address saved sucessfully");
+    window.location.href="./payment.html"; 
+}
+</script>
